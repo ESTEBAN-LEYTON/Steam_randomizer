@@ -2,8 +2,8 @@
 // - Archivos de la página y datos: primero la red (siempre lo último); si no hay conexión, la copia guardada.
 // - Portadas de Steam: primero la copia guardada (no cambian y así carga más rápido).
 
-const APP_CACHE = "backlog-app-v1";
-const IMG_CACHE = "backlog-img-v1";
+const APP_CACHE = "backlog-app-v2";
+const IMG_CACHE = "backlog-img-v2";
 const SHELL = [
   "./",
   "index.html",

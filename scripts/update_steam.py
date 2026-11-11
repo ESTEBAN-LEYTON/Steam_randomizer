@@ -97,9 +97,9 @@ def achievements(key: str, steamid: str, appid: int) -> tuple[int, int]:
     return done, len(achs)
 
 
-def store_images(appids: list[int]) -> dict[int, str]:
-    """URL de la cápsula pequeña (231x87) de cada juego, consultando la tienda por lotes."""
-    images: dict[int, str] = {}
+def store_images(appids: list[int]) -> dict[int, dict[str, str]]:
+    """URLs de la cápsula pequeña (231x87) y de la portada vertical (600x900) de cada juego."""
+    images: dict[int, dict[str, str]] = {}
     for i in range(0, len(appids), IMG_BATCH):
         chunk = appids[i : i + IMG_BATCH]
         query = {
@@ -111,9 +111,13 @@ def store_images(appids: list[int]) -> dict[int, str]:
         for item in (data or {}).get("response", {}).get("store_items", []):
             assets = item.get("assets") or {}
             fmt = assets.get("asset_url_format")
-            name = assets.get("small_capsule") or assets.get("header")
-            if fmt and name and item.get("appid"):
-                images[item["appid"]] = ASSET_CDN + fmt.replace("${FILENAME}", name)
+            if not fmt or not item.get("appid"):
+                continue
+            url = lambda name: ASSET_CDN + fmt.replace("${FILENAME}", name) if name else ""
+            images[item["appid"]] = {
+                "img": url(assets.get("small_capsule") or assets.get("header")),
+                "cover": url(assets.get("library_capsule_2x") or assets.get("library_capsule")),
+            }
     return images
 
 
@@ -146,7 +150,8 @@ def main() -> None:
                 "playtime_min": int(g.get("playtime_forever", 0)),
                 "ach_done": done,
                 "ach_total": total,
-                "img": images.get(g["appid"], ""),
+                "img": images.get(g["appid"], {}).get("img", ""),
+                "cover": images.get(g["appid"], {}).get("cover", ""),
                 "icon": f"{ICON_CDN}{g['appid']}/{icon}.jpg" if icon else "",
             }
         )

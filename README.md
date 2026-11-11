@@ -25,7 +25,15 @@ Cada juego está en **una sola** carpeta:
 - Si está en **Auto**: es *pendiente* si tiene menos de X horas (2 por defecto; se cambia en la página y
   0 lo desactiva); si no, *por platinar* si tiene logros sin completar; si no, queda *Sin carpeta*.
 
-Las imágenes de cada juego las obtiene el script de la tienda de Steam (`IStoreBrowseService/GetItems`).
+Las imágenes de cada juego las obtiene el script de la tienda de Steam (`IStoreBrowseService/GetItems`):
+la portada vertical de la biblioteca (`cover`) y la cápsula horizontal (`img`).
+
+## Lista de juegos
+
+- **▦ / ☰**: vista de portadas (como la biblioteca de Steam) o lista compacta.
+- **▴ / ▾**: comprime o despliega la sección de juegos. La vista y el estado se recuerdan.
+- **Descargar imagen**: genera un JPG con las portadas de todos los juegos de la pestaña actual
+  (respeta la búsqueda), con el nombre de la carpeta y el total arriba.
 
 ## Despliegue en GitHub Pages
 

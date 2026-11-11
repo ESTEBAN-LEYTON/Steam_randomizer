@@ -4,6 +4,8 @@
 const LS_CONFIG = "steamBacklog.config";
 const LS_LEGACY_INF = "steamBacklog.infinitos"; // versión anterior: solo infinitos
 const LS_INSTALLED = "steamBacklog.installed";
+const LS_VIEW = "steamBacklog.view"; // "grid" | "list"
+const LS_COLLAPSED = "steamBacklog.collapsed";
 const PAGE = 60;
 const NONE = "none";
 
@@ -25,6 +27,7 @@ const state = {
   filter: "pend",
   query: "",
   shown: PAGE,
+  view: "grid",
 };
 
 // ---------- Carpetas ----------
@@ -239,11 +242,49 @@ function hours(min) {
   return h < 10 ? h.toLocaleString("es", { maximumFractionDigits: 1 }) : Math.round(h).toString();
 }
 
-const LEGACY_IMG = (appid) =>
-  `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${appid}/capsule_231x87.jpg`;
+const STEAM_CDN = "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/";
+const LEGACY_IMG = (appid) => `${STEAM_CDN}${appid}/capsule_231x87.jpg`;
+const LEGACY_COVER = (appid) => `${STEAM_CDN}${appid}/library_600x900.jpg`;
 
+// Fuentes de imagen de un juego: primero las portadas verticales (como la biblioteca de Steam),
+// luego las cápsulas horizontales, que se muestran centradas con el nombre debajo.
+function imageSources(g) {
+  return {
+    tall: [g.cover, LEGACY_COVER(g.appid)].filter(Boolean),
+    wide: [g.img, LEGACY_IMG(g.appid)].filter(Boolean),
+  };
+}
+
+// Portada vertical 2:3 con las alternativas en cadena si alguna imagen no existe.
+function cover(g) {
+  const { tall, wide } = imageSources(g);
+  const sources = [...tall.map((src) => ({ src, wide: false })), ...wide.map((src) => ({ src, wide: true }))];
+  const box = el("div", { className: "cover" });
+  const img = el("img", { alt: g.name, loading: "lazy", decoding: "async", referrerPolicy: "no-referrer" });
+  let i = 0;
+  const show = () => {
+    img.src = sources[i].src;
+    if (sources[i].wide && !box.classList.contains("wide")) {
+      box.classList.add("wide");
+      box.append(el("span", { className: "cover-name" }, g.name));
+    }
+  };
+  img.addEventListener("error", () => {
+    i++;
+    if (i < sources.length) return show();
+    img.remove();
+    box.classList.remove("wide");
+    box.classList.add("ph");
+    box.replaceChildren(el("span", { className: "cover-name" }, g.name));
+  });
+  box.append(img);
+  show();
+  return box;
+}
+
+// Miniatura horizontal para la vista compacta.
 function thumb(g) {
-  const sources = [g.img, LEGACY_IMG(g.appid), g.icon].filter(Boolean);
+  const sources = [...imageSources(g).wide, g.icon].filter(Boolean);
   const box = el("div", { className: "thumb" });
   const img = el("img", { alt: "", loading: "lazy", decoding: "async", referrerPolicy: "no-referrer" });
   let i = 0;
@@ -280,34 +321,231 @@ function folderSelect(g) {
   return sel;
 }
 
-function renderList() {
+// Juegos de la pestaña actual que coinciden con la búsqueda.
+function filteredGames() {
   const q = state.query.trim().toLocaleLowerCase("es");
-  const items = state.games.filter((g) => {
+  return state.games.filter((g) => {
     if (state.filter !== "all" && folderOf(g) !== state.filter) return false;
     return !q || g.name.toLocaleLowerCase("es").includes(q);
   });
+}
+
+function achText(g) {
+  return g.ach_total ? `${g.ach_done}/${g.ach_total} logros` : "sin logros";
+}
+
+function renderList() {
+  const items = filteredGames();
+  const grid = state.view === "grid";
   const list = $("list");
+  list.className = grid ? "list grid" : "list";
   list.replaceChildren();
   if (!items.length) {
     list.append(el("li", { className: "empty" }, state.games.length ? "No hay juegos aquí." : "Sin datos todavía."));
   }
   for (const g of items.slice(0, state.shown)) {
     const f = folderById(folderOf(g));
-    const ach = g.ach_total
-      ? ` · ${g.ach_done}/${g.ach_total} logros (${Math.floor((g.ach_done / g.ach_total) * 100)} %)`
-      : " · sin logros";
-    list.append(
-      el("li", { style: { "--c": f ? f.color : "var(--line)" } },
-        thumb(g),
-        el("div", { className: "info" },
-          el("div", { className: "name" }, g.name),
-          el("div", { className: "meta" }, `${hours(g.playtime_min)} h${ach}`),
-          folderSelect(g)))
-    );
+    const color = f ? f.color : "var(--line)";
+    if (grid) {
+      const pct = g.ach_total ? Math.floor((g.ach_done / g.ach_total) * 100) : null;
+      const c = cover(g);
+      c.append(el("span", { className: "badge" }, `${hours(g.playtime_min)} h`));
+      if (pct !== null) c.append(el("span", { className: "badge right" + (pct === 100 ? " full" : "") }, `${pct} %`));
+      list.append(
+        el("li", { className: "tile", style: { "--c": color }, title: `${g.name} · ${hours(g.playtime_min)} h · ${achText(g)}` },
+          c, folderSelect(g)));
+    } else {
+      list.append(
+        el("li", { style: { "--c": color } },
+          thumb(g),
+          el("div", { className: "info" },
+            el("div", { className: "name" }, g.name),
+            el("div", { className: "meta" }, `${hours(g.playtime_min)} h · ${achText(g)}`),
+            folderSelect(g)))
+      );
+    }
   }
   const rest = items.length - state.shown;
   $("more").hidden = rest <= 0;
   $("more").textContent = `Mostrar más (${rest} restantes)`;
+  $("snapshot").disabled = !items.length;
+}
+
+function setView(view) {
+  state.view = view === "list" ? "list" : "grid";
+  lsSet(LS_VIEW, state.view);
+  $("view-grid").classList.toggle("active", state.view === "grid");
+  $("view-list").classList.toggle("active", state.view === "list");
+  renderList();
+}
+
+function setCollapsed(collapsed) {
+  $("games-body").hidden = collapsed;
+  $("collapse").setAttribute("aria-expanded", String(!collapsed));
+  $("collapse").textContent = collapsed ? "▾" : "▴";
+  $("collapse").title = collapsed ? "Mostrar lista" : "Comprimir lista";
+  $("games-card").classList.toggle("collapsed", collapsed);
+  lsSet(LS_COLLAPSED, collapsed ? "1" : "");
+}
+
+// ---------- Imagen descargable con todas las portadas de la lista ----------
+const MAX_PIXELS = 16_000_000; // límite seguro de canvas en móviles (iOS ≈ 16,7 M)
+const MAX_SIDE = 16_000;
+
+async function loadBitmap(url) {
+  const res = await fetch(url, { mode: "cors", credentials: "omit" });
+  if (!res.ok) throw new Error(res.status);
+  return createImageBitmap(await res.blob());
+}
+
+async function coverBitmap(g) {
+  const { tall, wide } = imageSources(g);
+  for (const [urls, isWide] of [[tall, false], [wide, true]]) {
+    for (const url of urls) {
+      try { return { bmp: await loadBitmap(url), wide: isWide }; } catch {}
+    }
+  }
+  return null;
+}
+
+async function mapPool(items, limit, fn, onDone) {
+  const out = new Array(items.length);
+  let next = 0, done = 0;
+  const worker = async () => {
+    while (next < items.length) {
+      const i = next++;
+      out[i] = await fn(items[i]);
+      onDone(++done);
+    }
+  };
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, worker));
+  return out;
+}
+
+function wrapText(ctx, text, maxWidth, maxLines) {
+  const words = text.split(/\s+/);
+  const lines = [];
+  let line = "";
+  for (const w of words) {
+    const test = line ? `${line} ${w}` : w;
+    if (ctx.measureText(test).width <= maxWidth || !line) line = test;
+    else { lines.push(line); line = w; }
+  }
+  if (line) lines.push(line);
+  if (lines.length > maxLines) {
+    lines.length = maxLines;
+    let last = lines[maxLines - 1];
+    while (last && ctx.measureText(last + "…").width > maxWidth) last = last.slice(0, -1);
+    lines[maxLines - 1] = last + "…";
+  }
+  return lines;
+}
+
+function roundRectPath(ctx, x, y, w, h, r) {
+  ctx.beginPath();
+  if (ctx.roundRect) ctx.roundRect(x, y, w, h, r);
+  else ctx.rect(x, y, w, h);
+}
+
+function drawTile(ctx, g, res, x, y, w, h) {
+  const r = w * 0.03;
+  ctx.save();
+  roundRectPath(ctx, x, y, w, h, r);
+  ctx.clip();
+  ctx.fillStyle = "#1f2733";
+  ctx.fillRect(x, y, w, h);
+  const font = (size, weight = 700) => `${weight} ${size}px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif`;
+  let textTop = y + h * 0.35;
+  if (res && !res.wide) {
+    // Recorta a 2:3 por si la imagen no tiene exactamente esa proporción
+    const { bmp } = res;
+    const s = Math.max(w / bmp.width, h / bmp.height);
+    const sw = w / s, sh = h / s;
+    ctx.drawImage(bmp, (bmp.width - sw) / 2, (bmp.height - sh) / 2, sw, sh, x, y, w, h);
+  } else {
+    if (res) {
+      const { bmp } = res;
+      const dh = (w * bmp.height) / bmp.width;
+      const dy = y + h * 0.3 - dh / 2;
+      ctx.drawImage(bmp, x, dy, w, dh);
+      textTop = dy + dh + w * 0.08;
+    }
+    ctx.fillStyle = "#e6ebf1";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "top";
+    const size = Math.round(w * 0.1);
+    ctx.font = font(size);
+    wrapText(ctx, g.name, w * 0.86, 4).forEach((l, i) => ctx.fillText(l, x + w / 2, textTop + i * size * 1.2));
+  }
+  ctx.restore();
+}
+
+async function downloadSnapshot() {
+  const items = filteredGames();
+  if (!items.length) return;
+  const btn = $("snapshot");
+  const label = btn.textContent;
+  btn.disabled = true;
+  try {
+    const n = items.length;
+    const cols = n <= 3 ? n : Math.min(12, Math.max(3, Math.ceil(Math.sqrt(n * 0.85))));
+    const rows = Math.ceil(n / cols);
+    // Todas las medidas son proporcionales al ancho de la portada (w).
+    const GAP = 0.06, PAD = 0.12, HEAD = 0.75;
+    const kw = cols + (cols - 1) * GAP + 2 * PAD;
+    const kh = HEAD + rows * 1.5 + (rows - 1) * GAP + 2 * PAD;
+    const w = Math.floor(Math.min(300, Math.sqrt(MAX_PIXELS / (kw * kh)), MAX_SIDE / kw, MAX_SIDE / kh));
+    const h = Math.round(w * 1.5), gap = Math.round(w * GAP), pad = Math.round(w * PAD), head = Math.round(w * HEAD);
+    const W = cols * w + (cols - 1) * gap + 2 * pad;
+    const H = head + rows * h + (rows - 1) * gap + 2 * pad;
+
+    const bitmaps = await mapPool(items, 8, coverBitmap, (d) => { btn.textContent = `Cargando ${d}/${n}…`; });
+    btn.textContent = "Generando…";
+
+    const canvas = el("canvas", { width: W, height: H });
+    const ctx = canvas.getContext("2d");
+    const bg = ctx.createLinearGradient(0, 0, 0, H);
+    bg.addColorStop(0, "#1b2838");
+    bg.addColorStop(1, "#0e141b");
+    ctx.fillStyle = bg;
+    ctx.fillRect(0, 0, W, H);
+
+    const tabName = state.filter === "all" ? "Todos" : state.filter === NONE ? "Sin carpeta" : folderById(state.filter)?.nombre ?? "";
+    const title = state.query.trim() ? `${tabName} · «${state.query.trim()}»` : tabName;
+    const font = (size, weight) => `${weight} ${size}px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif`;
+    ctx.textBaseline = "alphabetic";
+    ctx.textAlign = "left";
+    ctx.fillStyle = "#ffffff";
+    const tSize = Math.round(w * 0.24);
+    ctx.font = font(tSize, 800);
+    ctx.fillText(title, pad, pad + tSize);
+    ctx.fillStyle = "#8f98a0";
+    const sSize = Math.round(w * 0.12);
+    ctx.font = font(sSize, 500);
+    const date = new Date().toLocaleDateString("es", { dateStyle: "medium" });
+    ctx.fillText(`${n} ${n === 1 ? "juego" : "juegos"} · ${date}`, pad, pad + tSize + sSize * 1.5);
+
+    items.forEach((g, i) => {
+      const x = pad + (i % cols) * (w + gap);
+      const y = pad + head + Math.floor(i / cols) * (h + gap);
+      drawTile(ctx, g, bitmaps[i], x, y, w, h);
+      bitmaps[i]?.bmp.close?.();
+    });
+
+    const blob = await new Promise((ok) => canvas.toBlob(ok, "image/jpeg", 0.9));
+    if (!blob) throw new Error("toBlob");
+    const slug = title.normalize("NFD").replace(/[^\w]+/g, "-").replace(/^-|-$/g, "").toLowerCase() || "juegos";
+    const a = el("a", { href: URL.createObjectURL(blob), download: `backlog-${slug}.jpg` });
+    document.body.append(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+  } catch (e) {
+    alert("No se pudo generar la imagen. Revisa la conexión e inténtalo de nuevo.");
+  } finally {
+    btn.textContent = label;
+    btn.disabled = false;
+  }
 }
 
 // ---------- Render: gestión de carpetas ----------
@@ -404,6 +642,10 @@ function bindEvents() {
   $("r-go").addEventListener("click", generate);
   $("search").addEventListener("input", (e) => { state.query = e.target.value; state.shown = PAGE; renderList(); });
   $("more").addEventListener("click", () => { state.shown += PAGE; renderList(); });
+  $("view-grid").addEventListener("click", () => setView("grid"));
+  $("view-list").addEventListener("click", () => setView("list"));
+  $("collapse").addEventListener("click", () => setCollapsed(!$("games-body").hidden));
+  $("snapshot").addEventListener("click", downloadSnapshot);
 
   $("new-folder").addEventListener("submit", (e) => {
     e.preventDefault();
@@ -442,6 +684,10 @@ async function init() {
   bindEvents();
   const saved = lsGet(LS_INSTALLED);
   if (saved !== null) $("installed").value = saved;
+  state.view = lsGet(LS_VIEW) === "list" ? "list" : "grid";
+  $("view-grid").classList.toggle("active", state.view === "grid");
+  $("view-list").classList.toggle("active", state.view === "list");
+  setCollapsed(lsGet(LS_COLLAPSED) === "1");
 
   const [data, config] = await Promise.allSettled([fetchJSON("data.json"), fetchJSON("config.json")]);
   if (config.status === "fulfilled") state.fileConfig = normalizeConfig(config.value);

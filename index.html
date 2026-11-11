@@ -58,14 +58,26 @@
     </section>
 
     <!-- Lista de juegos -->
-    <section class="card">
-      <h2>Juegos</h2>
-      <input id="search" class="search" type="search" placeholder="Buscar…" autocomplete="off">
-      <div id="tabs" class="tabs" role="tablist"></div>
-      <p class="muted small">Usa el menú de cada juego para moverlo a otra carpeta.
-        «Auto» lo clasifica según las horas y los logros.</p>
-      <ul id="list" class="list"></ul>
-      <button id="more" class="btn more" hidden>Mostrar más</button>
+    <section class="card" id="games-card">
+      <div class="card-head">
+        <h2>Juegos</h2>
+        <div class="seg" role="group" aria-label="Vista">
+          <button type="button" id="view-grid" title="Portadas">▦</button>
+          <button type="button" id="view-list" title="Lista compacta">☰</button>
+        </div>
+        <button type="button" id="collapse" class="icon-btn" aria-expanded="true" title="Comprimir lista">▴</button>
+      </div>
+      <div id="games-body">
+        <input id="search" class="search" type="search" placeholder="Buscar…" autocomplete="off">
+        <div id="tabs" class="tabs" role="tablist"></div>
+        <div class="list-tools">
+          <p class="muted small">Usa el menú de cada juego para moverlo a otra carpeta.
+            «Auto» lo clasifica según las horas y los logros.</p>
+          <button type="button" id="snapshot" class="btn small-btn">Descargar imagen</button>
+        </div>
+        <ul id="list" class="list"></ul>
+        <button id="more" class="btn more" hidden>Mostrar más</button>
+      </div>
     </section>
 
     <!-- Carpetas y ajustes -->
