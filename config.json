@@ -1,3 +1,9 @@
 {
-  "infinitos": []
+  "horas_pendiente": 2,
+  "carpetas": [
+    { "id": "online", "nombre": "Solo online", "reparto": false },
+    { "id": "relleno", "nombre": "Relleno", "reparto": false },
+    { "id": "pasados", "nombre": "Ya me los pasé", "reparto": false }
+  ],
+  "asignaciones": {}
 }

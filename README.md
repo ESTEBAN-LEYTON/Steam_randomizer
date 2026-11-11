@@ -7,19 +7,24 @@ Publicada en: <https://esteban-leyton.github.io/Steam_randomizer/>
 |---|---|
 | `index.html`, `style.css`, `app.js` | La web |
 | `data.json` | Tu biblioteca (la genera el script; no se edita a mano) |
-| `config.json` | Lista de juegos infinitos (`{"infinitos": [appid, ...]}`) |
+| `config.json` | Carpetas propias, horas para «pendiente» y juegos asignados a mano |
 | `scripts/update_steam.py` | Lee la API de Steam y escribe `data.json` |
 | `.github/workflows/update.yml` | Ejecuta el script cada día (o a mano), hace commit y publica en Pages |
 
-## Criterios
+## Carpetas y criterios
 
-Cada juego cuenta en **una sola** categoría, en este orden de prioridad:
+Hay tres carpetas principales (**Pendientes**, **Infinitos**, **Por platinar**), que siempre cuentan en los
+contadores y en el reparto, y carpetas propias que puedes crear, renombrar y borrar desde la página.
+Vienen creadas *Solo online*, *Relleno* y *Ya me los pasé*. Marca **Reparto** en una carpeta propia si quieres que
+también cuente en los porcentajes y en el reparto de instalados.
 
-1. **Infinito**: lo marcaste con ∞ en la página.
-2. **Pendiente**: menos de 2 horas jugadas.
-3. **Por platinar**: tiene logros y menos del 100 % desbloqueado.
+Cada juego está en **una sola** carpeta:
 
-Los demás (≥ 2 h y 100 %, o sin logros) se consideran terminados y no cuentan.
+- Si la elegiste a mano en su menú, esa manda.
+- Si está en **Auto**: es *pendiente* si tiene menos de X horas (2 por defecto; se cambia en la página y
+  0 lo desactiva); si no, *por platinar* si tiene logros sin completar; si no, queda *Sin carpeta*.
+
+Las imágenes de cada juego las obtiene el script de la tienda de Steam (`IStoreBrowseService/GetItems`).
 
 ## Despliegue en GitHub Pages
 
@@ -40,10 +45,11 @@ Los demás (≥ 2 h y 100 %, o sin logros) se consideran terminados y no cuentan
 
 Después se actualiza solo cada día a las 09:00 UTC. Cada push a `main` vuelve a publicar la web (sin consultar Steam).
 
-## Marcar infinitos
+## Guardar tus carpetas
 
-Toca ∞ en un juego. Se guarda en el `localStorage` de ese navegador, así que vale solo en ese dispositivo.
-Para que valga en todos: pulsa **Descargar config.json**, sustituye el del repositorio (desde la web de GitHub: *Add file → Upload files*) y haz commit. El workflow republica la página sola.
+Los cambios (juegos movidos, carpetas, horas) se guardan en el `localStorage` de ese navegador.
+Para que valgan en todos tus dispositivos: pulsa **Descargar config.json**, sustituye el del repositorio
+(desde GitHub: *Add file → Upload files*) y haz commit. El workflow republica la página sola.
 **Volver a config.json** borra los cambios locales y usa el archivo del repo.
 
 ## Probar en local

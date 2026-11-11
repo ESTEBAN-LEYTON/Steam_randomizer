@@ -1,31 +1,62 @@
 "use strict";
 
-// ---------- Criterios ----------
-const PENDING_MINUTES = 120;      // menos de 2 h jugadas = pendiente
-const LS_KEY = "steamBacklog.infinitos";
+// ---------- Constantes ----------
+const LS_CONFIG = "steamBacklog.config";
+const LS_LEGACY_INF = "steamBacklog.infinitos"; // versión anterior: solo infinitos
 const LS_INSTALLED = "steamBacklog.installed";
-const CATS = ["pend", "inf", "plat"];
+const PAGE = 60;
+const NONE = "none";
+
+// Las tres carpetas principales: siempre existen y siempre cuentan en el reparto.
+const MAIN = [
+  { id: "pend", nombre: "Pendientes", color: "var(--pend)" },
+  { id: "inf", nombre: "Infinitos", color: "var(--inf)" },
+  { id: "plat", nombre: "Por platinar", color: "var(--plat)" },
+];
+const EXTRA_COLORS = ["#1aa39a", "#d4507a", "#6c8a1f", "#b5653a", "#4a6fd1", "#9a6b2e", "#7c5cbf", "#2b8a57"];
+
+const DEFAULT_CONFIG = { horas_pendiente: 2, carpetas: [], asignaciones: {} };
 
 const $ = (id) => document.getElementById(id);
-const state = { games: [], infinite: new Set(), configInfinite: [], filter: "pend", query: "" };
+const state = {
+  games: [],
+  config: structuredClone(DEFAULT_CONFIG),
+  fileConfig: structuredClone(DEFAULT_CONFIG),
+  filter: "pend",
+  query: "",
+  shown: PAGE,
+};
 
-// Cada juego cae en UNA sola categoría, por prioridad:
-// 1) infinito (marcado a mano)  2) pendiente (< 2 h)  3) por platinar (con logros y < 100 %)
-// El resto (jugado y platinado o sin logros) no cuenta en el backlog.
-function category(g) {
-  if (state.infinite.has(g.appid)) return "inf";
-  if (g.playtime_min < PENDING_MINUTES) return "pend";
-  if (g.ach_total > 0 && g.ach_done < g.ach_total) return "plat";
-  return null;
+// ---------- Carpetas ----------
+function folders() {
+  const extra = state.config.carpetas.map((c, i) => ({ ...c, color: EXTRA_COLORS[i % EXTRA_COLORS.length] }));
+  return [...MAIN.map((m) => ({ ...m, reparto: true, main: true })), ...extra];
+}
+function folderById(id) {
+  return folders().find((f) => f.id === id);
 }
 
-// ---------- Utilidades matemáticas ----------
+function autoFolder(g) {
+  const limit = Number(state.config.horas_pendiente) * 60;
+  if (limit > 0 && g.playtime_min < limit) return "pend";
+  if (g.ach_total > 0 && g.ach_done < g.ach_total) return "plat";
+  return NONE;
+}
+
+// Carpeta final de un juego: la elegida a mano o, si no hay, la automática.
+function folderOf(g) {
+  const manual = state.config.asignaciones[g.appid];
+  if (manual === NONE) return NONE;
+  if (manual && folderById(manual)) return manual;
+  return autoFolder(g);
+}
+
+// ---------- Matemáticas ----------
 const gcd = (a, b) => (b ? gcd(b, a % b) : Math.abs(a));
 
 /**
  * Método del mayor residuo (Hamilton).
- * Reparte `total` en proporción a `weights`, sin que ninguna parte supere su peso
- * (no puedes instalar más juegos de los que tienes en esa categoría).
+ * Reparte `total` en proporción a `weights`, sin que ninguna parte supere su peso.
  */
 function largestRemainder(total, weights) {
   const sum = weights.reduce((a, b) => a + b, 0);
@@ -44,15 +75,51 @@ function largestRemainder(total, weights) {
   return result;
 }
 
-// ---------- Infinitos (config.json + localStorage) ----------
-function loadLocalInfinite() {
-  try {
-    const raw = localStorage.getItem(LS_KEY);
-    return raw ? JSON.parse(raw) : null;
-  } catch { return null; }
+// ---------- Configuración (config.json + localStorage) ----------
+function normalizeConfig(raw) {
+  const c = { ...structuredClone(DEFAULT_CONFIG), ...(raw || {}) };
+  c.carpetas = Array.isArray(c.carpetas) ? c.carpetas.filter((f) => f && f.id && f.nombre) : [];
+  c.asignaciones = c.asignaciones && typeof c.asignaciones === "object" ? { ...c.asignaciones } : {};
+  // Formato antiguo: {"infinitos": [appid, ...]}
+  if (Array.isArray(c.infinitos)) {
+    for (const id of c.infinitos) c.asignaciones[id] ??= "inf";
+    delete c.infinitos;
+  }
+  const h = Number(c.horas_pendiente);
+  c.horas_pendiente = Number.isFinite(h) && h >= 0 ? h : 2;
+  return c;
 }
-function saveLocalInfinite() {
-  try { localStorage.setItem(LS_KEY, JSON.stringify([...state.infinite])); } catch {}
+
+function lsGet(key) {
+  try { return localStorage.getItem(key); } catch { return null; }
+}
+function lsSet(key, value) {
+  try { localStorage.setItem(key, value); } catch {}
+}
+function lsDel(key) {
+  try { localStorage.removeItem(key); } catch {}
+}
+
+function saveConfig() {
+  lsSet(LS_CONFIG, JSON.stringify(state.config));
+}
+
+function loadLocalConfig() {
+  const raw = lsGet(LS_CONFIG);
+  if (raw) {
+    try { return normalizeConfig(JSON.parse(raw)); } catch {}
+  }
+  // Migrar los infinitos guardados por la versión anterior
+  const legacy = lsGet(LS_LEGACY_INF);
+  if (legacy) {
+    try {
+      const c = structuredClone(state.fileConfig);
+      for (const id of JSON.parse(legacy)) c.asignaciones[id] = "inf";
+      lsDel(LS_LEGACY_INF);
+      return c;
+    } catch {}
+  }
+  return null;
 }
 
 async function fetchJSON(url) {
@@ -61,42 +128,110 @@ async function fetchJSON(url) {
   return res.json();
 }
 
-// ---------- Render ----------
+// ---------- Utilidades de DOM ----------
+function el(tag, props = {}, ...children) {
+  const node = document.createElement(tag);
+  for (const [k, v] of Object.entries(props)) {
+    if (k === "style") for (const [p, val] of Object.entries(v)) node.style.setProperty(p, val);
+    else if (k in node) node[k] = v;
+    else node.setAttribute(k, v);
+  }
+  node.append(...children.filter((c) => c != null));
+  return node;
+}
+const fmtPct = (n) => `${n.toLocaleString("es", { maximumFractionDigits: 1 })} %`;
+
+// ---------- Render: contadores y reparto ----------
 function counts() {
-  const c = { pend: 0, inf: 0, plat: 0, other: 0 };
-  for (const g of state.games) c[category(g) || "other"]++;
+  const c = Object.fromEntries(folders().map((f) => [f.id, 0]));
+  c[NONE] = 0;
+  for (const g of state.games) c[folderOf(g)]++;
   return c;
 }
 
 function renderCounters() {
   const c = counts();
-  const values = CATS.map((k) => c[k]);
+  const included = folders().filter((f) => f.reparto);
+  const values = included.map((f) => c[f.id]);
   const total = values.reduce((a, b) => a + b, 0);
-  // Porcentajes en décimas con mayor residuo para que sumen exactamente 100 %
   const tenths = largestRemainder(total ? 1000 : 0, values.map((v) => v * 1000)).map((t) => t / 10);
-  CATS.forEach((k, i) => {
-    $(`n-${k}`).textContent = values[i];
-    $(`p-${k}`).textContent = `${tenths[i].toLocaleString("es", { maximumFractionDigits: 1 })} %`;
-    $(`b-${k}`).style.width = total ? `${(values[i] / total) * 100}%` : "0";
-  });
+
+  $("counters").replaceChildren(
+    ...included.map((f, i) =>
+      el("div", { className: "counter", style: { "--c": f.color } },
+        el("span", { className: "label" }, f.nombre),
+        el("strong", {}, String(values[i])),
+        el("span", { className: "pct" }, fmtPct(tenths[i])))
+    )
+  );
+  $("counters").style.gridTemplateColumns = `repeat(${Math.min(included.length, 3)}, 1fr)`;
+  $("bar").replaceChildren(
+    ...included.map((f, i) =>
+      el("span", { style: { background: f.color, width: total ? `${(values[i] / total) * 100}%` : "0" } }))
+  );
+
   const g = values.reduce(gcd, 0);
+  $("ratio-labels").textContent = included.map((f) => initials(f.nombre)).join(" : ");
   $("ratio").textContent = g ? values.map((v) => v / g).join(" : ") : "—";
+
+  // Carpetas que no cuentan en el reparto + sin carpeta
+  const extras = folders().filter((f) => !f.reparto);
+  $("extra").replaceChildren(
+    ...extras.map((f) => chip(f.nombre, c[f.id], f.color)),
+    chip("Sin carpeta", c[NONE], "var(--muted)")
+  );
   $("others").textContent = state.games.length
-    ? `${total} en backlog de ${state.games.length} juegos. ${c.other} ya terminados (≥ 2 h y 100 % o sin logros).`
+    ? `${total} juegos cuentan en el reparto, de ${state.games.length} en tu biblioteca.`
     : "";
-  renderAllocation(values);
+  renderAllocation(included, values);
 }
 
-function renderAllocation(values = CATS.map((k) => counts()[k])) {
+function chip(name, n, color) {
+  return el("span", { className: "chip", style: { "--c": color } }, el("i"), `${name}: `, el("b", {}, String(n)));
+}
+
+function initials(name) {
+  return name.split(/\s+/).filter(Boolean).map((w) => w[0].toUpperCase()).join("").slice(0, 3);
+}
+
+let lastAlloc = null;
+function renderAllocation(included, values) {
+  if (included) lastAlloc = { included, values };
+  if (!lastAlloc) return;
+  ({ included, values } = lastAlloc);
   const raw = parseInt($("installed").value, 10);
   const wanted = Number.isFinite(raw) && raw > 0 ? raw : 0;
   const alloc = largestRemainder(wanted, values);
-  CATS.forEach((k, i) => ($(`a-${k}`).textContent = alloc[i]));
+  $("alloc").replaceChildren(
+    ...included.map((f, i) =>
+      el("div", { style: { "--c": f.color } }, el("span", {}, f.nombre), el("strong", {}, String(alloc[i]))))
+  );
+  $("alloc").style.gridTemplateColumns = `repeat(${Math.min(included.length, 3)}, 1fr)`;
   const sum = values.reduce((a, b) => a + b, 0);
   $("alloc-note").textContent =
     wanted > sum
-      ? `Solo tienes ${sum} juegos en el backlog, así que el reparto se limita a ${sum}.`
+      ? `Solo tienes ${sum} juegos en estas carpetas, así que el reparto se limita a ${sum}.`
       : "Reparto proporcional con el método del mayor residuo.";
+}
+
+// ---------- Render: pestañas y lista ----------
+function renderTabs() {
+  const c = counts();
+  const tabs = [...folders().map((f) => ({ id: f.id, nombre: f.nombre })), { id: NONE, nombre: "Sin carpeta" }, { id: "all", nombre: "Todos" }];
+  if (!tabs.some((t) => t.id === state.filter)) state.filter = "pend";
+  $("tabs").replaceChildren(
+    ...tabs.map((t) => {
+      const b = el("button", { className: t.id === state.filter ? "active" : "", type: "button" },
+        t.nombre, el("small", {}, ` ${t.id === "all" ? state.games.length : c[t.id]}`));
+      b.addEventListener("click", () => {
+        state.filter = t.id;
+        state.shown = PAGE;
+        renderTabs();
+        renderList();
+      });
+      return b;
+    })
+  );
 }
 
 function hours(min) {
@@ -104,62 +239,121 @@ function hours(min) {
   return h < 10 ? h.toLocaleString("es", { maximumFractionDigits: 1 }) : Math.round(h).toString();
 }
 
+const LEGACY_IMG = (appid) =>
+  `https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/${appid}/capsule_231x87.jpg`;
+
+function thumb(g) {
+  const sources = [g.img, LEGACY_IMG(g.appid), g.icon].filter(Boolean);
+  const box = el("div", { className: "thumb" });
+  const img = el("img", { alt: "", loading: "lazy", decoding: "async", referrerPolicy: "no-referrer" });
+  let i = 0;
+  img.addEventListener("error", () => {
+    i++;
+    if (i < sources.length) {
+      img.src = sources[i];
+      if (sources[i] === g.icon) box.classList.add("icon");
+    } else {
+      box.replaceChildren(el("span", {}, initials(g.name)));
+      box.classList.add("ph");
+    }
+  });
+  img.src = sources[0];
+  box.append(img);
+  return box;
+}
+
+function folderSelect(g) {
+  const manual = state.config.asignaciones[g.appid];
+  const auto = autoFolder(g);
+  const autoName = auto === NONE ? "Sin carpeta" : folderById(auto).nombre;
+  const sel = el("select", { className: "folder-sel" + (manual ? " manual" : ""), "aria-label": `Carpeta de ${g.name}` },
+    el("option", { value: "" }, `Auto: ${autoName}`),
+    ...folders().map((f) => el("option", { value: f.id }, f.nombre)),
+    el("option", { value: NONE }, "Sin carpeta"));
+  sel.value = manual && (manual === NONE || folderById(manual)) ? manual : "";
+  sel.addEventListener("change", () => {
+    if (sel.value) state.config.asignaciones[g.appid] = sel.value;
+    else delete state.config.asignaciones[g.appid];
+    saveConfig();
+    refresh();
+  });
+  return sel;
+}
+
 function renderList() {
   const q = state.query.trim().toLocaleLowerCase("es");
-  const list = $("list");
   const items = state.games.filter((g) => {
-    const cat = category(g);
-    if (state.filter !== "all" && cat !== state.filter) return false;
+    if (state.filter !== "all" && folderOf(g) !== state.filter) return false;
     return !q || g.name.toLocaleLowerCase("es").includes(q);
   });
+  const list = $("list");
   list.replaceChildren();
   if (!items.length) {
-    const li = document.createElement("li");
-    li.className = "empty";
-    li.textContent = state.games.length ? "No hay juegos aquí." : "Sin datos todavía.";
-    list.append(li);
-    return;
+    list.append(el("li", { className: "empty" }, state.games.length ? "No hay juegos aquí." : "Sin datos todavía."));
   }
-  const frag = document.createDocumentFragment();
-  for (const g of items.slice(0, 500)) {
-    const cat = category(g);
-    const li = document.createElement("li");
-    const dot = document.createElement("span");
-    dot.className = `dot ${cat ? "c-" + cat : ""}`;
-    const info = document.createElement("div");
-    info.className = "info";
-    const name = document.createElement("div");
-    name.className = "name";
-    name.textContent = g.name;
-    const meta = document.createElement("div");
-    meta.className = "meta";
+  for (const g of items.slice(0, state.shown)) {
+    const f = folderById(folderOf(g));
     const ach = g.ach_total
       ? ` · ${g.ach_done}/${g.ach_total} logros (${Math.floor((g.ach_done / g.ach_total) * 100)} %)`
       : " · sin logros";
-    meta.textContent = `${hours(g.playtime_min)} h${ach}`;
-    info.append(name, meta);
-    const btn = document.createElement("button");
-    btn.className = "inf-btn" + (state.infinite.has(g.appid) ? " on" : "");
-    btn.textContent = "∞";
-    btn.title = "Marcar como infinito";
-    btn.setAttribute("aria-pressed", state.infinite.has(g.appid));
-    btn.addEventListener("click", () => toggleInfinite(g.appid));
-    li.append(dot, info, btn);
-    frag.append(li);
+    list.append(
+      el("li", { style: { "--c": f ? f.color : "var(--line)" } },
+        thumb(g),
+        el("div", { className: "info" },
+          el("div", { className: "name" }, g.name),
+          el("div", { className: "meta" }, `${hours(g.playtime_min)} h${ach}`),
+          folderSelect(g)))
+    );
   }
-  list.append(frag);
+  const rest = items.length - state.shown;
+  $("more").hidden = rest <= 0;
+  $("more").textContent = `Mostrar más (${rest} restantes)`;
 }
 
-function toggleInfinite(appid) {
-  state.infinite.has(appid) ? state.infinite.delete(appid) : state.infinite.add(appid);
-  saveLocalInfinite();
+// ---------- Render: gestión de carpetas ----------
+function renderFolders() {
+  const c = counts();
+  $("folders").replaceChildren(
+    ...MAIN.map((m) =>
+      el("li", { style: { "--c": m.color } }, el("i"), el("span", { className: "fname" }, m.nombre),
+        el("span", { className: "muted small" }, `${c[m.id]} · principal`))),
+    ...state.config.carpetas.map((f, idx) => {
+      const color = EXTRA_COLORS[idx % EXTRA_COLORS.length];
+      const name = el("input", { type: "text", value: f.nombre, maxLength: 40, className: "fname-input", "aria-label": "Nombre" });
+      name.addEventListener("change", () => {
+        const v = name.value.trim();
+        if (!v) { name.value = f.nombre; return; }
+        f.nombre = v;
+        saveConfig();
+        refresh();
+      });
+      const rep = el("input", { type: "checkbox", checked: !!f.reparto });
+      rep.addEventListener("change", () => { f.reparto = rep.checked; saveConfig(); refresh(); });
+      const del = el("button", { type: "button", className: "icon-btn", title: "Borrar carpeta" }, "✕");
+      del.addEventListener("click", () => {
+        if (!confirm(`¿Borrar «${f.nombre}»? Sus ${c[f.id]} juegos vuelven a la clasificación automática.`)) return;
+        state.config.carpetas = state.config.carpetas.filter((x) => x.id !== f.id);
+        for (const [k, v] of Object.entries(state.config.asignaciones)) if (v === f.id) delete state.config.asignaciones[k];
+        saveConfig();
+        refresh();
+      });
+      return el("li", { style: { "--c": color } }, el("i"), name,
+        el("label", { className: "rep" }, rep, "Reparto"),
+        el("span", { className: "muted small count" }, String(c[f.id])), del);
+    })
+  );
+  $("hours").value = state.config.horas_pendiente;
+}
+
+function refresh() {
   renderCounters();
+  renderTabs();
   renderList();
+  renderFolders();
 }
 
 // ---------- Generador aleatorio ----------
 function randInt(maxExclusive) {
-  // Entero uniforme en [0, maxExclusive) sin sesgo de módulo
   const limit = Math.floor(0x100000000 / maxExclusive) * maxExclusive;
   const buf = new Uint32Array(1);
   do crypto.getRandomValues(buf); while (buf[0] >= limit);
@@ -203,50 +397,54 @@ function generate() {
 // ---------- Eventos ----------
 function bindEvents() {
   $("installed").addEventListener("input", () => {
-    try { localStorage.setItem(LS_INSTALLED, $("installed").value); } catch {}
+    lsSet(LS_INSTALLED, $("installed").value);
     renderAllocation();
   });
   $("r-go").addEventListener("click", generate);
-  $("search").addEventListener("input", (e) => { state.query = e.target.value; renderList(); });
-  document.querySelectorAll(".tabs button").forEach((b) =>
-    b.addEventListener("click", () => {
-      document.querySelectorAll(".tabs button").forEach((x) => x.classList.toggle("active", x === b));
-      state.filter = b.dataset.filter;
-      renderList();
-    })
-  );
+  $("search").addEventListener("input", (e) => { state.query = e.target.value; state.shown = PAGE; renderList(); });
+  $("more").addEventListener("click", () => { state.shown += PAGE; renderList(); });
+
+  $("new-folder").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const nombre = $("new-name").value.trim();
+    if (!nombre) return;
+    const id = "c" + Date.now().toString(36);
+    state.config.carpetas.push({ id, nombre, reparto: false });
+    $("new-name").value = "";
+    saveConfig();
+    refresh();
+  });
+
+  $("hours").addEventListener("change", () => {
+    const h = Number($("hours").value);
+    state.config.horas_pendiente = Number.isFinite(h) && h >= 0 ? h : 2;
+    saveConfig();
+    refresh();
+  });
+
   $("export").addEventListener("click", () => {
-    const body = JSON.stringify({ infinitos: [...state.infinite].sort((a, b) => a - b) }, null, 2) + "\n";
-    const a = document.createElement("a");
-    a.href = URL.createObjectURL(new Blob([body], { type: "application/json" }));
-    a.download = "config.json";
+    const body = JSON.stringify(state.config, null, 2) + "\n";
+    const a = el("a", { href: URL.createObjectURL(new Blob([body], { type: "application/json" })), download: "config.json" });
     a.click();
     setTimeout(() => URL.revokeObjectURL(a.href), 1000);
   });
   $("reset").addEventListener("click", () => {
     if (!confirm("¿Descartar los cambios de este navegador y usar config.json?")) return;
-    try { localStorage.removeItem(LS_KEY); } catch {}
-    state.infinite = new Set(state.configInfinite);
-    renderCounters();
-    renderList();
+    lsDel(LS_CONFIG);
+    state.config = structuredClone(state.fileConfig);
+    refresh();
   });
 }
 
 // ---------- Inicio ----------
 async function init() {
   bindEvents();
-  try {
-    const saved = localStorage.getItem(LS_INSTALLED);
-    if (saved !== null) $("installed").value = saved;
-  } catch {}
+  const saved = lsGet(LS_INSTALLED);
+  if (saved !== null) $("installed").value = saved;
 
   const [data, config] = await Promise.allSettled([fetchJSON("data.json"), fetchJSON("config.json")]);
-
-  if (config.status === "fulfilled") {
-    state.configInfinite = (config.value.infinitos || []).map(Number);
-  }
-  const local = loadLocalInfinite();
-  state.infinite = new Set(local ?? state.configInfinite);
+  if (config.status === "fulfilled") state.fileConfig = normalizeConfig(config.value);
+  state.config = loadLocalConfig() ?? structuredClone(state.fileConfig);
 
   if (data.status === "fulfilled") {
     state.games = data.value.games || [];
@@ -257,8 +455,7 @@ async function init() {
   } else {
     $("updated").textContent = "No se pudo cargar data.json.";
   }
-  renderCounters();
-  renderList();
+  refresh();
 }
 
 init();

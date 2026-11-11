@@ -23,6 +23,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 API = "https://api.steampowered.com"
+ASSET_CDN = "https://shared.akamai.steamstatic.com/store_item_assets/"
+ICON_CDN = "https://media.steampowered.com/steamcommunity/public/images/apps/"
+IMG_BATCH = 100
 OUTPUT = Path(__file__).resolve().parent.parent / "data.json"
 WORKERS = 6
 RETRIES = 3
@@ -94,6 +97,26 @@ def achievements(key: str, steamid: str, appid: int) -> tuple[int, int]:
     return done, len(achs)
 
 
+def store_images(appids: list[int]) -> dict[int, str]:
+    """URL de la cápsula pequeña (231x87) de cada juego, consultando la tienda por lotes."""
+    images: dict[int, str] = {}
+    for i in range(0, len(appids), IMG_BATCH):
+        chunk = appids[i : i + IMG_BATCH]
+        query = {
+            "ids": [{"appid": a} for a in chunk],
+            "context": {"language": "spanish", "country_code": "US"},
+            "data_request": {"include_assets": True},
+        }
+        data = get_json("IStoreBrowseService/GetItems/v1/", {"input_json": json.dumps(query)})
+        for item in (data or {}).get("response", {}).get("store_items", []):
+            assets = item.get("assets") or {}
+            fmt = assets.get("asset_url_format")
+            name = assets.get("small_capsule") or assets.get("header")
+            if fmt and name and item.get("appid"):
+                images[item["appid"]] = ASSET_CDN + fmt.replace("${FILENAME}", name)
+    return images
+
+
 def main() -> None:
     key = env("STEAM_API_KEY")
     steamid = env("STEAM_ID")
@@ -109,9 +132,13 @@ def main() -> None:
         results = pool.map(lambda g: achievements(key, steamid, g["appid"]), with_stats)
         ach_by_app = {g["appid"]: r for g, r in zip(with_stats, results)}
 
+    print("Buscando imágenes…")
+    images = store_images([g["appid"] for g in games])
+
     out = []
     for g in games:
         done, total = ach_by_app.get(g["appid"], (0, 0))
+        icon = g.get("img_icon_url")
         out.append(
             {
                 "appid": g["appid"],
@@ -119,6 +146,8 @@ def main() -> None:
                 "playtime_min": int(g.get("playtime_forever", 0)),
                 "ach_done": done,
                 "ach_total": total,
+                "img": images.get(g["appid"], ""),
+                "icon": f"{ICON_CDN}{g['appid']}/{icon}.jpg" if icon else "",
             }
         )
     out.sort(key=lambda x: x["name"].casefold())
