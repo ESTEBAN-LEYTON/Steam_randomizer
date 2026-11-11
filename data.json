@@ -1,4 +1,4051 @@
 {
- "generated_at": null,
- "games": []
+ "generated_at": "2026-11-11T01:14:12+00:00",
+ "games": [
+  {
+   "appid": 251570,
+   "name": "7 Days to Die",
+   "playtime_min": 96,
+   "ach_done": 6,
+   "ach_total": 43
+  },
+  {
+   "appid": 253230,
+   "name": "A Hat in Time",
+   "playtime_min": 1616,
+   "ach_done": 40,
+   "ach_total": 46
+  },
+  {
+   "appid": 1222700,
+   "name": "A Way Out",
+   "playtime_min": 373,
+   "ach_done": 5,
+   "ach_total": 14
+  },
+  {
+   "appid": 1904480,
+   "name": "Absolum",
+   "playtime_min": 780,
+   "ach_done": 26,
+   "ach_total": 37
+  },
+  {
+   "appid": 672630,
+   "name": "Academia : School Simulator",
+   "playtime_min": 2519,
+   "ach_done": 140,
+   "ach_total": 140
+  },
+  {
+   "appid": 502500,
+   "name": "ACE COMBAT™7: SKIES UNKNOWN",
+   "playtime_min": 819,
+   "ach_done": 24,
+   "ach_total": 49
+  },
+  {
+   "appid": 371140,
+   "name": "Aegis Defenders",
+   "playtime_min": 3,
+   "ach_done": 0,
+   "ach_total": 31
+  },
+  {
+   "appid": 221380,
+   "name": "Age of Empires II (2013)",
+   "playtime_min": 676,
+   "ach_done": 12,
+   "ach_total": 294
+  },
+  {
+   "appid": 933110,
+   "name": "Age of Empires III: Definitive Edition",
+   "playtime_min": 59,
+   "ach_done": 1,
+   "ach_total": 121
+  },
+  {
+   "appid": 40400,
+   "name": "AI War: Fleet Command",
+   "playtime_min": 26,
+   "ach_done": 0,
+   "ach_total": 322
+  },
+  {
+   "appid": 761890,
+   "name": "Albion Online",
+   "playtime_min": 375,
+   "ach_done": 8,
+   "ach_total": 154
+  },
+  {
+   "appid": 2166060,
+   "name": "Amanda the Adventurer",
+   "playtime_min": 89,
+   "ach_done": 5,
+   "ach_total": 19
+  },
+  {
+   "appid": 239200,
+   "name": "Amnesia: A Machine for Pigs",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 7
+  },
+  {
+   "appid": 57300,
+   "name": "Amnesia: The Dark Descent",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 18
+  },
+  {
+   "appid": 945360,
+   "name": "Among Us",
+   "playtime_min": 1709,
+   "ach_done": 7,
+   "ach_total": 33
+  },
+  {
+   "appid": 1887840,
+   "name": "Another Crab's Treasure",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 38
+  },
+  {
+   "appid": 1172470,
+   "name": "Apex Legends",
+   "playtime_min": 10853,
+   "ach_done": 12,
+   "ach_total": 12
+  },
+  {
+   "appid": 1390190,
+   "name": "APICO",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 72
+  },
+  {
+   "appid": 468100,
+   "name": "Aqua Moto Racing Utopia",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 17
+  },
+  {
+   "appid": 346110,
+   "name": "ARK: Survival Evolved",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 32
+  },
+  {
+   "appid": 407530,
+   "name": "ARK: Survival Of The Fittest",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 2224640,
+   "name": "Artisan TD",
+   "playtime_min": 57,
+   "ach_done": 2,
+   "ach_total": 41
+  },
+  {
+   "appid": 2780710,
+   "name": "Asgard's Fall — Viking Survivors",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 45
+  },
+  {
+   "appid": 812140,
+   "name": "Assassin's Creed Odyssey",
+   "playtime_min": 6787,
+   "ach_done": 93,
+   "ach_total": 93
+  },
+  {
+   "appid": 582160,
+   "name": "Assassin's Creed Origins",
+   "playtime_min": 5394,
+   "ach_done": 67,
+   "ach_total": 67
+  },
+  {
+   "appid": 289650,
+   "name": "Assassin's Creed Unity",
+   "playtime_min": 1679,
+   "ach_done": 29,
+   "ach_total": 57
+  },
+  {
+   "appid": 2208920,
+   "name": "Assassin's Creed Valhalla",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 94
+  },
+  {
+   "appid": 1202900,
+   "name": "Assemble with Care",
+   "playtime_min": 118,
+   "ach_done": 14,
+   "ach_total": 14
+  },
+  {
+   "appid": 361420,
+   "name": "ASTRONEER",
+   "playtime_min": 3721,
+   "ach_done": 56,
+   "ach_total": 56
+  },
+  {
+   "appid": 278490,
+   "name": "Aveyond 3-2: Gates of Night",
+   "playtime_min": 1,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 2379780,
+   "name": "Balatro",
+   "playtime_min": 884,
+   "ach_done": 10,
+   "ach_total": 31
+  },
+  {
+   "appid": 1493640,
+   "name": "Banishers: Ghosts of New Eden",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 43
+  },
+  {
+   "appid": 35140,
+   "name": "Batman: Arkham Asylum GOTY Edition",
+   "playtime_min": 739,
+   "ach_done": 25,
+   "ach_total": 47
+  },
+  {
+   "appid": 200260,
+   "name": "Batman: Arkham City GOTY",
+   "playtime_min": 634,
+   "ach_done": 16,
+   "ach_total": 64
+  },
+  {
+   "appid": 208650,
+   "name": "Batman™: Arkham Knight",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 113
+  },
+  {
+   "appid": 209000,
+   "name": "Batman™: Arkham Origins",
+   "playtime_min": 591,
+   "ach_done": 9,
+   "ach_total": 60
+  },
+  {
+   "appid": 211050,
+   "name": "Battle vs Chess",
+   "playtime_min": 4,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 1238840,
+   "name": "Battlefield™ 1",
+   "playtime_min": 594,
+   "ach_done": 5,
+   "ach_total": 50
+  },
+  {
+   "appid": 461950,
+   "name": "Beat Cop",
+   "playtime_min": 864,
+   "ach_done": 20,
+   "ach_total": 32
+  },
+  {
+   "appid": 475550,
+   "name": "Beholder",
+   "playtime_min": 155,
+   "ach_done": 3,
+   "ach_total": 60
+  },
+  {
+   "appid": 761620,
+   "name": "Beholder 2",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 52
+  },
+  {
+   "appid": 1570070,
+   "name": "Beholder 3",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 37
+  },
+  {
+   "appid": 2825530,
+   "name": "Beholder: Conductor",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 44
+  },
+  {
+   "appid": 1071870,
+   "name": "Biped",
+   "playtime_min": 138,
+   "ach_done": 10,
+   "ach_total": 15
+  },
+  {
+   "appid": 420290,
+   "name": "Blackwake",
+   "playtime_min": 19,
+   "ach_done": 0,
+   "ach_total": 39
+  },
+  {
+   "appid": 774361,
+   "name": "Blasphemous",
+   "playtime_min": 714,
+   "ach_done": 18,
+   "ach_total": 45
+  },
+  {
+   "appid": 396350,
+   "name": "Bleed 2",
+   "playtime_min": 60,
+   "ach_done": 2,
+   "ach_total": 33
+  },
+  {
+   "appid": 692850,
+   "name": "Bloodstained: Ritual of the Night",
+   "playtime_min": 1178,
+   "ach_done": 29,
+   "ach_total": 57
+  },
+  {
+   "appid": 960090,
+   "name": "Bloons TD 6",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 156
+  },
+  {
+   "appid": 49520,
+   "name": "Borderlands 2",
+   "playtime_min": 23,
+   "ach_done": 1,
+   "ach_total": 75
+  },
+  {
+   "appid": 8980,
+   "name": "Borderlands GOTY",
+   "playtime_min": 67,
+   "ach_done": 0,
+   "ach_total": 80
+  },
+  {
+   "appid": 729040,
+   "name": "Borderlands GOTY Enhanced",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 80
+  },
+  {
+   "appid": 261640,
+   "name": "Borderlands: The Pre-Sequel",
+   "playtime_min": 11,
+   "ach_done": 1,
+   "ach_total": 63
+  },
+  {
+   "appid": 943370,
+   "name": "Bravery and Greed",
+   "playtime_min": 246,
+   "ach_done": 24,
+   "ach_total": 50
+  },
+  {
+   "appid": 738520,
+   "name": "Breathedge",
+   "playtime_min": 85,
+   "ach_done": 1,
+   "ach_total": 54
+  },
+  {
+   "appid": 1269950,
+   "name": "Buddy Simulator 1984",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 30
+  },
+  {
+   "appid": 1082710,
+   "name": "Bug Fables: The Everlasting Sapling",
+   "playtime_min": 1,
+   "ach_done": 0,
+   "ach_total": 30
+  },
+  {
+   "appid": 397900,
+   "name": "Business Tour - Online Multiplayer Board Game",
+   "playtime_min": 41,
+   "ach_done": 0,
+   "ach_total": 19
+  },
+  {
+   "appid": 3020,
+   "name": "Call of Juarez",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 204450,
+   "name": "Call of Juarez Gunslinger",
+   "playtime_min": 225,
+   "ach_done": 10,
+   "ach_total": 26
+  },
+  {
+   "appid": 1321440,
+   "name": "Cassette Beasts",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 123
+  },
+  {
+   "appid": 204360,
+   "name": "Castle Crashers",
+   "playtime_min": 194,
+   "ach_done": 2,
+   "ach_total": 12
+  },
+  {
+   "appid": 542350,
+   "name": "Castle of no Escape 2",
+   "playtime_min": 158,
+   "ach_done": 1,
+   "ach_total": 21
+  },
+  {
+   "appid": 1422440,
+   "name": "Cataclismo",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 43
+  },
+  {
+   "appid": 333640,
+   "name": "Caves of Qud",
+   "playtime_min": 7,
+   "ach_done": 0,
+   "ach_total": 150
+  },
+  {
+   "appid": 504230,
+   "name": "Celeste",
+   "playtime_min": 1704,
+   "ach_done": 16,
+   "ach_total": 32
+  },
+  {
+   "appid": 2567870,
+   "name": "Chained Together",
+   "playtime_min": 494,
+   "ach_done": 5,
+   "ach_total": 16
+  },
+  {
+   "appid": 330020,
+   "name": "Children of Morta",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 45
+  },
+  {
+   "appid": 219640,
+   "name": "Chivalry: Medieval Warfare",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 49
+  },
+  {
+   "appid": 251130,
+   "name": "Chroma Squad",
+   "playtime_min": 954,
+   "ach_done": 32,
+   "ach_total": 43
+  },
+  {
+   "appid": 613830,
+   "name": "CHRONO TRIGGER",
+   "playtime_min": 2062,
+   "ach_done": 1,
+   "ach_total": 13
+  },
+  {
+   "appid": 726840,
+   "name": "City Game Studio",
+   "playtime_min": 82,
+   "ach_done": 25,
+   "ach_total": 87
+  },
+  {
+   "appid": 597170,
+   "name": "Clone Drone in the Danger Zone",
+   "playtime_min": 165,
+   "ach_done": 2,
+   "ach_total": 69
+  },
+  {
+   "appid": 301690,
+   "name": "Cobi Treasure Deluxe",
+   "playtime_min": 1,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 1497440,
+   "name": "COCOON",
+   "playtime_min": 314,
+   "ach_done": 17,
+   "ach_total": 17
+  },
+  {
+   "appid": 678960,
+   "name": "CODE VEIN",
+   "playtime_min": 1135,
+   "ach_done": 26,
+   "ach_total": 43
+  },
+  {
+   "appid": 231430,
+   "name": "Company of Heroes 2",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 452
+  },
+  {
+   "appid": 641320,
+   "name": "Cooking Simulator",
+   "playtime_min": 591,
+   "ach_done": 45,
+   "ach_total": 302
+  },
+  {
+   "appid": 1621690,
+   "name": "Core Keeper",
+   "playtime_min": 314,
+   "ach_done": 2,
+   "ach_total": 59
+  },
+  {
+   "appid": 1218210,
+   "name": "Coromon",
+   "playtime_min": 188,
+   "ach_done": 3,
+   "ach_total": 80
+  },
+  {
+   "appid": 730,
+   "name": "Counter-Strike 2",
+   "playtime_min": 491,
+   "ach_done": 1,
+   "ach_total": 1
+  },
+  {
+   "appid": 1782210,
+   "name": "Crab Game",
+   "playtime_min": 107,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 731490,
+   "name": "Crash Bandicoot™ N. Sane Trilogy",
+   "playtime_min": 703,
+   "ach_done": 33,
+   "ach_total": 74
+  },
+  {
+   "appid": 331690,
+   "name": "Crossing Souls",
+   "playtime_min": 423,
+   "ach_done": 19,
+   "ach_total": 32
+  },
+  {
+   "appid": 1388770,
+   "name": "Cruelty Squad",
+   "playtime_min": 14,
+   "ach_done": 0,
+   "ach_total": 38
+  },
+  {
+   "appid": 247080,
+   "name": "Crypt of the NecroDancer",
+   "playtime_min": 36,
+   "ach_done": 0,
+   "ach_total": 61
+  },
+  {
+   "appid": 268910,
+   "name": "Cuphead",
+   "playtime_min": 670,
+   "ach_done": 12,
+   "ach_total": 42
+  },
+  {
+   "appid": 1167450,
+   "name": "DAEMON X MACHINA",
+   "playtime_min": 704,
+   "ach_done": 13,
+   "ach_total": 61
+  },
+  {
+   "appid": 1342490,
+   "name": "Daemon X Machina: Titanic Scion",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 59
+  },
+  {
+   "appid": 335300,
+   "name": "DARK SOULS™ II: Scholar of the First Sin",
+   "playtime_min": 2546,
+   "ach_done": 13,
+   "ach_total": 38
+  },
+  {
+   "appid": 374320,
+   "name": "DARK SOULS™ III",
+   "playtime_min": 4232,
+   "ach_done": 43,
+   "ach_total": 43
+  },
+  {
+   "appid": 570940,
+   "name": "DARK SOULS™: REMASTERED",
+   "playtime_min": 2402,
+   "ach_done": 17,
+   "ach_total": 41
+  },
+  {
+   "appid": 50620,
+   "name": "Darksiders",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 43
+  },
+  {
+   "appid": 388410,
+   "name": "Darksiders II Deathinitive Edition",
+   "playtime_min": 1227,
+   "ach_done": 32,
+   "ach_total": 50
+  },
+  {
+   "appid": 606280,
+   "name": "Darksiders III",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 64
+  },
+  {
+   "appid": 462780,
+   "name": "Darksiders Warmastered Edition",
+   "playtime_min": 1036,
+   "ach_done": 28,
+   "ach_total": 43
+  },
+  {
+   "appid": 1868140,
+   "name": "DAVE THE DIVER",
+   "playtime_min": 2368,
+   "ach_done": 43,
+   "ach_total": 56
+  },
+  {
+   "appid": 381210,
+   "name": "Dead by Daylight",
+   "playtime_min": 1039,
+   "ach_done": 14,
+   "ach_total": 311
+  },
+  {
+   "appid": 588650,
+   "name": "Dead Cells",
+   "playtime_min": 2632,
+   "ach_done": 66,
+   "ach_total": 121
+  },
+  {
+   "appid": 383180,
+   "name": "Dead Island Riptide Definitive Edition",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 35
+  },
+  {
+   "appid": 1238060,
+   "name": "Dead Space™ 3",
+   "playtime_min": 178,
+   "ach_done": 7,
+   "ach_total": 58
+  },
+  {
+   "appid": 1850570,
+   "name": "DEATH STRANDING DIRECTOR'S CUT",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 63
+  },
+  {
+   "appid": 548430,
+   "name": "Deep Rock Galactic",
+   "playtime_min": 1380,
+   "ach_done": 17,
+   "ach_total": 69
+  },
+  {
+   "appid": 2321470,
+   "name": "Deep Rock Galactic: Survivor",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 300
+  },
+  {
+   "appid": 1036240,
+   "name": "Definitely Not Fried Chicken",
+   "playtime_min": 18,
+   "ach_done": 5,
+   "ach_total": 58
+  },
+  {
+   "appid": 337000,
+   "name": "Deus Ex: Mankind Divided™",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 81
+  },
+  {
+   "appid": 329050,
+   "name": "Devil May Cry 4 Special Edition",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 42
+  },
+  {
+   "appid": 601150,
+   "name": "Devil May Cry 5",
+   "playtime_min": 699,
+   "ach_done": 20,
+   "ach_total": 55
+  },
+  {
+   "appid": 631510,
+   "name": "Devil May Cry HD Collection",
+   "playtime_min": 1123,
+   "ach_done": 48,
+   "ach_total": 99
+  },
+  {
+   "appid": 1274570,
+   "name": "DEVOUR",
+   "playtime_min": 125,
+   "ach_done": 3,
+   "ach_total": 131
+  },
+  {
+   "appid": 1996430,
+   "name": "Dicefolk",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 49
+  },
+  {
+   "appid": 861540,
+   "name": "Dicey Dungeons",
+   "playtime_min": 1948,
+   "ach_done": 38,
+   "ach_total": 53
+  },
+  {
+   "appid": 1042550,
+   "name": "Digimon Story Cyber Sleuth: Complete Edition",
+   "playtime_min": 10489,
+   "ach_done": 95,
+   "ach_total": 103
+  },
+  {
+   "appid": 1530160,
+   "name": "Digimon World: Next Order",
+   "playtime_min": 6,
+   "ach_done": 0,
+   "ach_total": 45
+  },
+  {
+   "appid": 1083190,
+   "name": "Disc Creatures",
+   "playtime_min": 3,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 632470,
+   "name": "Disco Elysium",
+   "playtime_min": 122,
+   "ach_done": 0,
+   "ach_total": 45
+  },
+  {
+   "appid": 403640,
+   "name": "Dishonored 2",
+   "playtime_min": 622,
+   "ach_done": 14,
+   "ach_total": 50
+  },
+  {
+   "appid": 614570,
+   "name": "Dishonored®: Death of the Outsider™ ",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 30
+  },
+  {
+   "appid": 42500,
+   "name": "DogFighter",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 29
+  },
+  {
+   "appid": 1637320,
+   "name": "Dome Keeper",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 47
+  },
+  {
+   "appid": 322330,
+   "name": "Don't Starve Together",
+   "playtime_min": 228,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 379720,
+   "name": "DOOM",
+   "playtime_min": 572,
+   "ach_done": 15,
+   "ach_total": 54
+  },
+  {
+   "appid": 782330,
+   "name": "DOOM Eternal",
+   "playtime_min": 759,
+   "ach_done": 16,
+   "ach_total": 50
+  },
+  {
+   "appid": 570,
+   "name": "Dota 2",
+   "playtime_min": 315,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 454650,
+   "name": "DRAGON BALL XENOVERSE 2",
+   "playtime_min": 3679,
+   "ach_done": 38,
+   "ach_total": 61
+  },
+  {
+   "appid": 1790600,
+   "name": "DRAGON BALL: Sparking! ZERO",
+   "playtime_min": 2430,
+   "ach_done": 45,
+   "ach_total": 50
+  },
+  {
+   "appid": 367500,
+   "name": "Dragon's Dogma: Dark Arisen",
+   "playtime_min": 32,
+   "ach_done": 0,
+   "ach_total": 59
+  },
+  {
+   "appid": 442070,
+   "name": "Drawful 2",
+   "playtime_min": 28,
+   "ach_done": 6,
+   "ach_total": 10
+  },
+  {
+   "appid": 2525310,
+   "name": "Drop Duchy",
+   "playtime_min": 30,
+   "ach_done": 3,
+   "ach_total": 181
+  },
+  {
+   "appid": 312530,
+   "name": "Duck Game",
+   "playtime_min": 3257,
+   "ach_done": 11,
+   "ach_total": 18
+  },
+  {
+   "appid": 1172710,
+   "name": "Dune: Awakening",
+   "playtime_min": 103,
+   "ach_done": 0,
+   "ach_total": 74
+  },
+  {
+   "appid": 249050,
+   "name": "Dungeon of the ENDLESS™",
+   "playtime_min": 22,
+   "ach_done": 0,
+   "ach_total": 33
+  },
+  {
+   "appid": 2400770,
+   "name": "Dungeon Tycoon",
+   "playtime_min": 19,
+   "ach_done": 1,
+   "ach_total": 29
+  },
+  {
+   "appid": 2400510,
+   "name": "Dungeons & Degenerate Gamblers",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 39
+  },
+  {
+   "appid": 1983260,
+   "name": "Dungeons of Hinterberg",
+   "playtime_min": 989,
+   "ach_done": 31,
+   "ach_total": 50
+  },
+  {
+   "appid": 975370,
+   "name": "Dwarf Fortress",
+   "playtime_min": 16,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 239140,
+   "name": "Dying Light",
+   "playtime_min": 1953,
+   "ach_done": 33,
+   "ach_total": 78
+  },
+  {
+   "appid": 534380,
+   "name": "Dying Light 2: Reloaded Edition",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 65
+  },
+  {
+   "appid": 846770,
+   "name": "DYSMANTLE",
+   "playtime_min": 1699,
+   "ach_done": 12,
+   "ach_total": 34
+  },
+  {
+   "appid": 1366540,
+   "name": "Dyson Sphere Program",
+   "playtime_min": 31,
+   "ach_done": 1,
+   "ach_total": 128
+  },
+  {
+   "appid": 2195250,
+   "name": "EA SPORTS FC™ 24",
+   "playtime_min": 11928,
+   "ach_done": 18,
+   "ach_total": 40
+  },
+  {
+   "appid": 3405690,
+   "name": "EA SPORTS FC™ 26",
+   "playtime_min": 4904,
+   "ach_done": 12,
+   "ach_total": 43
+  },
+  {
+   "appid": 1313860,
+   "name": "EA SPORTS™ FIFA 21 ",
+   "playtime_min": 31543,
+   "ach_done": 23,
+   "ach_total": 36
+  },
+  {
+   "appid": 1811260,
+   "name": "EA SPORTS™ FIFA 23",
+   "playtime_min": 6896,
+   "ach_done": 16,
+   "ach_total": 39
+  },
+  {
+   "appid": 1665460,
+   "name": "eFootball™",
+   "playtime_min": 117,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 1245620,
+   "name": "ELDEN RING",
+   "playtime_min": 531,
+   "ach_done": 3,
+   "ach_total": 42
+  },
+  {
+   "appid": 1062830,
+   "name": "Embr",
+   "playtime_min": 266,
+   "ach_done": 16,
+   "ach_total": 29
+  },
+  {
+   "appid": 383120,
+   "name": "Empyrion - Galactic Survival",
+   "playtime_min": 6,
+   "ach_done": 0,
+   "ach_total": 22
+  },
+  {
+   "appid": 289130,
+   "name": "ENDLESS Legend™",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 139
+  },
+  {
+   "appid": 311690,
+   "name": "Enter the Gungeon",
+   "playtime_min": 597,
+   "ach_done": 1,
+   "ach_total": 54
+  },
+  {
+   "appid": 1435790,
+   "name": "Escape Simulator",
+   "playtime_min": 245,
+   "ach_done": 7,
+   "ach_total": 25
+  },
+  {
+   "appid": 227300,
+   "name": "Euro Truck Simulator 2",
+   "playtime_min": 18,
+   "ach_done": 0,
+   "ach_total": 114
+  },
+  {
+   "appid": 1209490,
+   "name": "Exit the Gungeon",
+   "playtime_min": 2,
+   "ach_done": 0,
+   "ach_total": 47
+  },
+  {
+   "appid": 1097150,
+   "name": "Fall Guys",
+   "playtime_min": 3590,
+   "ach_done": 27,
+   "ach_total": 34
+  },
+  {
+   "appid": 22380,
+   "name": "Fallout: New Vegas",
+   "playtime_min": 585,
+   "ach_done": 1,
+   "ach_total": 75
+  },
+  {
+   "appid": 1319460,
+   "name": "Fashion Police Squad",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 25
+  },
+  {
+   "appid": 224760,
+   "name": "FEZ",
+   "playtime_min": 646,
+   "ach_done": 12,
+   "ach_total": 12
+  },
+  {
+   "appid": 1265820,
+   "name": "Fights in Tight Spaces",
+   "playtime_min": 106,
+   "ach_done": 3,
+   "ach_total": 70
+  },
+  {
+   "appid": 377840,
+   "name": "FINAL FANTASY IX",
+   "playtime_min": 2,
+   "ach_done": 0,
+   "ach_total": 85
+  },
+  {
+   "appid": 3837340,
+   "name": "FINAL FANTASY VII",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 31
+  },
+  {
+   "appid": 39140,
+   "name": "FINAL FANTASY VII (2013)",
+   "playtime_min": 61,
+   "ach_done": 3,
+   "ach_total": 36
+  },
+  {
+   "appid": 359870,
+   "name": "FINAL FANTASY X/X-2 HD Remaster",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 69
+  },
+  {
+   "appid": 595520,
+   "name": "FINAL FANTASY XII THE ZODIAC AGE",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 41
+  },
+  {
+   "appid": 292120,
+   "name": "FINAL FANTASY XIII",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 35
+  },
+  {
+   "appid": 292140,
+   "name": "FINAL FANTASY XIII-2",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 31
+  },
+  {
+   "appid": 637650,
+   "name": "FINAL FANTASY XV WINDOWS EDITION",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 97
+  },
+  {
+   "appid": 265630,
+   "name": "Fistful of Frags",
+   "playtime_min": 38,
+   "ach_done": 0,
+   "ach_total": 20
+  },
+  {
+   "appid": 1102130,
+   "name": "Florence",
+   "playtime_min": 82,
+   "ach_done": 12,
+   "ach_total": 12
+  },
+  {
+   "appid": 3108510,
+   "name": "FlyKnight Enhanced Edition",
+   "playtime_min": 219,
+   "ach_done": 5,
+   "ach_total": 6
+  },
+  {
+   "appid": 304390,
+   "name": "FOR HONOR",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 60
+  },
+  {
+   "appid": 654310,
+   "name": "For Honor - Public Test",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 751780,
+   "name": "Forager",
+   "playtime_min": 716,
+   "ach_done": 48,
+   "ach_total": 103
+  },
+  {
+   "appid": 1562420,
+   "name": "FOREWARNED",
+   "playtime_min": 178,
+   "ach_done": 4,
+   "ach_total": 53
+  },
+  {
+   "appid": 1171320,
+   "name": "Frog Detective 3: Corruption at Cowboy County",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 6
+  },
+  {
+   "appid": 1575470,
+   "name": "Frogun",
+   "playtime_min": 1087,
+   "ach_done": 31,
+   "ach_total": 31
+  },
+  {
+   "appid": 212680,
+   "name": "FTL: Faster Than Light",
+   "playtime_min": 290,
+   "ach_done": 2,
+   "ach_total": 51
+  },
+  {
+   "appid": 423230,
+   "name": "Furi",
+   "playtime_min": 619,
+   "ach_done": 19,
+   "ach_total": 33
+  },
+  {
+   "appid": 239820,
+   "name": "Game Dev Tycoon",
+   "playtime_min": 617,
+   "ach_done": 19,
+   "ach_total": 35
+  },
+  {
+   "appid": 1078000,
+   "name": "Gamecraft",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 285900,
+   "name": "Gang Beasts",
+   "playtime_min": 64,
+   "ach_done": 3,
+   "ach_total": 19
+  },
+  {
+   "appid": 1915380,
+   "name": "Garden Life: A Cozy Simulator",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 37
+  },
+  {
+   "appid": 4000,
+   "name": "Garry's Mod",
+   "playtime_min": 2917,
+   "ach_done": 6,
+   "ach_total": 29
+  },
+  {
+   "appid": 1139900,
+   "name": "Ghostrunner",
+   "playtime_min": 483,
+   "ach_done": 16,
+   "ach_total": 45
+  },
+  {
+   "appid": 2144740,
+   "name": "Ghostrunner 2",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 34
+  },
+  {
+   "appid": 1432910,
+   "name": "Godlike Burger",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 28
+  },
+  {
+   "appid": 1029780,
+   "name": "Going Medieval",
+   "playtime_min": 818,
+   "ach_done": 31,
+   "ach_total": 94
+  },
+  {
+   "appid": 1556870,
+   "name": "Golf Club Nostalgia",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 27
+  },
+  {
+   "appid": 571740,
+   "name": "Golf It!",
+   "playtime_min": 1701,
+   "ach_done": 10,
+   "ach_total": 46
+  },
+  {
+   "appid": 253920,
+   "name": "Gorky 17",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 12210,
+   "name": "Grand Theft Auto IV: The Complete Edition",
+   "playtime_min": 384,
+   "ach_done": 3,
+   "ach_total": 55
+  },
+  {
+   "appid": 599140,
+   "name": "Graveyard Keeper",
+   "playtime_min": 4237,
+   "ach_done": 48,
+   "ach_total": 125
+  },
+  {
+   "appid": 858710,
+   "name": "Gravity Circuit",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 53
+  },
+  {
+   "appid": 601840,
+   "name": "Griftlands",
+   "playtime_min": 6,
+   "ach_done": 0,
+   "ach_total": 13
+  },
+  {
+   "appid": 962130,
+   "name": "Grounded",
+   "playtime_min": 6286,
+   "ach_done": 40,
+   "ach_total": 45
+  },
+  {
+   "appid": 365450,
+   "name": "Hacknet",
+   "playtime_min": 6,
+   "ach_done": 0,
+   "ach_total": 11
+  },
+  {
+   "appid": 1145360,
+   "name": "Hades",
+   "playtime_min": 4703,
+   "ach_done": 49,
+   "ach_total": 49
+  },
+  {
+   "appid": 1145350,
+   "name": "Hades II",
+   "playtime_min": 5358,
+   "ach_done": 50,
+   "ach_total": 50
+  },
+  {
+   "appid": 220,
+   "name": "Half-Life 2",
+   "playtime_min": 6,
+   "ach_done": 0,
+   "ach_total": 69
+  },
+  {
+   "appid": 320,
+   "name": "Half-Life 2: Deathmatch",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 360,
+   "name": "Half-Life Deathmatch: Source",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 1796470,
+   "name": "Haste",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 29
+  },
+  {
+   "appid": 983970,
+   "name": "Haven",
+   "playtime_min": 1151,
+   "ach_done": 30,
+   "ach_total": 30
+  },
+  {
+   "appid": 2020710,
+   "name": "Havendock",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 18
+  },
+  {
+   "appid": 205230,
+   "name": "Hell Yeah!",
+   "playtime_min": 489,
+   "ach_done": 12,
+   "ach_total": 12
+  },
+  {
+   "appid": 1356810,
+   "name": "Hexarchy",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 67
+  },
+  {
+   "appid": 1817230,
+   "name": "Hi-Fi RUSH",
+   "playtime_min": 713,
+   "ach_done": 29,
+   "ach_total": 71
+  },
+  {
+   "appid": 6850,
+   "name": "Hitman 2: Silent Assassin",
+   "playtime_min": 3,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 863550,
+   "name": "HITMAN™ 2",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 146
+  },
+  {
+   "appid": 990080,
+   "name": "Hogwarts Legacy",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 45
+  },
+  {
+   "appid": 367520,
+   "name": "Hollow Knight",
+   "playtime_min": 3581,
+   "ach_done": 54,
+   "ach_total": 63
+  },
+  {
+   "appid": 1030300,
+   "name": "Hollow Knight: Silksong",
+   "playtime_min": 4265,
+   "ach_done": 47,
+   "ach_total": 52
+  },
+  {
+   "appid": 2972990,
+   "name": "hololive Treasure Mountain",
+   "playtime_min": 1929,
+   "ach_done": 72,
+   "ach_total": 72
+  },
+  {
+   "appid": 841190,
+   "name": "Honey, I Joined a Cult",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 31
+  },
+  {
+   "appid": 1151640,
+   "name": "Horizon Zero Dawn™ Complete Edition",
+   "playtime_min": 285,
+   "ach_done": 7,
+   "ach_total": 79
+  },
+  {
+   "appid": 1271700,
+   "name": "HOT WHEELS UNLEASHED™",
+   "playtime_min": 1293,
+   "ach_done": 30,
+   "ach_total": 53
+  },
+  {
+   "appid": 219150,
+   "name": "Hotline Miami",
+   "playtime_min": 232,
+   "ach_done": 10,
+   "ach_total": 35
+  },
+  {
+   "appid": 274170,
+   "name": "Hotline Miami 2: Wrong Number",
+   "playtime_min": 427,
+   "ach_done": 8,
+   "ach_total": 29
+  },
+  {
+   "appid": 613100,
+   "name": "House Flipper",
+   "playtime_min": 649,
+   "ach_done": 3,
+   "ach_total": 96
+  },
+  {
+   "appid": 2264140,
+   "name": "How 2 Escape",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 26
+  },
+  {
+   "appid": 4001890,
+   "name": "How to Fish",
+   "playtime_min": 906,
+   "ach_done": 31,
+   "ach_total": 31
+  },
+  {
+   "appid": 477160,
+   "name": "Human Fall Flat",
+   "playtime_min": 422,
+   "ach_done": 28,
+   "ach_total": 155
+  },
+  {
+   "appid": 1124300,
+   "name": "HUMANKIND™",
+   "playtime_min": 55,
+   "ach_done": 2,
+   "ach_total": 99
+  },
+  {
+   "appid": 393520,
+   "name": "Iconoclasts",
+   "playtime_min": 713,
+   "ach_done": 6,
+   "ach_total": 11
+  },
+  {
+   "appid": 1742020,
+   "name": "Idol Showdown",
+   "playtime_min": 22,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 253750,
+   "name": "Ikaruga",
+   "playtime_min": 76,
+   "ach_done": 2,
+   "ach_total": 25
+  },
+  {
+   "appid": 595140,
+   "name": "Immortal Redneck",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 44
+  },
+  {
+   "appid": 2799860,
+   "name": "INAZUMA ELEVEN: Victory Road",
+   "playtime_min": 2293,
+   "ach_done": 21,
+   "ach_total": 52
+  },
+  {
+   "appid": 242700,
+   "name": "Injustice: Gods Among Us Ultimate Edition",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 50
+  },
+  {
+   "appid": 1092790,
+   "name": "Inscryption",
+   "playtime_min": 98,
+   "ach_done": 3,
+   "ach_total": 40
+  },
+  {
+   "appid": 1486630,
+   "name": "Intravenous",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 45
+  },
+  {
+   "appid": 2608270,
+   "name": "Intravenous 2",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 55
+  },
+  {
+   "appid": 243970,
+   "name": "Invisible, Inc.",
+   "playtime_min": 59,
+   "ach_done": 0,
+   "ach_total": 23
+  },
+  {
+   "appid": 1504980,
+   "name": "It Takes Two Friend's Pass",
+   "playtime_min": 647,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 1099640,
+   "name": "Jack Move",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 10
+  },
+  {
+   "appid": 446020,
+   "name": "Jalopy",
+   "playtime_min": 588,
+   "ach_done": 6,
+   "ach_total": 23
+  },
+  {
+   "appid": 205950,
+   "name": "Jet Set Radio",
+   "playtime_min": 359,
+   "ach_done": 12,
+   "ach_total": 30
+  },
+  {
+   "appid": 1977170,
+   "name": "Jusant",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 21
+  },
+  {
+   "appid": 225540,
+   "name": "Just Cause 3",
+   "playtime_min": 798,
+   "ach_done": 17,
+   "ach_total": 66
+  },
+  {
+   "appid": 561770,
+   "name": "Just Ignore Them",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 33
+  },
+  {
+   "appid": 1048540,
+   "name": "Kao the Kangaroo: Round 2",
+   "playtime_min": 8,
+   "ach_done": 0,
+   "ach_total": 9
+  },
+  {
+   "appid": 1661630,
+   "name": "KarmaZoo",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 22
+  },
+  {
+   "appid": 341800,
+   "name": "Keep Talking and Nobody Explodes",
+   "playtime_min": 54,
+   "ach_done": 2,
+   "ach_total": 10
+  },
+  {
+   "appid": 233860,
+   "name": "Kenshi",
+   "playtime_min": 298,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 747200,
+   "name": "Keplerth",
+   "playtime_min": 5,
+   "ach_done": 0,
+   "ach_total": 59
+  },
+  {
+   "appid": 261110,
+   "name": "Killer is Dead",
+   "playtime_min": 390,
+   "ach_done": 21,
+   "ach_total": 48
+  },
+  {
+   "appid": 868520,
+   "name": "killer7",
+   "playtime_min": 117,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 1839880,
+   "name": "King Of The Castle",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 68
+  },
+  {
+   "appid": 379430,
+   "name": "Kingdom Come: Deliverance",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 82
+  },
+  {
+   "appid": 368230,
+   "name": "Kingdom: Classic",
+   "playtime_min": 36,
+   "ach_done": 0,
+   "ach_total": 34
+  },
+  {
+   "appid": 1911390,
+   "name": "Knightfall: A Daring Journey",
+   "playtime_min": 26,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 110800,
+   "name": "L.A. Noire",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 60
+  },
+  {
+   "appid": 394220,
+   "name": "Last Horizon",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 10
+  },
+  {
+   "appid": 550,
+   "name": "Left 4 Dead 2",
+   "playtime_min": 530,
+   "ach_done": 4,
+   "ach_total": 101
+  },
+  {
+   "appid": 2521380,
+   "name": "Legacy of Kain™ Soul Reaver 1&2 Remastered",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 83
+  },
+  {
+   "appid": 313690,
+   "name": "LEGO® Batman™ 3: Beyond Gotham",
+   "playtime_min": 2915,
+   "ach_done": 70,
+   "ach_total": 70
+  },
+  {
+   "appid": 2215200,
+   "name": "LEGO® Batman™: Legacy of the Dark Knight",
+   "playtime_min": 2152,
+   "ach_done": 52,
+   "ach_total": 64
+  },
+  {
+   "appid": 578330,
+   "name": "LEGO® City Undercover",
+   "playtime_min": 3502,
+   "ach_done": 48,
+   "ach_total": 48
+  },
+  {
+   "appid": 21130,
+   "name": "LEGO® Harry Potter: Years 1-4",
+   "playtime_min": 1070,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 647830,
+   "name": "LEGO® MARVEL Super Heroes 2",
+   "playtime_min": 3984,
+   "ach_done": 75,
+   "ach_total": 75
+  },
+  {
+   "appid": 32440,
+   "name": "LEGO® Star Wars™: The Complete Saga",
+   "playtime_min": 3241,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 920210,
+   "name": "LEGO® Star Wars™: The Skywalker Saga",
+   "playtime_min": 3333,
+   "ach_done": 45,
+   "ach_total": 45
+  },
+  {
+   "appid": 285160,
+   "name": "LEGO® The Hobbit™",
+   "playtime_min": 1967,
+   "ach_done": 39,
+   "ach_total": 39
+  },
+  {
+   "appid": 214510,
+   "name": "LEGO® The Lord of the Rings™",
+   "playtime_min": 2406,
+   "ach_done": 48,
+   "ach_total": 48
+  },
+  {
+   "appid": 1937500,
+   "name": "Let's School",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 44
+  },
+  {
+   "appid": 1966720,
+   "name": "Lethal Company",
+   "playtime_min": 3096,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 3740360,
+   "name": "Lia: Hacking Destiny",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 58
+  },
+  {
+   "appid": 345350,
+   "name": "LIGHTNING RETURNS: FINAL FANTASY XIII",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 42
+  },
+  {
+   "appid": 2375550,
+   "name": "Like a Dragon Gaiden: The Man Who Erased His Name",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 62
+  },
+  {
+   "appid": 3061810,
+   "name": "Like a Dragon: Pirate Yakuza in Hawaii",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 62
+  },
+  {
+   "appid": 1586800,
+   "name": "Lil Gator Game",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 41
+  },
+  {
+   "appid": 335670,
+   "name": "LISA",
+   "playtime_min": 1025,
+   "ach_done": 32,
+   "ach_total": 68
+  },
+  {
+   "appid": 424840,
+   "name": "Little Nightmares",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 22
+  },
+  {
+   "appid": 2149010,
+   "name": "Little Nightmares Enhanced Edition",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 22
+  },
+  {
+   "appid": 1644940,
+   "name": "Loddlenaut",
+   "playtime_min": 301,
+   "ach_done": 19,
+   "ach_total": 23
+  },
+  {
+   "appid": 1282730,
+   "name": "Loop Hero",
+   "playtime_min": 187,
+   "ach_done": 5,
+   "ach_total": 50
+  },
+  {
+   "appid": 1931180,
+   "name": "Lost Skies",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 10
+  },
+  {
+   "appid": 1342330,
+   "name": "Mad Games Tycoon 2",
+   "playtime_min": 2,
+   "ach_done": 0,
+   "ach_total": 73
+  },
+  {
+   "appid": 234140,
+   "name": "Mad Max",
+   "playtime_min": 998,
+   "ach_done": 16,
+   "ach_total": 49
+  },
+  {
+   "appid": 860950,
+   "name": "Mark of the Ninja: Remastered",
+   "playtime_min": 352,
+   "ach_done": 14,
+   "ach_total": 38
+  },
+  {
+   "appid": 2767030,
+   "name": "Marvel Rivals",
+   "playtime_min": 541,
+   "ach_done": 5,
+   "ach_total": 49
+  },
+  {
+   "appid": 204100,
+   "name": "Max Payne 3",
+   "playtime_min": 676,
+   "ach_done": 14,
+   "ach_total": 67
+  },
+  {
+   "appid": 1338580,
+   "name": "McPixel 3",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 93
+  },
+  {
+   "appid": 2103680,
+   "name": "Mediterranea Inferno",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 11
+  },
+  {
+   "appid": 742300,
+   "name": "Mega Man 11",
+   "playtime_min": 942,
+   "ach_done": 18,
+   "ach_total": 50
+  },
+  {
+   "appid": 1798010,
+   "name": "Mega Man Battle Network Legacy Collection Vol. 1",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 56
+  },
+  {
+   "appid": 1798020,
+   "name": "Mega Man Battle Network Legacy Collection Vol. 2",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 47
+  },
+  {
+   "appid": 363440,
+   "name": "Mega Man Legacy Collection",
+   "playtime_min": 1562,
+   "ach_done": 10,
+   "ach_total": 24
+  },
+  {
+   "appid": 495050,
+   "name": "Mega Man Legacy Collection 2",
+   "playtime_min": 1542,
+   "ach_done": 4,
+   "ach_total": 21
+  },
+  {
+   "appid": 743890,
+   "name": "Mega Man X Legacy Collection",
+   "playtime_min": 2333,
+   "ach_done": 52,
+   "ach_total": 52
+  },
+  {
+   "appid": 743900,
+   "name": "Mega Man X Legacy Collection 2",
+   "playtime_min": 3183,
+   "ach_done": 52,
+   "ach_total": 52
+  },
+  {
+   "appid": 999020,
+   "name": "Mega Man Zero/ZX Legacy Collection",
+   "playtime_min": 2648,
+   "ach_done": 18,
+   "ach_total": 37
+  },
+  {
+   "appid": 2131680,
+   "name": "METAL GEAR & METAL GEAR 2: Solid Snake",
+   "playtime_min": 1114,
+   "ach_done": 12,
+   "ach_total": 12
+  },
+  {
+   "appid": 235460,
+   "name": "METAL GEAR RISING: REVENGEANCE",
+   "playtime_min": 648,
+   "ach_done": 20,
+   "ach_total": 60
+  },
+  {
+   "appid": 2131630,
+   "name": "METAL GEAR SOLID - Master Collection Version",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 18
+  },
+  {
+   "appid": 2131640,
+   "name": "METAL GEAR SOLID 2: Sons of Liberty - Master Collection Version",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 51
+  },
+  {
+   "appid": 2131650,
+   "name": "METAL GEAR SOLID 3: Snake Eater - Master Collection Version",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 51
+  },
+  {
+   "appid": 287700,
+   "name": "METAL GEAR SOLID V: THE PHANTOM PAIN",
+   "playtime_min": 3032,
+   "ach_done": 26,
+   "ach_total": 42
+  },
+  {
+   "appid": 2417610,
+   "name": "METAL GEAR SOLID Δ: SNAKE EATER",
+   "playtime_min": 816,
+   "ach_done": 28,
+   "ach_total": 45
+  },
+  {
+   "appid": 2306740,
+   "name": "METAL GEAR SOLID: MASTER COLLECTION Vol.1 BONUS CONTENT",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 286690,
+   "name": "Metro 2033 Redux",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 49
+  },
+  {
+   "appid": 241930,
+   "name": "Middle-earth™: Shadow of Mordor™",
+   "playtime_min": 3031,
+   "ach_done": 74,
+   "ach_total": 74
+  },
+  {
+   "appid": 356190,
+   "name": "Middle-earth™: Shadow of War™",
+   "playtime_min": 3672,
+   "ach_done": 72,
+   "ach_total": 72
+  },
+  {
+   "appid": 287980,
+   "name": "Mini Metro",
+   "playtime_min": 1302,
+   "ach_done": 50,
+   "ach_total": 73
+  },
+  {
+   "appid": 489520,
+   "name": "Minion Masters",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 38
+  },
+  {
+   "appid": 17410,
+   "name": "Mirror's Edge",
+   "playtime_min": 230,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 1233570,
+   "name": "Mirror's Edge™ Catalyst",
+   "playtime_min": 769,
+   "ach_done": 33,
+   "ach_total": 49
+  },
+  {
+   "appid": 32460,
+   "name": "Monkey Island 2: Special Edition",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 12
+  },
+  {
+   "appid": 562810,
+   "name": "Monopoly Plus",
+   "playtime_min": 140,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 1474700,
+   "name": "MONOPOLY Poker",
+   "playtime_min": 44,
+   "ach_done": 11,
+   "ach_total": 43
+  },
+  {
+   "appid": 3288270,
+   "name": "Monster Care Simulator",
+   "playtime_min": 1031,
+   "ach_done": 17,
+   "ach_total": 17
+  },
+  {
+   "appid": 1446780,
+   "name": "MONSTER HUNTER RISE",
+   "playtime_min": 23226,
+   "ach_done": 84,
+   "ach_total": 100
+  },
+  {
+   "appid": 2246340,
+   "name": "Monster Hunter Wilds",
+   "playtime_min": 19262,
+   "ach_done": 50,
+   "ach_total": 50
+  },
+  {
+   "appid": 3065170,
+   "name": "Monster Hunter Wilds: Ascendance Beta test",
+   "playtime_min": 284,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 582010,
+   "name": "Monster Hunter: World",
+   "playtime_min": 10459,
+   "ach_done": 56,
+   "ach_total": 100
+  },
+  {
+   "appid": 814370,
+   "name": "Monster Sanctuary",
+   "playtime_min": 464,
+   "ach_done": 8,
+   "ach_total": 41
+  },
+  {
+   "appid": 320040,
+   "name": "Moon Hunters",
+   "playtime_min": 227,
+   "ach_done": 8,
+   "ach_total": 47
+  },
+  {
+   "appid": 606150,
+   "name": "Moonlighter",
+   "playtime_min": 1118,
+   "ach_done": 29,
+   "ach_total": 67
+  },
+  {
+   "appid": 307780,
+   "name": "Mortal Kombat X",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 73
+  },
+  {
+   "appid": 1110910,
+   "name": "Mortal Shell",
+   "playtime_min": 2,
+   "ach_done": 0,
+   "ach_total": 37
+  },
+  {
+   "appid": 48700,
+   "name": "Mount & Blade: Warband",
+   "playtime_min": 3,
+   "ach_done": 0,
+   "ach_total": 80
+  },
+  {
+   "appid": 2475490,
+   "name": "Mouthwashing",
+   "playtime_min": 378,
+   "ach_done": 18,
+   "ach_total": 18
+  },
+  {
+   "appid": 323850,
+   "name": "Move or Die",
+   "playtime_min": 610,
+   "ach_done": 17,
+   "ach_total": 66
+  },
+  {
+   "appid": 1818750,
+   "name": "MultiVersus",
+   "playtime_min": 381,
+   "ach_done": 13,
+   "ach_total": 28
+  },
+  {
+   "appid": 774171,
+   "name": "Muse Dash",
+   "playtime_min": 2771,
+   "ach_done": 39,
+   "ach_total": 39
+  },
+  {
+   "appid": 2131350,
+   "name": "My Coworker Is An Idiot",
+   "playtime_min": 15,
+   "ach_done": 11,
+   "ach_total": 11
+  },
+  {
+   "appid": 1084600,
+   "name": "My Time at Sandrock",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 60
+  },
+  {
+   "appid": 802450,
+   "name": "NAIRI: Tower of Shirin",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 20
+  },
+  {
+   "appid": 349040,
+   "name": "NARUTO SHIPPUDEN: Ultimate Ninja STORM 4",
+   "playtime_min": 771,
+   "ach_done": 21,
+   "ach_total": 53
+  },
+  {
+   "appid": 1169040,
+   "name": "Necesse",
+   "playtime_min": 105,
+   "ach_done": 4,
+   "ach_total": 51
+  },
+  {
+   "appid": 1533420,
+   "name": "Neon White",
+   "playtime_min": 1060,
+   "ach_done": 49,
+   "ach_total": 63
+  },
+  {
+   "appid": 798460,
+   "name": "Ni no Kuni Wrath of the White Witch™ Remastered",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 33
+  },
+  {
+   "appid": 589360,
+   "name": "Ni no Kuni™ II: Revenant Kingdom",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 63
+  },
+  {
+   "appid": 1809540,
+   "name": "Nine Sols",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 35
+  },
+  {
+   "appid": 485510,
+   "name": "Nioh: Complete Edition",
+   "playtime_min": 35,
+   "ach_done": 0,
+   "ach_total": 79
+  },
+  {
+   "appid": 275850,
+   "name": "No Man's Sky",
+   "playtime_min": 1682,
+   "ach_done": 12,
+   "ach_total": 27
+  },
+  {
+   "appid": 1420290,
+   "name": "No More Heroes",
+   "playtime_min": 879,
+   "ach_done": 12,
+   "ach_total": 20
+  },
+  {
+   "appid": 1420300,
+   "name": "No More Heroes 2: Desperate Struggle",
+   "playtime_min": 444,
+   "ach_done": 16,
+   "ach_total": 22
+  },
+  {
+   "appid": 1939970,
+   "name": "Nobody Wants to Die",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 26
+  },
+  {
+   "appid": 881100,
+   "name": "Noita",
+   "playtime_min": 16,
+   "ach_done": 0,
+   "ach_total": 14
+  },
+  {
+   "appid": 733790,
+   "name": "Not Tonight",
+   "playtime_min": 770,
+   "ach_done": 9,
+   "ach_total": 15
+  },
+  {
+   "appid": 2337860,
+   "name": "Nubs!",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 15
+  },
+  {
+   "appid": 301700,
+   "name": "Numba Deluxe",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 3375890,
+   "name": "Ogre Chambers 2222",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 36
+  },
+  {
+   "appid": 587620,
+   "name": "Okami HD",
+   "playtime_min": 131,
+   "ach_done": 2,
+   "ach_total": 51
+  },
+  {
+   "appid": 1335790,
+   "name": "Operation Tango",
+   "playtime_min": 417,
+   "ach_done": 17,
+   "ach_total": 30
+  },
+  {
+   "appid": 261570,
+   "name": "Ori and the Blind Forest",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 50
+  },
+  {
+   "appid": 387290,
+   "name": "Ori and the Blind Forest: Definitive Edition",
+   "playtime_min": 501,
+   "ach_done": 32,
+   "ach_total": 57
+  },
+  {
+   "appid": 2026000,
+   "name": "Our Adventurer Guild",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 43
+  },
+  {
+   "appid": 753640,
+   "name": "Outer Wilds",
+   "playtime_min": 277,
+   "ach_done": 1,
+   "ach_total": 31
+  },
+  {
+   "appid": 305050,
+   "name": "Outland",
+   "playtime_min": 371,
+   "ach_done": 4,
+   "ach_total": 12
+  },
+  {
+   "appid": 2357570,
+   "name": "Overwatch®",
+   "playtime_min": 194,
+   "ach_done": 7,
+   "ach_total": 164
+  },
+  {
+   "appid": 457140,
+   "name": "Oxygen Not Included",
+   "playtime_min": 45,
+   "ach_done": 0,
+   "ach_total": 51
+  },
+  {
+   "appid": 236450,
+   "name": "PAC-MAN Championship Edition DX+",
+   "playtime_min": 74,
+   "ach_done": 12,
+   "ach_total": 12
+  },
+  {
+   "appid": 239030,
+   "name": "Papers, Please",
+   "playtime_min": 462,
+   "ach_done": 7,
+   "ach_total": 13
+  },
+  {
+   "appid": 1160220,
+   "name": "Paradise Killer",
+   "playtime_min": 5,
+   "ach_done": 0,
+   "ach_total": 39
+  },
+  {
+   "appid": 1260320,
+   "name": "Party Animals",
+   "playtime_min": 641,
+   "ach_done": 19,
+   "ach_total": 116
+  },
+  {
+   "appid": 218620,
+   "name": "PAYDAY 2",
+   "playtime_min": 302,
+   "ach_done": 19,
+   "ach_total": 1342
+  },
+  {
+   "appid": 621060,
+   "name": "PC Building Simulator",
+   "playtime_min": 616,
+   "ach_done": 20,
+   "ach_total": 94
+  },
+  {
+   "appid": 3527290,
+   "name": "PEAK",
+   "playtime_min": 2092,
+   "ach_done": 24,
+   "ach_total": 64
+  },
+  {
+   "appid": 1113000,
+   "name": "Persona 4 Golden",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 50
+  },
+  {
+   "appid": 1687950,
+   "name": "Persona 5 Royal",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 53
+  },
+  {
+   "appid": 1382330,
+   "name": "Persona 5 Strikers",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 47
+  },
+  {
+   "appid": 739630,
+   "name": "Phasmophobia",
+   "playtime_min": 1941,
+   "ach_done": 6,
+   "ach_total": 54
+  },
+  {
+   "appid": 787480,
+   "name": "Phoenix Wright: Ace Attorney Trilogy",
+   "playtime_min": 1631,
+   "ach_done": 9,
+   "ach_total": 30
+  },
+  {
+   "appid": 1509960,
+   "name": "PICO PARK",
+   "playtime_min": 226,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 1215320,
+   "name": "Piczle Cross Adventure",
+   "playtime_min": 1449,
+   "ach_done": 24,
+   "ach_total": 24
+  },
+  {
+   "appid": 2231450,
+   "name": "Pizza Tower",
+   "playtime_min": 520,
+   "ach_done": 4,
+   "ach_total": 74
+  },
+  {
+   "appid": 246620,
+   "name": "Plague Inc: Evolved",
+   "playtime_min": 36,
+   "ach_done": 6,
+   "ach_total": 250
+  },
+  {
+   "appid": 1608230,
+   "name": "Planet of Lana",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 25
+  },
+  {
+   "appid": 997010,
+   "name": "Police Simulator: Patrol Officers",
+   "playtime_min": 4,
+   "ach_done": 1,
+   "ach_total": 20
+  },
+  {
+   "appid": 539470,
+   "name": "Police Stories",
+   "playtime_min": 294,
+   "ach_done": 17,
+   "ach_total": 39
+  },
+  {
+   "appid": 367450,
+   "name": "Poly Bridge",
+   "playtime_min": 133,
+   "ach_done": 4,
+   "ach_total": 22
+  },
+  {
+   "appid": 405640,
+   "name": "Pony Island",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 20
+  },
+  {
+   "appid": 223470,
+   "name": "POSTAL 2",
+   "playtime_min": 1071,
+   "ach_done": 30,
+   "ach_total": 89
+  },
+  {
+   "appid": 1210320,
+   "name": "Potion Craft: Alchemist Simulator",
+   "playtime_min": 364,
+   "ach_done": 5,
+   "ach_total": 29
+  },
+  {
+   "appid": 1290000,
+   "name": "PowerWash Simulator",
+   "playtime_min": 3112,
+   "ach_done": 33,
+   "ach_total": 100
+  },
+  {
+   "appid": 2751000,
+   "name": "Prince of Persia The Lost Crown",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 40
+  },
+  {
+   "appid": 233450,
+   "name": "Prison Architect",
+   "playtime_min": 366,
+   "ach_done": 0,
+   "ach_total": 18
+  },
+  {
+   "appid": 1583320,
+   "name": "Pro Soccer Online",
+   "playtime_min": 439,
+   "ach_done": 0,
+   "ach_total": 8
+  },
+  {
+   "appid": 108600,
+   "name": "Project Zomboid",
+   "playtime_min": 6329,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 3830,
+   "name": "Psychonauts",
+   "playtime_min": 1262,
+   "ach_done": 16,
+   "ach_total": 37
+  },
+  {
+   "appid": 607080,
+   "name": "Psychonauts 2",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 57
+  },
+  {
+   "appid": 880940,
+   "name": "Pummel Party",
+   "playtime_min": 1092,
+   "ach_done": 17,
+   "ach_total": 31
+  },
+  {
+   "appid": 394310,
+   "name": "Punch Club",
+   "playtime_min": 141,
+   "ach_done": 13,
+   "ach_total": 47
+  },
+  {
+   "appid": 1268960,
+   "name": "pureya",
+   "playtime_min": 1587,
+   "ach_done": 9,
+   "ach_total": 9
+  },
+  {
+   "appid": 1259790,
+   "name": "Puyo Puyo™ Tetris® 2",
+   "playtime_min": 2890,
+   "ach_done": 43,
+   "ach_total": 43
+  },
+  {
+   "appid": 1836120,
+   "name": "QUICKERFLAK",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 9
+  },
+  {
+   "appid": 648800,
+   "name": "Raft",
+   "playtime_min": 2110,
+   "ach_done": 51,
+   "ach_total": 104
+  },
+  {
+   "appid": 242550,
+   "name": "Rayman Legends",
+   "playtime_min": 1584,
+   "ach_done": 42,
+   "ach_total": 42
+  },
+  {
+   "appid": 670290,
+   "name": "Real Pool 3D - Poolians",
+   "playtime_min": 81,
+   "ach_done": 0,
+   "ach_total": 13
+  },
+  {
+   "appid": 970960,
+   "name": "Rebel Cops",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 33
+  },
+  {
+   "appid": 1088790,
+   "name": "Rebel Inc: Escalation",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 99
+  },
+  {
+   "appid": 1174180,
+   "name": "Red Dead Redemption 2",
+   "playtime_min": 1099,
+   "ach_done": 3,
+   "ach_total": 51
+  },
+  {
+   "appid": 502400,
+   "name": "Redactem",
+   "playtime_min": 3,
+   "ach_done": 6,
+   "ach_total": 24
+  },
+  {
+   "appid": 2138720,
+   "name": "REMATCH",
+   "playtime_min": 9213,
+   "ach_done": 37,
+   "ach_total": 37
+  },
+  {
+   "appid": 3432970,
+   "name": "REMATCH BETA TEST",
+   "playtime_min": 2328,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 1282100,
+   "name": "Remnant II",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 65
+  },
+  {
+   "appid": 1916310,
+   "name": "Remnant Records",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 29
+  },
+  {
+   "appid": 617290,
+   "name": "Remnant: From the Ashes",
+   "playtime_min": 789,
+   "ach_done": 22,
+   "ach_total": 50
+  },
+  {
+   "appid": 221040,
+   "name": "Resident Evil 6",
+   "playtime_min": 1382,
+   "ach_done": 23,
+   "ach_total": 70
+  },
+  {
+   "appid": 222480,
+   "name": "Resident Evil Revelations",
+   "playtime_min": 641,
+   "ach_done": 13,
+   "ach_total": 50
+  },
+  {
+   "appid": 3812600,
+   "name": "ReStory: Chill Electronics Repairs",
+   "playtime_min": 66,
+   "ach_done": 8,
+   "ach_total": 50
+  },
+  {
+   "appid": 1730260,
+   "name": "Retro Gadgets",
+   "playtime_min": 106,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 653530,
+   "name": "Return of the Obra Dinn",
+   "playtime_min": 40,
+   "ach_done": 0,
+   "ach_total": 16
+  },
+  {
+   "appid": 2073250,
+   "name": "Rift of the NecroDancer",
+   "playtime_min": 1896,
+   "ach_done": 9,
+   "ach_total": 35
+  },
+  {
+   "appid": 294100,
+   "name": "RimWorld",
+   "playtime_min": 8039,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 248820,
+   "name": "Risk of Rain (2013)",
+   "playtime_min": 203,
+   "ach_done": 6,
+   "ach_total": 15
+  },
+  {
+   "appid": 632360,
+   "name": "Risk of Rain 2",
+   "playtime_min": 1362,
+   "ach_done": 35,
+   "ach_total": 205
+  },
+  {
+   "appid": 1128810,
+   "name": "RISK: Global Domination",
+   "playtime_min": 148,
+   "ach_done": 5,
+   "ach_total": 55
+  },
+  {
+   "appid": 1466640,
+   "name": "Road 96",
+   "playtime_min": 598,
+   "ach_done": 12,
+   "ach_total": 12
+  },
+  {
+   "appid": 692890,
+   "name": "Roboquest",
+   "playtime_min": 3562,
+   "ach_done": 86,
+   "ach_total": 86
+  },
+  {
+   "appid": 252950,
+   "name": "Rocket League",
+   "playtime_min": 55429,
+   "ach_done": 88,
+   "ach_total": 88
+  },
+  {
+   "appid": 1253920,
+   "name": "Rogue Legacy 2",
+   "playtime_min": 8,
+   "ach_done": 0,
+   "ach_total": 39
+  },
+  {
+   "appid": 464650,
+   "name": "Runbow",
+   "playtime_min": 4,
+   "ach_done": 0,
+   "ach_total": 68
+  },
+  {
+   "appid": 757310,
+   "name": "Sable",
+   "playtime_min": 675,
+   "ach_done": 37,
+   "ach_total": 56
+  },
+  {
+   "appid": 206420,
+   "name": "Saints Row IV",
+   "playtime_min": 1568,
+   "ach_done": 31,
+   "ach_total": 73
+  },
+  {
+   "appid": 1356670,
+   "name": "Sakuna: Of Rice and Ruin",
+   "playtime_min": 2186,
+   "ach_done": 13,
+   "ach_total": 40
+  },
+  {
+   "appid": 1562700,
+   "name": "SANABI",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 21
+  },
+  {
+   "appid": 1122720,
+   "name": "Sayonara Wild Hearts",
+   "playtime_min": 1583,
+   "ach_done": 24,
+   "ach_total": 24
+  },
+  {
+   "appid": 2215260,
+   "name": "Scott Pilgrim vs The World",
+   "playtime_min": 149,
+   "ach_done": 4,
+   "ach_total": 19
+  },
+  {
+   "appid": 1037020,
+   "name": "ScourgeBringer",
+   "playtime_min": 15,
+   "ach_done": 4,
+   "ach_total": 42
+  },
+  {
+   "appid": 249870,
+   "name": "Scribblenauts Unmasked",
+   "playtime_min": 335,
+   "ach_done": 29,
+   "ach_total": 40
+  },
+  {
+   "appid": 1244090,
+   "name": "Sea of Stars: Sunset Edition",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 54
+  },
+  {
+   "appid": 1172620,
+   "name": "Sea of Thieves",
+   "playtime_min": 698,
+   "ach_done": 27,
+   "ach_total": 293
+  },
+  {
+   "appid": 34270,
+   "name": "SEGA Mega Drive & Genesis Classics",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 25
+  },
+  {
+   "appid": 814380,
+   "name": "Sekiro™: Shadows Die Twice",
+   "playtime_min": 2216,
+   "ach_done": 18,
+   "ach_total": 34
+  },
+  {
+   "appid": 6120,
+   "name": "Shank",
+   "playtime_min": 220,
+   "ach_done": 8,
+   "ach_total": 12
+  },
+  {
+   "appid": 102840,
+   "name": "Shank 2",
+   "playtime_min": 225,
+   "ach_done": 3,
+   "ach_total": 20
+  },
+  {
+   "appid": 1318690,
+   "name": "shapez",
+   "playtime_min": 24,
+   "ach_done": 3,
+   "ach_total": 45
+  },
+  {
+   "appid": 3496000,
+   "name": "Ship, Inc.",
+   "playtime_min": 14,
+   "ach_done": 5,
+   "ach_total": 48
+  },
+  {
+   "appid": 250760,
+   "name": "Shovel Knight: Treasure Trove",
+   "playtime_min": 1596,
+   "ach_done": 37,
+   "ach_total": 138
+  },
+  {
+   "appid": 2138710,
+   "name": "Sifu",
+   "playtime_min": 286,
+   "ach_done": 9,
+   "ach_total": 61
+  },
+  {
+   "appid": 971030,
+   "name": "SkateBIRD",
+   "playtime_min": 710,
+   "ach_done": 16,
+   "ach_total": 16
+  },
+  {
+   "appid": 1492070,
+   "name": "Sker Ritual",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 52
+  },
+  {
+   "appid": 308600,
+   "name": "Skillshot City",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 40
+  },
+  {
+   "appid": 1147560,
+   "name": "Skul: The Hero Slayer",
+   "playtime_min": 106,
+   "ach_done": 3,
+   "ach_total": 101
+  },
+  {
+   "appid": 1482620,
+   "name": "Slappyball",
+   "playtime_min": 16,
+   "ach_done": 0,
+   "ach_total": 9
+  },
+  {
+   "appid": 2486740,
+   "name": "Sledders",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 26
+  },
+  {
+   "appid": 307690,
+   "name": "Sleeping Dogs: Definitive Edition",
+   "playtime_min": 1139,
+   "ach_done": 25,
+   "ach_total": 59
+  },
+  {
+   "appid": 433340,
+   "name": "Slime Rancher",
+   "playtime_min": 21,
+   "ach_done": 1,
+   "ach_total": 57
+  },
+  {
+   "appid": 386360,
+   "name": "SMITE",
+   "playtime_min": 44,
+   "ach_done": 0,
+   "ach_total": 319
+  },
+  {
+   "appid": 544330,
+   "name": "Snake Pass",
+   "playtime_min": 37,
+   "ach_done": 4,
+   "ach_total": 33
+  },
+  {
+   "appid": 351470,
+   "name": "Sometimes: Success Requires Sacrifice",
+   "playtime_min": 1,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 71340,
+   "name": "Sonic Generations",
+   "playtime_min": 312,
+   "ach_done": 26,
+   "ach_total": 49
+  },
+  {
+   "appid": 584400,
+   "name": "Sonic Mania",
+   "playtime_min": 297,
+   "ach_done": 5,
+   "ach_total": 18
+  },
+  {
+   "appid": 2475460,
+   "name": "SOS OPS!",
+   "playtime_min": 65,
+   "ach_done": 1,
+   "ach_total": 38
+  },
+  {
+   "appid": 629520,
+   "name": "Soundpad",
+   "playtime_min": 14789,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 979110,
+   "name": "Space Haven",
+   "playtime_min": 1,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 1058830,
+   "name": "Spin Rhythm XD",
+   "playtime_min": 63,
+   "ach_done": 4,
+   "ach_total": 46
+  },
+  {
+   "appid": 1282150,
+   "name": "SpongeBob SquarePants: The Cosmic Shake",
+   "playtime_min": 915,
+   "ach_done": 44,
+   "ach_total": 44
+  },
+  {
+   "appid": 1948280,
+   "name": "Stacklands",
+   "playtime_min": 127,
+   "ach_done": 7,
+   "ach_total": 36
+  },
+  {
+   "appid": 1172380,
+   "name": "STAR WARS Jedi: Fallen Order™ ",
+   "playtime_min": 1900,
+   "ach_done": 39,
+   "ach_total": 39
+  },
+  {
+   "appid": 1774580,
+   "name": "STAR WARS Jedi: Survivor™",
+   "playtime_min": 1973,
+   "ach_done": 30,
+   "ach_total": 53
+  },
+  {
+   "appid": 32370,
+   "name": "STAR WARS™ Knights of the Old Republic™",
+   "playtime_min": 65,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 208580,
+   "name": "STAR WARS™ Knights of the Old Republic™ II: The Sith Lords™",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 57
+  },
+  {
+   "appid": 32430,
+   "name": "STAR WARS™: The Force Unleashed™ Ultimate Sith Edition",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 211820,
+   "name": "Starbound",
+   "playtime_min": 1565,
+   "ach_done": 13,
+   "ach_total": 51
+  },
+  {
+   "appid": 367540,
+   "name": "Starbound - Unstable",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 51
+  },
+  {
+   "appid": 413150,
+   "name": "Stardew Valley",
+   "playtime_min": 6187,
+   "ach_done": 22,
+   "ach_total": 49
+  },
+  {
+   "appid": 1062000,
+   "name": "Starmancer",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 495420,
+   "name": "State of Decay 2",
+   "playtime_min": 348,
+   "ach_done": 18,
+   "ach_total": 153
+  },
+  {
+   "appid": 2272400,
+   "name": "Station to Station",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 81
+  },
+  {
+   "appid": 252410,
+   "name": "SteamWorld Dig",
+   "playtime_min": 95,
+   "ach_done": 3,
+   "ach_total": 24
+  },
+  {
+   "appid": 1283400,
+   "name": "Steelrising",
+   "playtime_min": 6,
+   "ach_done": 0,
+   "ach_total": 55
+  },
+  {
+   "appid": 1324130,
+   "name": "Stranded: Alien Dawn",
+   "playtime_min": 5,
+   "ach_done": 0,
+   "ach_total": 58
+  },
+  {
+   "appid": 1332010,
+   "name": "Stray",
+   "playtime_min": 966,
+   "ach_done": 24,
+   "ach_total": 24
+  },
+  {
+   "appid": 985890,
+   "name": "Streets of Rage 4",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 45
+  },
+  {
+   "appid": 264710,
+   "name": "Subnautica",
+   "playtime_min": 111,
+   "ach_done": 1,
+   "ach_total": 17
+  },
+  {
+   "appid": 1972820,
+   "name": "Suicide Guy Deluxe Plus",
+   "playtime_min": 84,
+   "ach_done": 14,
+   "ach_total": 32
+  },
+  {
+   "appid": 2709570,
+   "name": "Supermarket Together",
+   "playtime_min": 278,
+   "ach_done": 0,
+   "ach_total": 55
+  },
+  {
+   "appid": 774791,
+   "name": "Surgeon Simulator 2",
+   "playtime_min": 90,
+   "ach_done": 4,
+   "ach_total": 30
+  },
+  {
+   "appid": 1488200,
+   "name": "Symphony of War: The Nephilim Saga",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 19
+  },
+  {
+   "appid": 286160,
+   "name": "Tabletop Simulator",
+   "playtime_min": 311,
+   "ach_done": 2,
+   "ach_total": 26
+  },
+  {
+   "appid": 429660,
+   "name": "Tales of Berseria",
+   "playtime_min": 3114,
+   "ach_done": 24,
+   "ach_total": 51
+  },
+  {
+   "appid": 372360,
+   "name": "Tales of Symphonia",
+   "playtime_min": 124,
+   "ach_done": 2,
+   "ach_total": 39
+  },
+  {
+   "appid": 738540,
+   "name": "Tales of Vesperia: Definitive Edition",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 53
+  },
+  {
+   "appid": 351970,
+   "name": "Tales of Zestiria",
+   "playtime_min": 2584,
+   "ach_done": 14,
+   "ach_total": 56
+  },
+  {
+   "appid": 1289340,
+   "name": "Tastemaker",
+   "playtime_min": 11,
+   "ach_done": 0,
+   "ach_total": 8
+  },
+  {
+   "appid": 1496590,
+   "name": "Tchia",
+   "playtime_min": 500,
+   "ach_done": 3,
+   "ach_total": 21
+  },
+  {
+   "appid": 1244800,
+   "name": "Terraformers",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 63
+  },
+  {
+   "appid": 105600,
+   "name": "Terraria",
+   "playtime_min": 8328,
+   "ach_done": 79,
+   "ach_total": 137
+  },
+  {
+   "appid": 237990,
+   "name": "The Banner Saga",
+   "playtime_min": 45,
+   "ach_done": 4,
+   "ach_total": 39
+  },
+  {
+   "appid": 281640,
+   "name": "The Banner Saga 2",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 55
+  },
+  {
+   "appid": 485460,
+   "name": "The Banner Saga 3",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 101
+  },
+  {
+   "appid": 250900,
+   "name": "The Binding of Isaac: Rebirth",
+   "playtime_min": 208,
+   "ach_done": 9,
+   "ach_total": 641
+  },
+  {
+   "appid": 1432100,
+   "name": "The Bookwalker",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 37
+  },
+  {
+   "appid": 1544020,
+   "name": "The Callisto Protocol",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 46
+  },
+  {
+   "appid": 306130,
+   "name": "The Elder Scrolls Online",
+   "playtime_min": 44,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 489830,
+   "name": "The Elder Scrolls V: Skyrim Special Edition",
+   "playtime_min": 8361,
+   "ach_done": 75,
+   "ach_total": 75
+  },
+  {
+   "appid": 1182310,
+   "name": "The Excavation of Hob's Barrow",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 40
+  },
+  {
+   "appid": 2060160,
+   "name": "The Farmer Was Replaced",
+   "playtime_min": 53,
+   "ach_done": 11,
+   "ach_total": 111
+  },
+  {
+   "appid": 2073850,
+   "name": "THE FINALS",
+   "playtime_min": 53,
+   "ach_done": 2,
+   "ach_total": 50
+  },
+  {
+   "appid": 242760,
+   "name": "The Forest",
+   "playtime_min": 50,
+   "ach_done": 2,
+   "ach_total": 45
+  },
+  {
+   "appid": 1451480,
+   "name": "The Greatest Penguin Heist of All Time",
+   "playtime_min": 336,
+   "ach_done": 14,
+   "ach_total": 51
+  },
+  {
+   "appid": 628200,
+   "name": "The Invisible Hand",
+   "playtime_min": 5,
+   "ach_done": 0,
+   "ach_total": 31
+  },
+  {
+   "appid": 1167750,
+   "name": "The Lamplighters League",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 41
+  },
+  {
+   "appid": 640590,
+   "name": "The LEGO® NINJAGO® Movie Video Game",
+   "playtime_min": 1131,
+   "ach_done": 50,
+   "ach_total": 50
+  },
+  {
+   "appid": 305620,
+   "name": "The Long Dark",
+   "playtime_min": 65,
+   "ach_done": 1,
+   "ach_total": 87
+  },
+  {
+   "appid": 2933130,
+   "name": "The Lord of the Rings: Return to Moria™",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 27
+  },
+  {
+   "appid": 1304930,
+   "name": "The Outlast Trials",
+   "playtime_min": 1724,
+   "ach_done": 10,
+   "ach_total": 27
+  },
+  {
+   "appid": 1515210,
+   "name": "The Past Within",
+   "playtime_min": 125,
+   "ach_done": 11,
+   "ach_total": 24
+  },
+  {
+   "appid": 1071130,
+   "name": "The Procession to Calvary",
+   "playtime_min": 170,
+   "ach_done": 16,
+   "ach_total": 21
+  },
+  {
+   "appid": 265590,
+   "name": "The Red Solstice",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 73
+  },
+  {
+   "appid": 32360,
+   "name": "The Secret of Monkey Island: Special Edition",
+   "playtime_min": 459,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 378540,
+   "name": "The Surge",
+   "playtime_min": 29,
+   "ach_done": 3,
+   "ach_total": 67
+  },
+  {
+   "appid": 644830,
+   "name": "The Surge 2",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 57
+  },
+  {
+   "appid": 20920,
+   "name": "The Witcher 2: Assassins of Kings Enhanced Edition",
+   "playtime_min": 12,
+   "ach_done": 0,
+   "ach_total": 52
+  },
+  {
+   "appid": 292030,
+   "name": "The Witcher 3: Wild Hunt — Remastered",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 78
+  },
+  {
+   "appid": 20900,
+   "name": "The Witcher: Enhanced Edition",
+   "playtime_min": 130,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 443810,
+   "name": "This Is the Police",
+   "playtime_min": 349,
+   "ach_done": 1,
+   "ach_total": 10
+  },
+  {
+   "appid": 785740,
+   "name": "This Is the Police 2",
+   "playtime_min": 1,
+   "ach_done": 0,
+   "ach_total": 12
+  },
+  {
+   "appid": 282070,
+   "name": "This War of Mine",
+   "playtime_min": 59,
+   "ach_done": 1,
+   "ach_total": 59
+  },
+  {
+   "appid": 2088570,
+   "name": "Tiny Rogues",
+   "playtime_min": 191,
+   "ach_done": 9,
+   "ach_total": 86
+  },
+  {
+   "appid": 2238040,
+   "name": "Tiny Terry's Turbo Trip",
+   "playtime_min": 407,
+   "ach_done": 31,
+   "ach_total": 31
+  },
+  {
+   "appid": 297130,
+   "name": "Titan Souls",
+   "playtime_min": 191,
+   "ach_done": 8,
+   "ach_total": 27
+  },
+  {
+   "appid": 1058320,
+   "name": "Toki",
+   "playtime_min": 4,
+   "ach_done": 1,
+   "ach_total": 13
+  },
+  {
+   "appid": 243870,
+   "name": "Tom Clancy's Ghost Recon Phantoms - NA",
+   "playtime_min": 56,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 460930,
+   "name": "Tom Clancy's Ghost Recon® Wildlands",
+   "playtime_min": 368,
+   "ach_done": 0,
+   "ach_total": 57
+  },
+  {
+   "appid": 203160,
+   "name": "Tomb Raider",
+   "playtime_min": 591,
+   "ach_done": 14,
+   "ach_total": 50
+  },
+  {
+   "appid": 8140,
+   "name": "Tomb Raider: Underworld",
+   "playtime_min": 58,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 1142710,
+   "name": "Total War: WARHAMMER III",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 138
+  },
+  {
+   "appid": 2361460,
+   "name": "Toy Shire",
+   "playtime_min": 8,
+   "ach_done": 0,
+   "ach_total": 42
+  },
+  {
+   "appid": 237930,
+   "name": "Transistor",
+   "playtime_min": 401,
+   "ach_done": 13,
+   "ach_total": 33
+  },
+  {
+   "appid": 1139980,
+   "name": "Travellers Rest",
+   "playtime_min": 58,
+   "ach_done": 2,
+   "ach_total": 55
+  },
+  {
+   "appid": 437920,
+   "name": "Tricky Towers",
+   "playtime_min": 661,
+   "ach_done": 5,
+   "ach_total": 29
+  },
+  {
+   "appid": 546090,
+   "name": "Trip to Vinelands",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 5
+  },
+  {
+   "appid": 57690,
+   "name": "Tropico 4",
+   "playtime_min": 29,
+   "ach_done": 0,
+   "ach_total": 70
+  },
+  {
+   "appid": 701470,
+   "name": "TTV2",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 5
+  },
+  {
+   "appid": 553420,
+   "name": "TUNIC",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 36
+  },
+  {
+   "appid": 1444480,
+   "name": "Turing Complete",
+   "playtime_min": 532,
+   "ach_done": 0,
+   "ach_total": 10
+  },
+  {
+   "appid": 1205450,
+   "name": "Turnip Boy Commits Tax Evasion",
+   "playtime_min": 369,
+   "ach_done": 37,
+   "ach_total": 37
+  },
+  {
+   "appid": 2097230,
+   "name": "Turnip Boy Robs a Bank",
+   "playtime_min": 384,
+   "ach_done": 23,
+   "ach_total": 23
+  },
+  {
+   "appid": 1649080,
+   "name": "Two Point Campus",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 48
+  },
+  {
+   "appid": 535930,
+   "name": "Two Point Hospital",
+   "playtime_min": 54,
+   "ach_done": 1,
+   "ach_total": 61
+  },
+  {
+   "appid": 1930,
+   "name": "Two Worlds: Epic Edition",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 0
+  },
+  {
+   "appid": 357070,
+   "name": "UBERMOSH",
+   "playtime_min": 5,
+   "ach_done": 0,
+   "ach_total": 7
+  },
+  {
+   "appid": 3224770,
+   "name": "Umamusume: Pretty Derby",
+   "playtime_min": 1353,
+   "ach_done": 13,
+   "ach_total": 20
+  },
+  {
+   "appid": 1062110,
+   "name": "UNSIGHTED",
+   "playtime_min": 177,
+   "ach_done": 2,
+   "ach_total": 42
+  },
+  {
+   "appid": 1574820,
+   "name": "Until Then",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 29
+  },
+  {
+   "appid": 304930,
+   "name": "Unturned",
+   "playtime_min": 1817,
+   "ach_done": 10,
+   "ach_total": 95
+  },
+  {
+   "appid": 1604030,
+   "name": "V Rising",
+   "playtime_min": 2219,
+   "ach_done": 31,
+   "ach_total": 49
+  },
+  {
+   "appid": 892970,
+   "name": "Valheim",
+   "playtime_min": 2881,
+   "ach_done": 0,
+   "ach_total": 53
+  },
+  {
+   "appid": 3265700,
+   "name": "Vampire Crawlers",
+   "playtime_min": 1317,
+   "ach_done": 161,
+   "ach_total": 161
+  },
+  {
+   "appid": 1794680,
+   "name": "Vampire Survivors",
+   "playtime_min": 9346,
+   "ach_done": 243,
+   "ach_total": 243
+  },
+  {
+   "appid": 529340,
+   "name": "Victoria 3",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 152
+  },
+  {
+   "appid": 431960,
+   "name": "Wallpaper Engine",
+   "playtime_min": 11994,
+   "ach_done": 6,
+   "ach_total": 17
+  },
+  {
+   "appid": 230410,
+   "name": "Warframe",
+   "playtime_min": 916,
+   "ach_done": 15,
+   "ach_total": 193
+  },
+  {
+   "appid": 2005010,
+   "name": "Warhammer 40,000: Boltgun",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 21
+  },
+  {
+   "appid": 1361210,
+   "name": "Warhammer 40,000: Darktide",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 36
+  },
+  {
+   "appid": 552500,
+   "name": "Warhammer: Vermintide 2",
+   "playtime_min": 291,
+   "ach_done": 6,
+   "ach_total": 26
+  },
+  {
+   "appid": 1291010,
+   "name": "Warpips",
+   "playtime_min": 321,
+   "ach_done": 12,
+   "ach_total": 21
+  },
+  {
+   "appid": 2239550,
+   "name": "Watch Dogs: Legion",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 49
+  },
+  {
+   "appid": 243470,
+   "name": "Watch_Dogs",
+   "playtime_min": 1089,
+   "ach_done": 11,
+   "ach_total": 49
+  },
+  {
+   "appid": 447040,
+   "name": "Watch_Dogs 2",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 55
+  },
+  {
+   "appid": 865360,
+   "name": "We Were Here Together",
+   "playtime_min": 88,
+   "ach_done": 2,
+   "ach_total": 22
+  },
+  {
+   "appid": 1016790,
+   "name": "West of Dead",
+   "playtime_min": 206,
+   "ach_done": 6,
+   "ach_total": 24
+  },
+  {
+   "appid": 275200,
+   "name": "Westerado: Double Barreled",
+   "playtime_min": 381,
+   "ach_done": 28,
+   "ach_total": 79
+  },
+  {
+   "appid": 619150,
+   "name": "while True: learn()",
+   "playtime_min": 934,
+   "ach_done": 31,
+   "ach_total": 31
+  },
+  {
+   "appid": 427730,
+   "name": "Who's Your Daddy?!",
+   "playtime_min": 6,
+   "ach_done": 0,
+   "ach_total": 44
+  },
+  {
+   "appid": 1599330,
+   "name": "Wildmender",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 108
+  },
+  {
+   "appid": 445980,
+   "name": "Wizard of Legend",
+   "playtime_min": 498,
+   "ach_done": 8,
+   "ach_total": 19
+  },
+  {
+   "appid": 22600,
+   "name": "Worms Reloaded",
+   "playtime_min": 150,
+   "ach_done": 1,
+   "ach_total": 61
+  },
+  {
+   "appid": 268500,
+   "name": "XCOM 2",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 88
+  },
+  {
+   "appid": 200510,
+   "name": "XCOM: Enemy Unknown",
+   "playtime_min": 535,
+   "ach_done": 14,
+   "ach_total": 85
+  },
+  {
+   "appid": 638970,
+   "name": "Yakuza 0",
+   "playtime_min": 2150,
+   "ach_done": 20,
+   "ach_total": 55
+  },
+  {
+   "appid": 1088710,
+   "name": "Yakuza 3 Remastered",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 50
+  },
+  {
+   "appid": 1105500,
+   "name": "Yakuza 4 Remastered",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 47
+  },
+  {
+   "appid": 1105510,
+   "name": "Yakuza 5 Remastered",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 56
+  },
+  {
+   "appid": 1388590,
+   "name": "Yakuza 6: The Song of Life",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 59
+  },
+  {
+   "appid": 834530,
+   "name": "Yakuza Kiwami (Legacy)",
+   "playtime_min": 1221,
+   "ach_done": 19,
+   "ach_total": 55
+  },
+  {
+   "appid": 3717340,
+   "name": "Yakuza Kiwami 2",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 59
+  },
+  {
+   "appid": 927380,
+   "name": "Yakuza Kiwami 2 (Legacy)",
+   "playtime_min": 1,
+   "ach_done": 0,
+   "ach_total": 59
+  },
+  {
+   "appid": 1235140,
+   "name": "Yakuza: Like a Dragon",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 63
+  },
+  {
+   "appid": 2011780,
+   "name": "Yellow Taxi Goes Vroom",
+   "playtime_min": 810,
+   "ach_done": 61,
+   "ach_total": 61
+  },
+  {
+   "appid": 334940,
+   "name": "Yoku's Island Express",
+   "playtime_min": 0,
+   "ach_done": 0,
+   "ach_total": 31
+  },
+  {
+   "appid": 1493760,
+   "name": "Youtubers Life 2",
+   "playtime_min": 41,
+   "ach_done": 2,
+   "ach_total": 20
+  },
+  {
+   "appid": 1449850,
+   "name": "Yu-Gi-Oh!  Master Duel",
+   "playtime_min": 62,
+   "ach_done": 1,
+   "ach_total": 11
+  },
+  {
+   "appid": 622040,
+   "name": "Zooicide",
+   "playtime_min": 10,
+   "ach_done": 0,
+   "ach_total": 0
+  }
+ ]
 }
