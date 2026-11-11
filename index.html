@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#11151c">
+  <title>Backlog de Steam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Backlog de Steam</h1>
+    <p id="updated" class="muted">Cargando datos…</p>
+  </header>
+
+  <main>
+    <!-- Contadores -->
+    <section class="card">
+      <div class="counters">
+        <div class="counter c-pend">
+          <span class="label">Pendientes</span>
+          <strong id="n-pend">0</strong>
+          <span class="pct" id="p-pend">0 %</span>
+        </div>
+        <div class="counter c-inf">
+          <span class="label">Infinitos</span>
+          <strong id="n-inf">0</strong>
+          <span class="pct" id="p-inf">0 %</span>
+        </div>
+        <div class="counter c-plat">
+          <span class="label">Por platinar</span>
+          <strong id="n-plat">0</strong>
+          <span class="pct" id="p-plat">0 %</span>
+        </div>
+      </div>
+      <div class="bar" aria-hidden="true">
+        <span class="c-pend" id="b-pend"></span><span class="c-inf" id="b-inf"></span><span class="c-plat" id="b-plat"></span>
+      </div>
+      <p class="ratio">Razón P : I : PP = <strong id="ratio">—</strong></p>
+      <p class="muted small" id="others"></p>
+    </section>
+
+    <!-- Reparto de instalados -->
+    <section class="card">
+      <h2>¿Cuántos instalo de cada tipo?</h2>
+      <label class="field">
+        <span>Juegos instalados en total</span>
+        <input id="installed" type="number" inputmode="numeric" min="0" step="1" value="10">
+      </label>
+      <div class="alloc">
+        <div class="c-pend"><span>Pendientes</span><strong id="a-pend">0</strong></div>
+        <div class="c-inf"><span>Infinitos</span><strong id="a-inf">0</strong></div>
+        <div class="c-plat"><span>Por platinar</span><strong id="a-plat">0</strong></div>
+      </div>
+      <p class="muted small" id="alloc-note">Reparto proporcional con el método del mayor residuo.</p>
+    </section>
+
+    <!-- Generador aleatorio -->
+    <section class="card">
+      <h2>Números aleatorios</h2>
+      <div class="row3">
+        <label class="field"><span>Desde</span><input id="r-min" type="number" inputmode="numeric" value="1"></label>
+        <label class="field"><span>Hasta</span><input id="r-max" type="number" inputmode="numeric" value="10"></label>
+        <label class="field"><span>Cantidad</span><input id="r-count" type="number" inputmode="numeric" min="1" value="1"></label>
+      </div>
+      <label class="check"><input id="r-unique" type="checkbox" checked> Sin repetir</label>
+      <button id="r-go" class="btn primary">Generar</button>
+      <p id="r-out" class="rand-out" aria-live="polite"></p>
+    </section>
+
+    <!-- Lista de juegos -->
+    <section class="card">
+      <h2>Juegos</h2>
+      <input id="search" class="search" type="search" placeholder="Buscar…" autocomplete="off">
+      <div class="tabs" role="tablist">
+        <button data-filter="pend" class="active">Pendientes</button>
+        <button data-filter="inf">Infinitos</button>
+        <button data-filter="plat">Por platinar</button>
+        <button data-filter="all">Todos</button>
+      </div>
+      <p class="muted small">Toca ∞ para marcar o desmarcar un juego como infinito.</p>
+      <ul id="list" class="list"></ul>
+      <div class="actions">
+        <button id="export" class="btn">Descargar config.json</button>
+        <button id="reset" class="btn ghost">Volver a config.json</button>
+      </div>
+      <p class="muted small">Los infinitos se guardan en este navegador. Para que valgan en todos tus
+        dispositivos, descarga <code>config.json</code> y súbelo al repositorio.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
