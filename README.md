@@ -9,6 +9,7 @@ Publicada en: <https://esteban-leyton.github.io/Steam_randomizer/>
 | `data.json` | Tu biblioteca (la genera el script; no se edita a mano) |
 | `config.json` | Carpetas propias, horas para «pendiente» y juegos asignados a mano |
 | `scripts/update_steam.py` | Lee la API de Steam y escribe `data.json` |
+| `manifest.webmanifest`, `sw.js`, `icons/` | Lo que la hace instalable como app y usable sin conexión |
 | `.github/workflows/update.yml` | Ejecuta el script cada día (o a mano), hace commit y publica en Pages |
 
 ## Carpetas y criterios
@@ -51,6 +52,16 @@ Los cambios (juegos movidos, carpetas, horas) se guardan en el `localStorage` de
 Para que valgan en todos tus dispositivos: pulsa **Descargar config.json**, sustituye el del repositorio
 (desde GitHub: *Add file → Upload files*) y haz commit. El workflow republica la página sola.
 **Volver a config.json** borra los cambios locales y usa el archivo del repo.
+
+## Instalar como app (PWA)
+
+Abre la página en el celular:
+
+- **Android (Chrome):** pulsa **Instalar app** arriba a la derecha, o menú ⋮ → *Instalar app*.
+- **iPhone (Safari):** botón de compartir → *Agregar a inicio*.
+
+Se abre a pantalla completa con su propio ícono y funciona sin conexión con la última copia descargada
+(`sw.js` guarda la página, los datos y las portadas que ya viste). Con conexión siempre carga lo más reciente.
 
 ## Probar en local
 

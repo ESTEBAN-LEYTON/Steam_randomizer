@@ -459,4 +459,27 @@ async function init() {
   refresh();
 }
 
+// ---------- App instalable (PWA) ----------
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => navigator.serviceWorker.register("sw.js").catch(() => {}));
+}
+let installPrompt = null;
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  installPrompt = e;
+  $("install").hidden = false;
+});
+$("install").addEventListener("click", async () => {
+  if (!installPrompt) return;
+  installPrompt.prompt();
+  await installPrompt.userChoice;
+  installPrompt = null;
+  $("install").hidden = true;
+});
+window.addEventListener("appinstalled", () => { $("install").hidden = true; });
+const showOnline = () => $("updated").classList.toggle("offline", !navigator.onLine);
+window.addEventListener("offline", showOnline);
+window.addEventListener("online", showOnline);
+showOnline();
+
 init();

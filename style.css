@@ -168,3 +168,7 @@ input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 
 .actions { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
 .actions .btn { flex: 1 1 160px; }
+
+.top-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.btn.install { padding: 7px 12px; font-size: .85rem; background: var(--accent); border-color: var(--accent); color: #fff; }
+#updated.offline::after { content: " · sin conexión"; color: var(--plat); }
