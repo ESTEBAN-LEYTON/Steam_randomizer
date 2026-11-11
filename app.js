@@ -391,6 +391,7 @@ function generate() {
   } else {
     nums = Array.from({ length: count }, () => min + randInt(size));
   }
+  nums.sort((a, b) => a - b);
   out.textContent = nums.join(", ");
 }
 
