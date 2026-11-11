@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T15:19:34+00:00",
+ "generated_at": "2026-11-11T16:43:23+00:00",
  "games": [
   {
    "appid": 251570,
@@ -2404,7 +2404,7 @@
   {
    "appid": 1661630,
    "name": "KarmaZoo",
-   "playtime_min": 0,
+   "playtime_min": 10,
    "ach_done": 0,
    "ach_total": 22,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1661630/capsule_231x87.jpg?t=1728951152",
@@ -2997,7 +2997,7 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 49,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/286690/e61b54b5c5ec0a610be1bd53e89b461c413e0e6b/capsule_231x87_alt_assets_1.jpg?t=1792681167",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/286690/capsule_231x87.jpg?t=1792681167",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/286690/7c276efe09b88ba437ab80331c5ca3095e6f936d/library_capsule_2x.jpg?t=1792681167",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/286690/353ea01a045c084215bca95519808eaa7319ce0c.jpg"
   },
@@ -5744,8 +5744,8 @@
   {
    "appid": 334940,
    "name": "Yoku's Island Express",
-   "playtime_min": 0,
-   "ach_done": 0,
+   "playtime_min": 15,
+   "ach_done": 2,
    "ach_total": 31,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/334940/capsule_231x87.jpg?t=1763040310",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/334940/library_600x900_2x.jpg?t=1763040310",
