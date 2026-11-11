@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#11151c">
+  <meta name="theme-color" content="#e9e9ec" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101012" media="(prefers-color-scheme: dark)">
   <title>Backlog de Steam</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
@@ -17,24 +18,26 @@
 <body>
   <header class="top">
     <div class="top-row">
-      <h1>Backlog de Steam</h1>
-      <button id="install" class="btn install" hidden>Instalar app</button>
+      <img class="logo" src="icons/icon-192.png" alt="" width="44" height="44">
+      <button id="install" class="btn pill dark install" hidden>Instalar app</button>
     </div>
+    <h1>Backlog <b>de Steam</b></h1>
     <p id="updated" class="muted">Cargando datos…</p>
   </header>
 
   <main>
     <!-- Contadores -->
-    <section class="card">
+    <section class="hero" id="s-resumen">
+      <p class="hero-title">Juega lo que <b>ya tienes</b>,<br>no lo que <b>compras.</b></p>
       <div id="counters" class="counters"></div>
       <div id="bar" class="bar" aria-hidden="true"></div>
       <p class="ratio">Razón <span id="ratio-labels"></span> = <strong id="ratio">—</strong></p>
       <div id="extra" class="extra"></div>
-      <p class="muted small" id="others"></p>
+      <p class="small hero-note" id="others"></p>
     </section>
 
     <!-- Reparto de instalados -->
-    <section class="card">
+    <section class="card" id="s-reparto">
       <h2>¿Cuántos instalo de cada tipo?</h2>
       <label class="field">
         <span>Juegos instalados en total</span>
@@ -45,7 +48,7 @@
     </section>
 
     <!-- Generador aleatorio -->
-    <section class="card">
+    <section class="card" id="s-azar">
       <h2>Números aleatorios</h2>
       <div class="row3">
         <label class="field"><span>Desde</span><input id="r-min" type="number" inputmode="numeric" value="1"></label>
@@ -53,7 +56,7 @@
         <label class="field"><span>Cantidad</span><input id="r-count" type="number" inputmode="numeric" min="1" value="1"></label>
       </div>
       <label class="check"><input id="r-unique" type="checkbox" checked> Sin repetir</label>
-      <button id="r-go" class="btn primary">Generar</button>
+      <button id="r-go" class="btn pill dark wide">Generar</button>
       <p id="r-out" class="rand-out" aria-live="polite"></p>
     </section>
 
@@ -65,7 +68,7 @@
           <button type="button" id="view-grid" title="Portadas">▦</button>
           <button type="button" id="view-list" title="Lista compacta">☰</button>
         </div>
-        <button type="button" id="collapse" class="icon-btn" aria-expanded="true" title="Comprimir lista">▴</button>
+        <button type="button" id="collapse" class="round" aria-expanded="true" title="Comprimir lista">▴</button>
       </div>
       <div id="games-body">
         <input id="search" class="search" type="search" placeholder="Buscar…" autocomplete="off">
@@ -73,20 +76,20 @@
         <div class="list-tools">
           <p class="muted small">Usa el menú de cada juego para moverlo a otra carpeta.
             «Auto» lo clasifica según las horas y los logros.</p>
-          <button type="button" id="snapshot" class="btn small-btn">Descargar imagen</button>
+          <button type="button" id="snapshot" class="btn pill dark small-btn">Descargar imagen</button>
         </div>
         <ul id="list" class="list"></ul>
-        <button id="more" class="btn more" hidden>Mostrar más</button>
+        <button id="more" class="btn pill more" hidden>Mostrar más</button>
       </div>
     </section>
 
     <!-- Carpetas y ajustes -->
-    <section class="card">
+    <section class="card" id="s-carpetas">
       <h2>Carpetas</h2>
       <ul id="folders" class="folders"></ul>
       <form id="new-folder" class="new-folder">
         <input id="new-name" type="text" placeholder="Nombre de la carpeta" maxlength="40" required>
-        <button class="btn">Crear</button>
+        <button class="btn pill dark">Crear</button>
       </form>
 
       <h2 class="mt">Clasificación automática</h2>
@@ -98,13 +101,22 @@
         por platinar si tiene logros sin completar; si no, queda «Sin carpeta».</p>
 
       <div class="actions">
-        <button id="export" class="btn">Descargar config.json</button>
-        <button id="reset" class="btn ghost">Volver a config.json</button>
+        <button id="export" class="btn pill dark">Descargar config.json</button>
+        <button id="reset" class="btn pill">Volver a config.json</button>
       </div>
       <p class="muted small">Los cambios se guardan en este navegador. Para que valgan en todos tus
         dispositivos, descarga <code>config.json</code> y súbelo al repositorio.</p>
     </section>
   </main>
+
+  <!-- Barra de navegación flotante -->
+  <nav class="dock" aria-label="Secciones">
+    <a href="#s-resumen" title="Resumen"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/></svg></a>
+    <a href="#s-reparto" title="Reparto"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 3.5V12l6 6"/></svg></a>
+    <a href="#s-azar" title="Números aleatorios"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="9" cy="9" r="1.2" fill="currentColor"/><circle cx="15" cy="15" r="1.2" fill="currentColor"/><circle cx="15" cy="9" r="1.2" fill="currentColor"/><circle cx="9" cy="15" r="1.2" fill="currentColor"/></svg></a>
+    <a href="#games-card" title="Juegos"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="6.5" height="9" rx="2"/><rect x="13.5" y="4" width="6.5" height="9" rx="2"/><path d="M4 17h6.5M13.5 17H20M4 20h6.5M13.5 20H20"/></svg></a>
+    <a href="#s-carpetas" title="Carpetas"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 7.5a2 2 0 0 1 2-2h4l2 2.5h7a2 2 0 0 1 2 2v7.5a2 2 0 0 1-2 2h-13a2 2 0 0 1-2-2z"/></svg></a>
+  </nav>
 
   <script src="app.js"></script>
 </body>

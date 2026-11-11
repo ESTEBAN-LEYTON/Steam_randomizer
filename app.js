@@ -349,11 +349,14 @@ function renderList() {
     if (grid) {
       const pct = g.ach_total ? Math.floor((g.ach_done / g.ach_total) * 100) : null;
       const c = cover(g);
-      c.append(el("span", { className: "badge" }, `${hours(g.playtime_min)} h`));
-      if (pct !== null) c.append(el("span", { className: "badge right" + (pct === 100 ? " full" : "") }, `${pct} %`));
+      if (pct !== null) c.append(el("span", { className: "badge" + (pct === 100 ? " full" : "") }, `${pct} %`));
       list.append(
         el("li", { className: "tile", style: { "--c": color }, title: `${g.name} · ${hours(g.playtime_min)} h · ${achText(g)}` },
-          c, folderSelect(g)));
+          c,
+          el("div", { className: "t-name" }, g.name),
+          el("div", { className: "t-meta" }, achText(g)),
+          el("div", { className: "t-hours" }, hours(g.playtime_min), el("small", {}, " h")),
+          folderSelect(g)));
     } else {
       list.append(
         el("li", { style: { "--c": color } },
@@ -679,9 +682,25 @@ function bindEvents() {
   });
 }
 
+// ---------- Barra de navegación: resalta la sección visible ----------
+function bindDock() {
+  const links = [...document.querySelectorAll(".dock a")];
+  const byId = new Map(links.map((a) => [a.getAttribute("href").slice(1), a]));
+  const visible = new Map();
+  const io = new IntersectionObserver((entries) => {
+    for (const e of entries) visible.set(e.target.id, e.intersectionRatio);
+    let best = null, bestRatio = 0;
+    for (const [id, r] of visible) if (r > bestRatio) { best = id; bestRatio = r; }
+    if (best) links.forEach((a) => a.classList.toggle("active", a === byId.get(best)));
+  }, { threshold: [0, 0.25, 0.5, 0.75, 1], rootMargin: "-20% 0px -30% 0px" });
+  for (const id of byId.keys()) { const s = $(id); if (s) io.observe(s); }
+  links[0]?.classList.add("active");
+}
+
 // ---------- Inicio ----------
 async function init() {
   bindEvents();
+  bindDock();
   const saved = lsGet(LS_INSTALLED);
   if (saved !== null) $("installed").value = saved;
   state.view = lsGet(LS_VIEW) === "list" ? "list" : "grid";
