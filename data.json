@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T16:43:23+00:00",
+ "generated_at": "2026-11-12T17:12:23+00:00",
  "games": [
   {
    "appid": 251570,
@@ -864,7 +864,7 @@
   {
    "appid": 268910,
    "name": "Cuphead",
-   "playtime_min": 670,
+   "playtime_min": 671,
    "ach_done": 12,
    "ach_total": 42,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/capsule_231x87.jpg?t=1709068852",
@@ -1007,8 +1007,8 @@
    "playtime_min": 178,
    "ach_done": 7,
    "ach_total": 58,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238060/capsule_231x87.jpg?t=1779987583",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238060/library_600x900_2x.jpg?t=1779987583",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238060/capsule_231x87.jpg?t=1794430344",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238060/d74131bbdc653ab8859da2652646dafef3a1dc99/library_capsule_2x.jpg?t=1794430344",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1238060/22294a53f3376c8f8ad0c8ecea1bfd11a2559258.jpg"
   },
   {
@@ -1254,7 +1254,7 @@
   {
    "appid": 1790600,
    "name": "DRAGON BALL: Sparking! ZERO",
-   "playtime_min": 2430,
+   "playtime_min": 2438,
    "ach_done": 45,
    "ach_total": 50,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1790600/capsule_231x87.jpg?t=1785726916",
@@ -1516,9 +1516,9 @@
    "name": "Euro Truck Simulator 2",
    "playtime_min": 18,
    "ach_done": 0,
-   "ach_total": 110,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/da84d11d3ddd817e0cca299608b469a854d75ba5/capsule_231x87.jpg?t=1793285269",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/library_600x900_2x.jpg?t=1793285269",
+   "ach_total": 114,
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/da84d11d3ddd817e0cca299608b469a854d75ba5/capsule_231x87.jpg?t=1794502925",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/227300/library_600x900_2x.jpg?t=1794502925",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/227300/adc18a4fc9adc0330144b76d61cbda68bb2394a0.jpg"
   },
   {
@@ -1697,7 +1697,7 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 60,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304390/8723827c4b3d6d77cb25cb764af699bd07ea585f/capsule_231x87_alt_assets_14.jpg?t=1793633078",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304390/2990e16e6dd97857e85b7f7c943112d6084aa5f3/capsule_231x87_alt_assets_13.jpg?t=1793633078",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304390/93723b4e6f256d52d617b04789ffd4eee77e7e2b/library_capsule_2x.jpg?t=1793633078",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/304390/24ec1359d4c27b2aef9ad3fc59fdfa495789d6e6.jpg"
   },
@@ -2797,8 +2797,8 @@
    "playtime_min": 541,
    "ach_done": 5,
    "ach_total": 49,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/e7870f67a65dd3e9a9d04021260e62bf2a637e33/capsule_231x87.jpg?t=1792140776",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/846b1e4bc5e334b691bbe0b19fbbb6b074d5d89f/library_capsule_2x.jpg?t=1792140776",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/e7870f67a65dd3e9a9d04021260e62bf2a637e33/capsule_231x87.jpg?t=1794453707",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/846b1e4bc5e334b691bbe0b19fbbb6b074d5d89f/library_capsule_2x.jpg?t=1794453707",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/2767030/839b4712925b95702ca56e0c4d399adf54f4d617.jpg"
   },
   {
@@ -3104,7 +3104,7 @@
   {
    "appid": 1446780,
    "name": "MONSTER HUNTER RISE",
-   "playtime_min": 23226,
+   "playtime_min": 23256,
    "ach_done": 84,
    "ach_total": 100,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1446780/capsule_231x87.jpg?t=1792548454",
@@ -3194,8 +3194,8 @@
   {
    "appid": 48700,
    "name": "Mount & Blade: Warband",
-   "playtime_min": 3,
-   "ach_done": 0,
+   "playtime_min": 34,
+   "ach_done": 1,
    "ach_total": 80,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/48700/capsule_231x87.jpg?t=1750147149",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/48700/library_600x900_2x.jpg?t=1750147149",
@@ -3514,8 +3514,8 @@
   {
    "appid": 457140,
    "name": "Oxygen Not Included",
-   "playtime_min": 45,
-   "ach_done": 0,
+   "playtime_min": 68,
+   "ach_done": 1,
    "ach_total": 51,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/457140/capsule_231x87.jpg?t=1790785089",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/457140/library_600x900_2x.jpg?t=1790785089",
@@ -3697,8 +3697,8 @@
    "playtime_min": 4,
    "ach_done": 1,
    "ach_total": 20,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/997010/c4fae841f9d6551766104dacdb661f1e17801f1d/capsule_231x87.jpg?t=1789143123",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/997010/library_600x900.jpg?t=1789143123",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/997010/c4fae841f9d6551766104dacdb661f1e17801f1d/capsule_231x87.jpg?t=1794473166",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/997010/library_600x900.jpg?t=1794473166",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/997010/c70e222d018ee6aa2571d1c41b7c928f20dfc00f.jpg"
   },
   {
@@ -4017,8 +4017,8 @@
    "playtime_min": 66,
    "ach_done": 8,
    "ach_total": 50,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3812600/fcf913006c05b4afafbfd25388bf4e3fe8bb1f04/capsule_231x87.jpg?t=1793881659",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3812600/e5b5c644ea016beccffb56e76cf61ca78b552a14/library_capsule_2x.jpg?t=1793881659",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3812600/fcf913006c05b4afafbfd25388bf4e3fe8bb1f04/capsule_231x87.jpg?t=1794469143",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3812600/e5b5c644ea016beccffb56e76cf61ca78b552a14/library_capsule_2x.jpg?t=1794469143",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/3812600/223fc3dfb2c254906f0d311e682cbcaedab4f181.jpg"
   },
   {
@@ -4114,7 +4114,7 @@
   {
    "appid": 252950,
    "name": "Rocket League",
-   "playtime_min": 55429,
+   "playtime_min": 55530,
    "ach_done": 88,
    "ach_total": 88,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252950/cb96e5338e74348cfc4640bc56f7bce313fcf7c3/capsule_231x87_alt_assets_17.jpg?t=1791210513",
@@ -4684,8 +4684,8 @@
   {
    "appid": 1972820,
    "name": "Suicide Guy Deluxe Plus",
-   "playtime_min": 132,
-   "ach_done": 18,
+   "playtime_min": 206,
+   "ach_done": 24,
    "ach_total": 32,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1972820/capsule_231x87.jpg?t=1793784833",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1972820/library_600x900_2x.jpg?t=1793784833",
@@ -4917,8 +4917,8 @@
    "playtime_min": 53,
    "ach_done": 2,
    "ach_total": 50,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2073850/f68c29ce93dd6eedf9d3c71c26a122e87a1c14c3/capsule_231x87.jpg?t=1792501373",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2073850/bde08dae07fcb40376bd6c8bf8c17887e91f0072/library_capsule_2x.jpg?t=1792501373",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2073850/f68c29ce93dd6eedf9d3c71c26a122e87a1c14c3/capsule_231x87.jpg?t=1794480042",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2073850/bde08dae07fcb40376bd6c8bf8c17887e91f0072/library_capsule_2x.jpg?t=1794480042",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/2073850/9532db560dca3b4982f4af3f5981b6b2ce2a6909.jpg"
   },
   {
@@ -5744,8 +5744,8 @@
   {
    "appid": 334940,
    "name": "Yoku's Island Express",
-   "playtime_min": 15,
-   "ach_done": 2,
+   "playtime_min": 83,
+   "ach_done": 7,
    "ach_total": 31,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/334940/capsule_231x87.jpg?t=1763040310",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/334940/library_600x900_2x.jpg?t=1763040310",
