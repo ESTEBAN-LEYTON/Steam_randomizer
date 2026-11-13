@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-12T17:12:23+00:00",
+ "generated_at": "2026-11-13T13:44:31+00:00",
  "games": [
   {
    "appid": 251570,
@@ -397,8 +397,8 @@
    "playtime_min": 155,
    "ach_done": 3,
    "ach_total": 60,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/475550/capsule_231x87_spanish.jpg?t=1794399353",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/475550/library_600x900_2x.jpg?t=1794399353",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/475550/capsule_231x87_spanish.jpg?t=1794572346",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/475550/library_600x900_2x.jpg?t=1794572346",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/475550/1025e7d1606b1e7a7f17048532039d78241e9f5d.jpg"
   },
   {
@@ -726,7 +726,7 @@
    "name": "Clone Drone in the Danger Zone",
    "playtime_min": 165,
    "ach_done": 2,
-   "ach_total": 69,
+   "ach_total": 72,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/597170/capsule_231x87.jpg?t=1784069375",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/597170/library_600x900_2x.jpg?t=1784069375",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/597170/2c09e97d9c2ded6c73d3502ef2121bfdcb5aee61.jpg"
@@ -1357,8 +1357,8 @@
    "playtime_min": 16,
    "ach_done": 0,
    "ach_total": 0,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/975370/850c2065e11af335a579e58febcda189ea13b489/capsule_231x87.jpg?t=1788524920",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/975370/ba2d017bd5738ff58b3d4f04fc64669bc529c95d/library_capsule_2x.jpg?t=1788524920",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/975370/850c2065e11af335a579e58febcda189ea13b489/capsule_231x87.jpg?t=1794518963",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/975370/ba2d017bd5738ff58b3d4f04fc64669bc529c95d/library_capsule_2x.jpg?t=1794518963",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/975370/f2590e71d4b5c48c200ecc4d8b6e0eddb60eff20.jpg"
   },
   {
@@ -2797,8 +2797,8 @@
    "playtime_min": 541,
    "ach_done": 5,
    "ach_total": 49,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/e7870f67a65dd3e9a9d04021260e62bf2a637e33/capsule_231x87.jpg?t=1794453707",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/846b1e4bc5e334b691bbe0b19fbbb6b074d5d89f/library_capsule_2x.jpg?t=1794453707",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/2a0e98c63e8d5b3ae8a7b7aee57cad4c1d2e6b4c/capsule_231x87.jpg?t=1794561883",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/cd27144f2f595b564be1a71863a51a603504e1ef/library_capsule_2x.jpg?t=1794561883",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/2767030/839b4712925b95702ca56e0c4d399adf54f4d617.jpg"
   },
   {
@@ -4684,8 +4684,8 @@
   {
    "appid": 1972820,
    "name": "Suicide Guy Deluxe Plus",
-   "playtime_min": 206,
-   "ach_done": 24,
+   "playtime_min": 285,
+   "ach_done": 32,
    "ach_total": 32,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1972820/capsule_231x87.jpg?t=1793784833",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1972820/library_600x900_2x.jpg?t=1793784833",
@@ -5487,8 +5487,8 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 36,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1361210/611c940039ef84ed8f18410b3fba99171ea0ce66/capsule_231x87.jpg?t=1790691939",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1361210/9bfbd134692bd2caa8a28847f48f1a80c9408148/library_capsule_2x.jpg?t=1790691939",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1361210/611c940039ef84ed8f18410b3fba99171ea0ce66/capsule_231x87.jpg?t=1794566003",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1361210/9bfbd134692bd2caa8a28847f48f1a80c9408148/library_capsule_2x.jpg?t=1794566003",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1361210/c4e0990ff034cf6c48fb96649229e6362b866629.jpg"
   },
   {
