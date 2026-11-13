@@ -1,8 +1,8 @@
 {
-  "name": "Backlog de Steam",
+  "name": "Steam Backlog",
   "short_name": "Backlog",
-  "description": "Controla tu backlog de juegos de Steam.",
-  "lang": "es",
+  "description": "Keep track of your Steam game backlog.",
+  "lang": "en",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",

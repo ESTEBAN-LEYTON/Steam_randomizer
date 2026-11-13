@@ -17,6 +17,7 @@
   --pend: #3b82f6;
   --inf: #9b6bf2;
   --plat: #e5a020;
+  --done: #1f9d6b;
   --danger: #d64545;
   --shadow: 0 10px 30px rgb(20 20 30 / .07);
   --mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
@@ -37,6 +38,7 @@
     --pend: #6aa3ff;
     --inf: #b394ff;
     --plat: #f2b648;
+    --done: #3ccf8e;
     --shadow: 0 10px 30px rgb(0 0 0 / .35);
     color-scheme: dark;
   }
@@ -71,7 +73,7 @@ h1 {
   margin: 18px 0 2px;
 }
 h1 b { font-weight: 700; }
-#updated.offline::after { content: " · sin conexión"; color: var(--plat); }
+#updated.offline::after { content: " · offline"; color: var(--plat); }
 
 /* ---------- Tarjetas ---------- */
 .card {

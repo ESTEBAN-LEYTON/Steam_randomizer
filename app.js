@@ -11,10 +11,12 @@ const NONE = "none";
 
 // Las tres carpetas principales: siempre existen y siempre cuentan en el reparto.
 const MAIN = [
-  { id: "pend", nombre: "Pendientes", color: "var(--pend)" },
-  { id: "inf", nombre: "Infinitos", color: "var(--inf)" },
-  { id: "plat", nombre: "Por platinar", color: "var(--plat)" },
+  { id: "pend", nombre: "Backlog", color: "var(--pend)" },
+  { id: "inf", nombre: "Endless", color: "var(--inf)" },
+  { id: "plat", nombre: "To platinum", color: "var(--plat)" },
 ];
+// Carpeta fija de juegos con el 100 % de los logros (no cuenta en el reparto).
+const DONE = { id: "done", nombre: "Platinum", color: "var(--done)" };
 const EXTRA_COLORS = ["#1aa39a", "#d4507a", "#6c8a1f", "#b5653a", "#4a6fd1", "#9a6b2e", "#7c5cbf", "#2b8a57"];
 
 const DEFAULT_CONFIG = { horas_pendiente: 2, carpetas: [], asignaciones: {} };
@@ -33,13 +35,16 @@ const state = {
 // ---------- Carpetas ----------
 function folders() {
   const extra = state.config.carpetas.map((c, i) => ({ ...c, color: EXTRA_COLORS[i % EXTRA_COLORS.length] }));
-  return [...MAIN.map((m) => ({ ...m, reparto: true, main: true })), ...extra];
+  return [...MAIN.map((m) => ({ ...m, reparto: true, main: true })), { ...DONE, reparto: false, main: true }, ...extra];
 }
 function folderById(id) {
   return folders().find((f) => f.id === id);
 }
 
+const isComplete = (g) => g.ach_total > 0 && g.ach_done >= g.ach_total;
+
 function autoFolder(g) {
+  if (isComplete(g)) return DONE.id;
   const limit = Number(state.config.horas_pendiente) * 60;
   if (limit > 0 && g.playtime_min < limit) return "pend";
   if (g.ach_total > 0 && g.ach_done < g.ach_total) return "plat";
@@ -47,9 +52,11 @@ function autoFolder(g) {
 }
 
 // Carpeta final de un juego: la elegida a mano o, si no hay, la automática.
+// Un juego con todos los logros pasa solo a Platinum aunque estuviera en una carpeta principal.
 function folderOf(g) {
   const manual = state.config.asignaciones[g.appid];
   if (manual === NONE) return NONE;
+  if (isComplete(g) && (!manual || MAIN.some((m) => m.id === manual))) return DONE.id;
   if (manual && folderById(manual)) return manual;
   return autoFolder(g);
 }
@@ -142,7 +149,7 @@ function el(tag, props = {}, ...children) {
   node.append(...children.filter((c) => c != null));
   return node;
 }
-const fmtPct = (n) => `${n.toLocaleString("es", { maximumFractionDigits: 1 })} %`;
+const fmtPct = (n) => `${n.toLocaleString("en", { maximumFractionDigits: 1 })}%`;
 
 // ---------- Render: contadores y reparto ----------
 function counts() {
@@ -181,10 +188,10 @@ function renderCounters() {
   const extras = folders().filter((f) => !f.reparto);
   $("extra").replaceChildren(
     ...extras.map((f) => chip(f.nombre, c[f.id], f.color)),
-    chip("Sin carpeta", c[NONE], "var(--muted)")
+    chip("Unsorted", c[NONE], "var(--muted)")
   );
   $("others").textContent = state.games.length
-    ? `${total} juegos cuentan en el reparto, de ${state.games.length} en tu biblioteca.`
+    ? `${total} games count toward the split, out of ${state.games.length} in your library.`
     : "";
   renderAllocation(included, values);
 }
@@ -213,14 +220,14 @@ function renderAllocation(included, values) {
   const sum = values.reduce((a, b) => a + b, 0);
   $("alloc-note").textContent =
     wanted > sum
-      ? `Solo tienes ${sum} juegos en estas carpetas, así que el reparto se limita a ${sum}.`
-      : "Reparto proporcional con el método del mayor residuo.";
+      ? `You only have ${sum} games in these folders, so the split is capped at ${sum}.`
+      : "Proportional split using the largest remainder method.";
 }
 
 // ---------- Render: pestañas y lista ----------
 function renderTabs() {
   const c = counts();
-  const tabs = [...folders().map((f) => ({ id: f.id, nombre: f.nombre })), { id: NONE, nombre: "Sin carpeta" }, { id: "all", nombre: "Todos" }];
+  const tabs = [...folders().map((f) => ({ id: f.id, nombre: f.nombre })), { id: NONE, nombre: "Unsorted" }, { id: "all", nombre: "All" }];
   if (!tabs.some((t) => t.id === state.filter)) state.filter = "pend";
   $("tabs").replaceChildren(
     ...tabs.map((t) => {
@@ -239,7 +246,7 @@ function renderTabs() {
 
 function hours(min) {
   const h = min / 60;
-  return h < 10 ? h.toLocaleString("es", { maximumFractionDigits: 1 }) : Math.round(h).toString();
+  return h < 10 ? h.toLocaleString("en", { maximumFractionDigits: 1 }) : Math.round(h).toString();
 }
 
 const STEAM_CDN = "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/";
@@ -306,11 +313,11 @@ function thumb(g) {
 function folderSelect(g) {
   const manual = state.config.asignaciones[g.appid];
   const auto = autoFolder(g);
-  const autoName = auto === NONE ? "Sin carpeta" : folderById(auto).nombre;
-  const sel = el("select", { className: "folder-sel" + (manual ? " manual" : ""), "aria-label": `Carpeta de ${g.name}` },
+  const autoName = auto === NONE ? "Unsorted" : folderById(auto).nombre;
+  const sel = el("select", { className: "folder-sel" + (manual ? " manual" : ""), "aria-label": `Folder for ${g.name}` },
     el("option", { value: "" }, `Auto: ${autoName}`),
     ...folders().map((f) => el("option", { value: f.id }, f.nombre)),
-    el("option", { value: NONE }, "Sin carpeta"));
+    el("option", { value: NONE }, "Unsorted"));
   sel.value = manual && (manual === NONE || folderById(manual)) ? manual : "";
   sel.addEventListener("change", () => {
     if (sel.value) state.config.asignaciones[g.appid] = sel.value;
@@ -323,15 +330,15 @@ function folderSelect(g) {
 
 // Juegos de la pestaña actual que coinciden con la búsqueda.
 function filteredGames() {
-  const q = state.query.trim().toLocaleLowerCase("es");
+  const q = state.query.trim().toLocaleLowerCase();
   return state.games.filter((g) => {
     if (state.filter !== "all" && folderOf(g) !== state.filter) return false;
-    return !q || g.name.toLocaleLowerCase("es").includes(q);
+    return !q || g.name.toLocaleLowerCase().includes(q);
   });
 }
 
 function achText(g) {
-  return g.ach_total ? `${g.ach_done}/${g.ach_total} logros` : "sin logros";
+  return g.ach_total ? `${g.ach_done}/${g.ach_total} achievements` : "no achievements";
 }
 
 function renderList() {
@@ -341,7 +348,7 @@ function renderList() {
   list.className = grid ? "list grid" : "list";
   list.replaceChildren();
   if (!items.length) {
-    list.append(el("li", { className: "empty" }, state.games.length ? "No hay juegos aquí." : "Sin datos todavía."));
+    list.append(el("li", { className: "empty" }, state.games.length ? "No games here." : "No data yet."));
   }
   for (const g of items.slice(0, state.shown)) {
     const f = folderById(folderOf(g));
@@ -349,7 +356,7 @@ function renderList() {
     if (grid) {
       const pct = g.ach_total ? Math.floor((g.ach_done / g.ach_total) * 100) : null;
       const c = cover(g);
-      if (pct !== null) c.append(el("span", { className: "badge" + (pct === 100 ? " full" : "") }, `${pct} %`));
+      if (pct !== null) c.append(el("span", { className: "badge" + (pct === 100 ? " full" : "") }, `${pct}%`));
       list.append(
         el("li", { className: "tile", style: { "--c": color }, title: `${g.name} · ${hours(g.playtime_min)} h · ${achText(g)}` },
           c,
@@ -370,7 +377,7 @@ function renderList() {
   }
   const rest = items.length - state.shown;
   $("more").hidden = rest <= 0;
-  $("more").textContent = `Mostrar más (${rest} restantes)`;
+  $("more").textContent = `Show more (${rest} left)`;
   $("snapshot").disabled = !items.length;
 }
 
@@ -386,7 +393,7 @@ function setCollapsed(collapsed) {
   $("games-body").hidden = collapsed;
   $("collapse").setAttribute("aria-expanded", String(!collapsed));
   $("collapse").textContent = collapsed ? "▾" : "▴";
-  $("collapse").title = collapsed ? "Mostrar lista" : "Comprimir lista";
+  $("collapse").title = collapsed ? "Expand list" : "Collapse list";
   $("games-card").classList.toggle("collapsed", collapsed);
   lsSet(LS_COLLAPSED, collapsed ? "1" : "");
 }
@@ -481,6 +488,89 @@ function drawTile(ctx, g, res, x, y, w, h) {
     wrapText(ctx, g.name, w * 0.86, 4).forEach((l, i) => ctx.fillText(l, x + w / 2, textTop + i * size * 1.2));
   }
   ctx.restore();
+  if (g.ach_total) drawAchBadge(ctx, g, x, y, w, h);
+}
+
+// Insignia de logros: trofeo dorado si está al 100 %; si no, porcentaje y relación (p. ej. 40/46).
+function drawAchBadge(ctx, g, x, y, w, h) {
+  const font = (size, weight = 700) => `${weight} ${size}px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif`;
+  const m = w * 0.05;
+  ctx.save();
+  if (isComplete(g)) {
+    const r = w * 0.15;
+    const cx = x + w - m - r, cy = y + h - m - r;
+    ctx.shadowColor = "rgba(0,0,0,.45)";
+    ctx.shadowBlur = w * 0.04;
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, 0, Math.PI * 2);
+    ctx.fillStyle = "#f2b648";
+    ctx.fill();
+    ctx.shadowColor = "transparent";
+    ctx.lineWidth = w * 0.012;
+    ctx.strokeStyle = "rgba(255,255,255,.85)";
+    ctx.stroke();
+    drawTrophy(ctx, cx, cy - r * 0.18, r * 0.95, "#1b1b1f");
+    ctx.fillStyle = "#1b1b1f";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.font = font(Math.round(r * 0.42), 800);
+    ctx.fillText("100%", cx, cy + r * 0.52);
+  } else {
+    const pct = Math.floor((g.ach_done / g.ach_total) * 100);
+    const big = Math.round(w * 0.11), small = Math.round(w * 0.075);
+    const line1 = `${pct}%`, line2 = `${g.ach_done}/${g.ach_total}`;
+    ctx.font = font(big, 800);
+    const w1 = ctx.measureText(line1).width;
+    ctx.font = font(small, 600);
+    const w2 = ctx.measureText(line2).width;
+    const bw = Math.max(w1, w2) + w * 0.1, bh = big + small + w * 0.09;
+    const bx = x + w - m - bw, by = y + h - m - bh;
+    roundRectPath(ctx, bx, by, bw, bh, w * 0.05);
+    ctx.fillStyle = "rgba(14,20,27,.82)";
+    ctx.fill();
+    // Barra de progreso
+    const pw = bw - w * 0.1, px = bx + w * 0.05, py = by + bh - w * 0.04;
+    ctx.fillStyle = "rgba(255,255,255,.2)";
+    ctx.fillRect(px, py, pw, w * 0.012);
+    ctx.fillStyle = "#f2b648";
+    ctx.fillRect(px, py, pw * (pct / 100), w * 0.012);
+    ctx.textAlign = "center";
+    ctx.textBaseline = "top";
+    ctx.fillStyle = "#ffffff";
+    ctx.font = font(big, 800);
+    ctx.fillText(line1, bx + bw / 2, by + w * 0.025);
+    ctx.fillStyle = "#c7d0da";
+    ctx.font = font(small, 600);
+    ctx.fillText(line2, bx + bw / 2, by + w * 0.025 + big * 1.05);
+  }
+  ctx.restore();
+}
+
+// Trofeo sencillo centrado en (cx, cy) con alto aproximado `s`.
+function drawTrophy(ctx, cx, cy, s, color) {
+  const u = s / 2;
+  ctx.save();
+  ctx.fillStyle = color;
+  ctx.strokeStyle = color;
+  ctx.lineWidth = u * 0.13;
+  // Copa
+  ctx.beginPath();
+  ctx.moveTo(cx - u * 0.42, cy - u * 0.5);
+  ctx.lineTo(cx + u * 0.42, cy - u * 0.5);
+  ctx.quadraticCurveTo(cx + u * 0.42, cy + u * 0.15, cx, cy + u * 0.2);
+  ctx.quadraticCurveTo(cx - u * 0.42, cy + u * 0.15, cx - u * 0.42, cy - u * 0.5);
+  ctx.fill();
+  // Asas
+  ctx.beginPath();
+  ctx.arc(cx - u * 0.42, cy - u * 0.25, u * 0.2, Math.PI * 0.5, Math.PI * 1.5);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(cx + u * 0.42, cy - u * 0.25, u * 0.2, -Math.PI * 0.5, Math.PI * 0.5);
+  ctx.stroke();
+  // Pie
+  ctx.fillRect(cx - u * 0.07, cy + u * 0.18, u * 0.14, u * 0.18);
+  ctx.fillRect(cx - u * 0.26, cy + u * 0.34, u * 0.52, u * 0.1);
+  ctx.restore();
 }
 
 async function downloadSnapshot() {
@@ -502,8 +592,8 @@ async function downloadSnapshot() {
     const W = cols * w + (cols - 1) * gap + 2 * pad;
     const H = head + rows * h + (rows - 1) * gap + 2 * pad;
 
-    const bitmaps = await mapPool(items, 8, coverBitmap, (d) => { btn.textContent = `Cargando ${d}/${n}…`; });
-    btn.textContent = "Generando…";
+    const bitmaps = await mapPool(items, 8, coverBitmap, (d) => { btn.textContent = `Loading ${d}/${n}…`; });
+    btn.textContent = "Generating…";
 
     const canvas = el("canvas", { width: W, height: H });
     const ctx = canvas.getContext("2d");
@@ -513,8 +603,8 @@ async function downloadSnapshot() {
     ctx.fillStyle = bg;
     ctx.fillRect(0, 0, W, H);
 
-    const tabName = state.filter === "all" ? "Todos" : state.filter === NONE ? "Sin carpeta" : folderById(state.filter)?.nombre ?? "";
-    const title = state.query.trim() ? `${tabName} · «${state.query.trim()}»` : tabName;
+    const tabName = state.filter === "all" ? "All" : state.filter === NONE ? "Unsorted" : folderById(state.filter)?.nombre ?? "";
+    const title = state.query.trim() ? `${tabName} · "${state.query.trim()}"` : tabName;
     const font = (size, weight) => `${weight} ${size}px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif`;
     ctx.textBaseline = "alphabetic";
     ctx.textAlign = "left";
@@ -525,8 +615,8 @@ async function downloadSnapshot() {
     ctx.fillStyle = "#8f98a0";
     const sSize = Math.round(w * 0.12);
     ctx.font = font(sSize, 500);
-    const date = new Date().toLocaleDateString("es", { dateStyle: "medium" });
-    ctx.fillText(`${n} ${n === 1 ? "juego" : "juegos"} · ${date}`, pad, pad + tSize + sSize * 1.5);
+    const date = new Date().toLocaleDateString("en", { dateStyle: "medium" });
+    ctx.fillText(`${n} ${n === 1 ? "game" : "games"} · ${date}`, pad, pad + tSize + sSize * 1.5);
 
     items.forEach((g, i) => {
       const x = pad + (i % cols) * (w + gap);
@@ -537,14 +627,14 @@ async function downloadSnapshot() {
 
     const blob = await new Promise((ok) => canvas.toBlob(ok, "image/jpeg", 0.9));
     if (!blob) throw new Error("toBlob");
-    const slug = title.normalize("NFD").replace(/[^\w]+/g, "-").replace(/^-|-$/g, "").toLowerCase() || "juegos";
+    const slug = title.normalize("NFD").replace(/[^\w]+/g, "-").replace(/^-|-$/g, "").toLowerCase() || "games";
     const a = el("a", { href: URL.createObjectURL(blob), download: `backlog-${slug}.jpg` });
     document.body.append(a);
     a.click();
     a.remove();
     setTimeout(() => URL.revokeObjectURL(a.href), 5000);
   } catch (e) {
-    alert("No se pudo generar la imagen. Revisa la conexión e inténtalo de nuevo.");
+    alert("Couldn't generate the image. Check your connection and try again.");
   } finally {
     btn.textContent = label;
     btn.disabled = false;
@@ -555,12 +645,12 @@ async function downloadSnapshot() {
 function renderFolders() {
   const c = counts();
   $("folders").replaceChildren(
-    ...MAIN.map((m) =>
+    ...[...MAIN, DONE].map((m) =>
       el("li", { style: { "--c": m.color } }, el("i"), el("span", { className: "fname" }, m.nombre),
-        el("span", { className: "muted small" }, `${c[m.id]} · principal`))),
+        el("span", { className: "muted small" }, `${c[m.id]} · ${m === DONE ? "automatic" : "main"}`))),
     ...state.config.carpetas.map((f, idx) => {
       const color = EXTRA_COLORS[idx % EXTRA_COLORS.length];
-      const name = el("input", { type: "text", value: f.nombre, maxLength: 40, className: "fname-input", "aria-label": "Nombre" });
+      const name = el("input", { type: "text", value: f.nombre, maxLength: 40, className: "fname-input", "aria-label": "Name" });
       name.addEventListener("change", () => {
         const v = name.value.trim();
         if (!v) { name.value = f.nombre; return; }
@@ -570,16 +660,16 @@ function renderFolders() {
       });
       const rep = el("input", { type: "checkbox", checked: !!f.reparto });
       rep.addEventListener("change", () => { f.reparto = rep.checked; saveConfig(); refresh(); });
-      const del = el("button", { type: "button", className: "icon-btn", title: "Borrar carpeta" }, "✕");
+      const del = el("button", { type: "button", className: "icon-btn", title: "Delete folder" }, "✕");
       del.addEventListener("click", () => {
-        if (!confirm(`¿Borrar «${f.nombre}»? Sus ${c[f.id]} juegos vuelven a la clasificación automática.`)) return;
+        if (!confirm(`Delete "${f.nombre}"? Its ${c[f.id]} games go back to automatic sorting.`)) return;
         state.config.carpetas = state.config.carpetas.filter((x) => x.id !== f.id);
         for (const [k, v] of Object.entries(state.config.asignaciones)) if (v === f.id) delete state.config.asignaciones[k];
         saveConfig();
         refresh();
       });
       return el("li", { style: { "--c": color } }, el("i"), name,
-        el("label", { className: "rep" }, rep, "Reparto"),
+        el("label", { className: "rep" }, rep, "Split"),
         el("span", { className: "muted small count" }, String(c[f.id])), del);
     })
   );
@@ -609,13 +699,13 @@ function generate() {
   const count = parseInt($("r-count").value, 10);
   const unique = $("r-unique").checked;
   const fail = (msg) => { out.textContent = msg; out.classList.add("err"); };
-  if (![min, max, count].every(Number.isFinite)) return fail("Completa los tres campos.");
+  if (![min, max, count].every(Number.isFinite)) return fail("Fill in all three fields.");
   if (min > max) [min, max] = [max, min];
-  if (count < 1) return fail("La cantidad debe ser al menos 1.");
+  if (count < 1) return fail("Count must be at least 1.");
   const size = max - min + 1;
-  if (size > 0xffffffff) return fail("El rango es demasiado grande.");
-  if (count > 10000) return fail("Máximo 10 000 números.");
-  if (unique && count > size) return fail(`Sin repetir solo hay ${size} números posibles entre ${min} y ${max}.`);
+  if (size > 0xffffffff) return fail("The range is too large.");
+  if (count > 10000) return fail("Maximum 10,000 numbers.");
+  if (unique && count > size) return fail(`Without repeats there are only ${size} possible numbers between ${min} and ${max}.`);
 
   let nums;
   if (unique) {
@@ -675,7 +765,7 @@ function bindEvents() {
     setTimeout(() => URL.revokeObjectURL(a.href), 1000);
   });
   $("reset").addEventListener("click", () => {
-    if (!confirm("¿Descartar los cambios de este navegador y usar config.json?")) return;
+    if (!confirm("Discard this browser's changes and use config.json?")) return;
     lsDel(LS_CONFIG);
     state.config = structuredClone(state.fileConfig);
     refresh();
@@ -716,10 +806,10 @@ async function init() {
     state.games = data.value.games || [];
     const when = data.value.generated_at ? new Date(data.value.generated_at) : null;
     $("updated").textContent = when
-      ? `Actualizado: ${when.toLocaleString("es", { dateStyle: "medium", timeStyle: "short" })}`
-      : "Aún no hay datos: ejecuta el GitHub Action.";
+      ? `Updated: ${when.toLocaleString("en", { dateStyle: "medium", timeStyle: "short" })}`
+      : "No data yet: run the GitHub Action.";
   } else {
-    $("updated").textContent = "No se pudo cargar data.json.";
+    $("updated").textContent = "Couldn't load data.json.";
   }
   refresh();
 }
