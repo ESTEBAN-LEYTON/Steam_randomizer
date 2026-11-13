@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T13:44:31+00:00",
+ "generated_at": "2026-11-13T16:49:33+00:00",
  "games": [
   {
    "appid": 251570,
@@ -4456,9 +4456,9 @@
    "name": "SOS OPS!",
    "playtime_min": 65,
    "ach_done": 1,
-   "ach_total": 38,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475460/5344dee4abc51a44a5ff48fe7e4508187f885f6f/capsule_231x87.jpg?t=1794321859",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475460/796a5700f792bdd4d3d011cb93ab32e4b76381d5/library_capsule_2x.jpg?t=1794321859",
+   "ach_total": 49,
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475460/34e2e0bf44a3ccf362a4f05b7f85d607cc845b30/capsule_231x87.jpg?t=1794582873",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475460/79817c7c4ea00409a97efefbae54f8b0041ea096/library_capsule_2x.jpg?t=1794582873",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/2475460/fedae233db87adc274b6493356fe0bbe88ed0a7f.jpg"
   },
   {
