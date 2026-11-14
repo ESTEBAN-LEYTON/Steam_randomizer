@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T16:49:33+00:00",
+ "generated_at": "2026-11-14T15:24:33+00:00",
  "games": [
   {
    "appid": 251570,
@@ -327,8 +327,8 @@
    "playtime_min": 739,
    "ach_done": 25,
    "ach_total": 47,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/35140/capsule_231x87.jpg?t=1745966724",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/35140/library_600x900_2x.jpg?t=1745966724",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/35140/capsule_231x87.jpg?t=1794604349",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/35140/library_600x900_2x.jpg?t=1794604349",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/35140/e52f91ecb0d3f20263e96fe188de1bcc8c91643e.jpg"
   },
   {
@@ -337,8 +337,8 @@
    "playtime_min": 634,
    "ach_done": 16,
    "ach_total": 64,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/200260/capsule_231x87.jpg?t=1745964057",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/200260/library_600x900_2x.jpg?t=1745964057",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/200260/capsule_231x87.jpg?t=1794604828",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/200260/library_600x900_2x.jpg?t=1794604828",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/200260/746ecf3ce44b2525eb7ad643e76a3b60913d2662.jpg"
   },
   {
@@ -347,8 +347,8 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 113,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/208650/capsule_231x87.jpg?t=1745534372",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/208650/library_600x900_2x.jpg?t=1745534372",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/208650/capsule_231x87.jpg?t=1794605442",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/208650/library_600x900_2x.jpg?t=1794605442",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/208650/f6c2ce13796844750dfbd01685fb009eeac4bf70.jpg"
   },
   {
@@ -1877,8 +1877,8 @@
    "playtime_min": 1701,
    "ach_done": 10,
    "ach_total": 46,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/571740/capsule_231x87.jpg?t=1790080653",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/571740/library_600x900_2x.jpg?t=1790080653",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/571740/c297e0a1b7cc4b73ff2c3ab28d569465faa09ac9/capsule_231x87.jpg?t=1794616579",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/571740/cc81d25f23128c71c315b5f066739aa53bf1619d/library_capsule_2x.jpg?t=1794616579",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/571740/70b58cf94333587a69cf93c7e4a4241500928251.jpg"
   },
   {
@@ -2627,8 +2627,8 @@
    "playtime_min": 2406,
    "ach_done": 48,
    "ach_total": 48,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/214510/capsule_231x87.jpg?t=1780599831",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/214510/library_600x900_2x.jpg?t=1780599831",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/214510/capsule_231x87.jpg?t=1794606993",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/214510/library_600x900_2x.jpg?t=1794606993",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/214510/aa7d4b19990dfe8e29de2bb90be5fcef58a78a89.jpg"
   },
   {
@@ -3007,8 +3007,8 @@
    "playtime_min": 3031,
    "ach_done": 74,
    "ach_total": 74,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/241930/capsule_231x87_spanish.jpg?t=1780594906",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/241930/library_600x900_2x.jpg?t=1780594906",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/241930/capsule_231x87_spanish.jpg?t=1794606033",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/241930/library_600x900_2x.jpg?t=1794606033",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/241930/161afab3c9f725f593635723cc64a7fbeb324ead.jpg"
   },
   {
