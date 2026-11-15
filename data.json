@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T15:24:33+00:00",
+ "generated_at": "2026-11-15T15:56:59+00:00",
  "games": [
   {
    "appid": 251570,
@@ -5477,7 +5477,7 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 21,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2005010/4db98948a8b46ec034eb1352fb5a37ccf49e840e/capsule_231x87_alt_assets_3.jpg?t=1791993717",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2005010/9cce468c98e63b89809f45130d89ddd788cad48b/capsule_231x87.jpg?t=1791993717",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2005010/library_600x900_2x.jpg?t=1791993717",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/2005010/2ffcd2f993a8dac66c8523fb579234ffa2c83bdf.jpg"
   },
