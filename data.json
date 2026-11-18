@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-17T17:57:55+00:00",
+ "generated_at": "2026-11-18T17:40:05+00:00",
  "games": [
   {
    "appid": 251570,
@@ -167,8 +167,8 @@
    "playtime_min": 10853,
    "ach_done": 12,
    "ach_total": 12,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/0f7e056bbc3fb645cfd812a0154ebf3d53ef47f1/capsule_231x87_alt_assets_7.jpg?t=1794339458",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/b727d513ccbd272e35095089837d386176c59a97/library_capsule_2x.jpg?t=1794339458",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/0f7e056bbc3fb645cfd812a0154ebf3d53ef47f1/capsule_231x87_alt_assets_7.jpg?t=1794958367",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/b727d513ccbd272e35095089837d386176c59a97/library_capsule_2x.jpg?t=1794958367",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1172470/8986dd626da56db5f3fe09bc1b8871739de8b00d.jpg"
   },
   {
@@ -2874,7 +2874,7 @@
   {
    "appid": 495050,
    "name": "Mega Man Legacy Collection 2",
-   "playtime_min": 1542,
+   "playtime_min": 1549,
    "ach_done": 4,
    "ach_total": 21,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/495050/capsule_231x87.jpg?t=1788394008",
@@ -3237,8 +3237,8 @@
    "playtime_min": 2771,
    "ach_done": 39,
    "ach_total": 39,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774171/capsule_231x87.jpg?t=1793183311",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774171/library_600x900_2x.jpg?t=1793183311",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774171/capsule_231x87.jpg?t=1794965579",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774171/library_600x900_2x.jpg?t=1794965579",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/774171/116c4098769bb51aed2d654f2943771b68c29afa.jpg"
   },
   {
@@ -3567,8 +3567,8 @@
    "playtime_min": 302,
    "ach_done": 19,
    "ach_total": 1342,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/218620/93da274741e6e69dc57ede857ab8979167d015ce/capsule_231x87.jpg?t=1794908368",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/218620/e7aba53917eb9c188f83f1df103bc96f657a4b53/library_capsule_2x.jpg?t=1794908368",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/218620/93da274741e6e69dc57ede857ab8979167d015ce/capsule_231x87.jpg?t=1795005310",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/218620/e7aba53917eb9c188f83f1df103bc96f657a4b53/library_capsule_2x.jpg?t=1795005310",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/218620/8fce45cbb0dee03e87cd30b96ac5e5c3d4b2c494.jpg"
   },
   {
@@ -3917,8 +3917,8 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 99,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088790/d40cdc97a60007b9a0a58b3cbd30eab9191f17a0/capsule_231x87.jpg?t=1793284228",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088790/e8b3cb8983c2694e00d08c3332f0b3064bafebdf/library_capsule_2x.jpg?t=1793284228",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088790/d40cdc97a60007b9a0a58b3cbd30eab9191f17a0/capsule_231x87.jpg?t=1794966067",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088790/e8b3cb8983c2694e00d08c3332f0b3064bafebdf/library_capsule_2x.jpg?t=1794966067",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1088790/7a4fe7587db367de75892a396f2f6937345016c9.jpg"
   },
   {
@@ -5487,8 +5487,8 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 36,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1361210/611c940039ef84ed8f18410b3fba99171ea0ce66/capsule_231x87.jpg?t=1794566003",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1361210/9bfbd134692bd2caa8a28847f48f1a80c9408148/library_capsule_2x.jpg?t=1794566003",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1361210/611c940039ef84ed8f18410b3fba99171ea0ce66/capsule_231x87.jpg?t=1794993230",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1361210/9bfbd134692bd2caa8a28847f48f1a80c9408148/library_capsule_2x.jpg?t=1794993230",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1361210/c4e0990ff034cf6c48fb96649229e6362b866629.jpg"
   },
   {
@@ -5744,8 +5744,8 @@
   {
    "appid": 334940,
    "name": "Yoku's Island Express",
-   "playtime_min": 157,
-   "ach_done": 10,
+   "playtime_min": 347,
+   "ach_done": 21,
    "ach_total": 31,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/334940/capsule_231x87.jpg?t=1763040310",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/334940/library_600x900_2x.jpg?t=1763040310",
