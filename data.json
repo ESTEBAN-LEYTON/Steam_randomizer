@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-18T17:40:05+00:00",
+ "generated_at": "2026-11-19T17:48:41+00:00",
  "games": [
   {
    "appid": 251570,
@@ -184,8 +184,8 @@
   {
    "appid": 468100,
    "name": "Aqua Moto Racing Utopia",
-   "playtime_min": 0,
-   "ach_done": 0,
+   "playtime_min": 7,
+   "ach_done": 1,
    "ach_total": 17,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/468100/capsule_231x87.jpg?t=1761935699",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/468100/library_600x900_2x.jpg?t=1761935699",
@@ -637,8 +637,8 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 43,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1422440/ce6bf5ba11052aacaa2cb7ff7bff32b9e8dc08f1/capsule_231x87.jpg?t=1793280633",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1422440/09beeef38b8b652efe596bcb8be2d4f01066ac3f/library_600x900_2x.jpg?t=1793280633",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1422440/ce6bf5ba11052aacaa2cb7ff7bff32b9e8dc08f1/capsule_231x87.jpg?t=1795107031",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1422440/09beeef38b8b652efe596bcb8be2d4f01066ac3f/library_600x900_2x.jpg?t=1795107031",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1422440/9da05eda6ab1949b2f96c9b106325826daf9b3dd.jpg"
   },
   {
@@ -977,8 +977,8 @@
    "playtime_min": 1039,
    "ach_done": 14,
    "ach_total": 311,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/capsule_231x87.jpg?t=1793724618",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/1b6ff94b7c05c205fbcbd2628f862a1469882f23/library_capsule_2x.jpg?t=1793724618",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/capsule_231x87.jpg?t=1795106282",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/1b6ff94b7c05c205fbcbd2628f862a1469882f23/library_capsule_2x.jpg?t=1795106282",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/381210/aa152097a700fd6f4707397ce41794ea30874790.jpg"
   },
   {
@@ -2177,8 +2177,8 @@
    "playtime_min": 649,
    "ach_done": 3,
    "ach_total": 96,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/613100/446e6c6faa35dd9303ae58753b532bdb4ff42960/capsule_231x87.jpg?t=1790844381",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/613100/e28856fc6bbdf3d8a4d612e8d3cb7a4c400c4220/library_600x900_2x.jpg?t=1790844381",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/613100/446e6c6faa35dd9303ae58753b532bdb4ff42960/capsule_231x87.jpg?t=1795087754",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/613100/e28856fc6bbdf3d8a4d612e8d3cb7a4c400c4220/library_600x900_2x.jpg?t=1795087754",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/613100/4ab6e7c49f3f0c063dfe08ab85038c979301f6dd.jpg"
   },
   {
@@ -2797,8 +2797,8 @@
    "playtime_min": 541,
    "ach_done": 5,
    "ach_total": 49,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/2a0e98c63e8d5b3ae8a7b7aee57cad4c1d2e6b4c/capsule_231x87.jpg?t=1794561883",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/cd27144f2f595b564be1a71863a51a603504e1ef/library_capsule_2x.jpg?t=1794561883",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/8567fef96992bf1907ca9388ea09692d033c4761/capsule_231x87.jpg?t=1795078806",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2767030/12be32a207a49ff59087a7d6a891f220a2be7e6f/library_capsule_2x.jpg?t=1795078806",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/2767030/839b4712925b95702ca56e0c4d399adf54f4d617.jpg"
   },
   {
@@ -3287,8 +3287,8 @@
    "playtime_min": 105,
    "ach_done": 4,
    "ach_total": 51,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1169040/2221d66e7576c197c3d360257d70614ccc2afb8e/capsule_231x87_alt_assets_5.jpg?t=1790679641",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1169040/f951103ede12401e1e1a1048d18113c68885bce6/library_capsule_2x.jpg?t=1790679641",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1169040/2221d66e7576c197c3d360257d70614ccc2afb8e/capsule_231x87_alt_assets_5.jpg?t=1795108247",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1169040/f951103ede12401e1e1a1048d18113c68885bce6/library_capsule_2x.jpg?t=1795108247",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1169040/b9e3becff5c706c4e57db3699ab7451cd178394e.jpg"
   },
   {
@@ -3917,8 +3917,8 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 99,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088790/d40cdc97a60007b9a0a58b3cbd30eab9191f17a0/capsule_231x87.jpg?t=1794966067",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088790/e8b3cb8983c2694e00d08c3332f0b3064bafebdf/library_capsule_2x.jpg?t=1794966067",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088790/d40cdc97a60007b9a0a58b3cbd30eab9191f17a0/capsule_231x87.jpg?t=1795106611",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088790/e8b3cb8983c2694e00d08c3332f0b3064bafebdf/library_capsule_2x.jpg?t=1795106611",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1088790/7a4fe7587db367de75892a396f2f6937345016c9.jpg"
   },
   {
@@ -4897,8 +4897,8 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 40,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1182310/capsule_231x87.jpg?t=1794387231",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1182310/library_600x900_2x.jpg?t=1794387231",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1182310/capsule_231x87.jpg?t=1795026392",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1182310/library_600x900_2x.jpg?t=1795026392",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1182310/fed0b439ff7890401dea818c551cb9fc0e0cb499.jpg"
   },
   {
@@ -5369,7 +5369,7 @@
    "ach_total": 20,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3224770/8ec1b9ecbdf9af10a1c21aaf1b2a2f3be58bf097/capsule_231x87.jpg?t=1773306345",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3224770/c4d6110ee1551cede1476acf5b973f50e9ebe3ad/library_capsule_2x.jpg?t=1773306345",
-   "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/3224770/ac7d50108c18915cfe5115ffbf483cd797324b6c.jpg"
+   "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/3224770/e6ef0ead88a3ef46988b7aa75e83a8c97c5e48d1.jpg"
   },
   {
    "appid": 1062110,
@@ -5554,8 +5554,8 @@
   {
    "appid": 1016790,
    "name": "West of Dead",
-   "playtime_min": 245,
-   "ach_done": 11,
+   "playtime_min": 356,
+   "ach_done": 15,
    "ach_total": 24,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1016790/capsule_231x87.jpg?t=1759231379",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1016790/library_600x900_2x.jpg?t=1759231379",
@@ -5744,8 +5744,8 @@
   {
    "appid": 334940,
    "name": "Yoku's Island Express",
-   "playtime_min": 347,
-   "ach_done": 21,
+   "playtime_min": 431,
+   "ach_done": 24,
    "ach_total": 31,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/334940/capsule_231x87.jpg?t=1763040310",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/334940/library_600x900_2x.jpg?t=1763040310",
