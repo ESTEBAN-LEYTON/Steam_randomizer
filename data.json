@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-19T17:48:41+00:00",
+ "generated_at": "2026-11-20T17:23:53+00:00",
  "games": [
   {
    "appid": 251570,
@@ -637,8 +637,8 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 43,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1422440/ce6bf5ba11052aacaa2cb7ff7bff32b9e8dc08f1/capsule_231x87.jpg?t=1795107031",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1422440/09beeef38b8b652efe596bcb8be2d4f01066ac3f/library_600x900_2x.jpg?t=1795107031",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1422440/ce6bf5ba11052aacaa2cb7ff7bff32b9e8dc08f1/capsule_231x87.jpg?t=1795189518",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1422440/09beeef38b8b652efe596bcb8be2d4f01066ac3f/library_600x900_2x.jpg?t=1795189518",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1422440/9da05eda6ab1949b2f96c9b106325826daf9b3dd.jpg"
   },
   {
@@ -977,8 +977,8 @@
    "playtime_min": 1039,
    "ach_done": 14,
    "ach_total": 311,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/capsule_231x87.jpg?t=1795106282",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/1b6ff94b7c05c205fbcbd2628f862a1469882f23/library_capsule_2x.jpg?t=1795106282",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/capsule_231x87.jpg?t=1795112227",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/1b6ff94b7c05c205fbcbd2628f862a1469882f23/library_capsule_2x.jpg?t=1795112227",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/381210/aa152097a700fd6f4707397ce41794ea30874790.jpg"
   },
   {
@@ -1134,7 +1134,7 @@
   {
    "appid": 1530160,
    "name": "Digimon World: Next Order",
-   "playtime_min": 6,
+   "playtime_min": 7,
    "ach_done": 0,
    "ach_total": 45,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1530160/capsule_231x87.jpg?t=1792446584",
@@ -2084,8 +2084,8 @@
   {
    "appid": 990080,
    "name": "Hogwarts Legacy",
-   "playtime_min": 0,
-   "ach_done": 0,
+   "playtime_min": 74,
+   "ach_done": 1,
    "ach_total": 45,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/4617336bf98ab04289173328838f18303673457f/capsule_231x87.jpg?t=1790708992",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/dca9bb926befe37ff9754e3336cd9fe4c969c1e9/library_capsule_2x.jpg?t=1790708992",
@@ -3104,7 +3104,7 @@
   {
    "appid": 1446780,
    "name": "MONSTER HUNTER RISE",
-   "playtime_min": 23256,
+   "playtime_min": 23291,
    "ach_done": 84,
    "ach_total": 100,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1446780/capsule_231x87.jpg?t=1792548454",
@@ -3517,8 +3517,8 @@
    "playtime_min": 68,
    "ach_done": 1,
    "ach_total": 51,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/457140/capsule_231x87.jpg?t=1790785089",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/457140/library_600x900_2x.jpg?t=1790785089",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/457140/capsule_231x87.jpg?t=1795119151",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/457140/library_600x900_2x.jpg?t=1795119151",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/457140/d37534163ebac8351e0bda0bf30f8f2174c921b6.jpg"
   },
   {
@@ -3834,7 +3834,7 @@
   {
    "appid": 394310,
    "name": "Punch Club",
-   "playtime_min": 141,
+   "playtime_min": 146,
    "ach_done": 13,
    "ach_total": 47,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/394310/capsule_231x87.jpg?t=1781529810",
@@ -3914,11 +3914,11 @@
   {
    "appid": 1088790,
    "name": "Rebel Inc: Escalation",
-   "playtime_min": 0,
-   "ach_done": 0,
+   "playtime_min": 41,
+   "ach_done": 5,
    "ach_total": 99,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088790/d40cdc97a60007b9a0a58b3cbd30eab9191f17a0/capsule_231x87.jpg?t=1795106611",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088790/e8b3cb8983c2694e00d08c3332f0b3064bafebdf/library_capsule_2x.jpg?t=1795106611",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088790/d40cdc97a60007b9a0a58b3cbd30eab9191f17a0/capsule_231x87.jpg?t=1795190077",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088790/e8b3cb8983c2694e00d08c3332f0b3064bafebdf/library_capsule_2x.jpg?t=1795190077",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1088790/7a4fe7587db367de75892a396f2f6937345016c9.jpg"
   },
   {
@@ -4114,7 +4114,7 @@
   {
    "appid": 252950,
    "name": "Rocket League",
-   "playtime_min": 55567,
+   "playtime_min": 55647,
    "ach_done": 88,
    "ach_total": 88,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252950/cb96e5338e74348cfc4640bc56f7bce313fcf7c3/capsule_231x87_alt_assets_17.jpg?t=1791210513",
@@ -4717,8 +4717,8 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 19,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1488200/capsule_231x87_spanish.jpg?t=1786749643",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1488200/library_600x900_spanish_2x.jpg?t=1786749643",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1488200/capsule_231x87_spanish.jpg?t=1795180616",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1488200/library_600x900_spanish_2x.jpg?t=1795180616",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1488200/35809511a6c2a0a36d8daec5436ea2864271094a.jpg"
   },
   {
@@ -5454,7 +5454,7 @@
   {
    "appid": 431960,
    "name": "Wallpaper Engine",
-   "playtime_min": 11994,
+   "playtime_min": 12033,
    "ach_done": 6,
    "ach_total": 17,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/431960/capsule_231x87.jpg?t=1779452230",
