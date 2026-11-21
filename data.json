@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-20T17:23:53+00:00",
+ "generated_at": "2026-11-21T16:28:47+00:00",
  "games": [
   {
    "appid": 251570,
@@ -1507,8 +1507,8 @@
    "playtime_min": 245,
    "ach_done": 7,
    "ach_total": 25,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1435790/45a7f618deb1486f4819e27d4b0d007fdcb5f4f3/capsule_231x87.jpg?t=1791969592",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1435790/library_600x900_2x.jpg?t=1791969592",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1435790/45a7f618deb1486f4819e27d4b0d007fdcb5f4f3/capsule_231x87.jpg?t=1795254692",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1435790/library_600x900_2x.jpg?t=1795254692",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1435790/6c294463e2be859160824246e2123a08afce83c4.jpg"
   },
   {
@@ -2085,7 +2085,7 @@
    "appid": 990080,
    "name": "Hogwarts Legacy",
    "playtime_min": 74,
-   "ach_done": 1,
+   "ach_done": 2,
    "ach_total": 45,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/4617336bf98ab04289173328838f18303673457f/capsule_231x87.jpg?t=1790708992",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/dca9bb926befe37ff9754e3336cd9fe4c969c1e9/library_capsule_2x.jpg?t=1790708992",
@@ -4114,7 +4114,7 @@
   {
    "appid": 252950,
    "name": "Rocket League",
-   "playtime_min": 55647,
+   "playtime_min": 55654,
    "ach_done": 88,
    "ach_total": 88,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252950/cb96e5338e74348cfc4640bc56f7bce313fcf7c3/capsule_231x87_alt_assets_17.jpg?t=1791210513",
@@ -5554,8 +5554,8 @@
   {
    "appid": 1016790,
    "name": "West of Dead",
-   "playtime_min": 356,
-   "ach_done": 15,
+   "playtime_min": 451,
+   "ach_done": 17,
    "ach_total": 24,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1016790/capsule_231x87.jpg?t=1759231379",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1016790/library_600x900_2x.jpg?t=1759231379",
