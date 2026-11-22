@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-21T16:28:47+00:00",
+ "generated_at": "2026-11-22T16:45:07+00:00",
  "games": [
   {
    "appid": 251570,
@@ -2084,7 +2084,7 @@
   {
    "appid": 990080,
    "name": "Hogwarts Legacy",
-   "playtime_min": 74,
+   "playtime_min": 113,
    "ach_done": 2,
    "ach_total": 45,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/4617336bf98ab04289173328838f18303673457f/capsule_231x87.jpg?t=1790708992",
@@ -5554,7 +5554,7 @@
   {
    "appid": 1016790,
    "name": "West of Dead",
-   "playtime_min": 451,
+   "playtime_min": 495,
    "ach_done": 17,
    "ach_total": 24,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1016790/capsule_231x87.jpg?t=1759231379",
