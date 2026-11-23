@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-22T16:45:07+00:00",
+ "generated_at": "2026-11-23T20:40:30+00:00",
  "games": [
   {
    "appid": 251570,
@@ -717,8 +717,8 @@
    "playtime_min": 82,
    "ach_done": 25,
    "ach_total": 87,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/726840/8d974e36218e7826fa9754381a339e93306c717c/capsule_231x87_alt_assets_18.jpg?t=1789984751",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/726840/967c9748ab92537731b85e06302b3586a4e0a0e4/library_capsule_2x.jpg?t=1789984751",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/726840/8d974e36218e7826fa9754381a339e93306c717c/capsule_231x87_alt_assets_18.jpg?t=1795431060",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/726840/967c9748ab92537731b85e06302b3586a4e0a0e4/library_capsule_2x.jpg?t=1795431060",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/726840/012f7e42ba3960e488a19d8b192f33e2c33ac000.jpg"
   },
   {
@@ -1697,7 +1697,7 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 60,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304390/2990e16e6dd97857e85b7f7c943112d6084aa5f3/capsule_231x87_alt_assets_13.jpg?t=1793633078",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304390/5b4909717c94e99511e459aad48cd2202e191046/capsule_231x87.jpg?t=1793633078",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304390/93723b4e6f256d52d617b04789ffd4eee77e7e2b/library_capsule_2x.jpg?t=1793633078",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/304390/24ec1359d4c27b2aef9ad3fc59fdfa495789d6e6.jpg"
   },
@@ -1857,8 +1857,8 @@
    "playtime_min": 818,
    "ach_done": 31,
    "ach_total": 94,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1029780/f70ac93d7e1e623dc351ed9373600c73af6f23f1/capsule_231x87.jpg?t=1793293280",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1029780/5734ed387598780444bf0a955532aeed33b355b6/library_capsule_2x.jpg?t=1793293280",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1029780/f70ac93d7e1e623dc351ed9373600c73af6f23f1/capsule_231x87.jpg?t=1795442544",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1029780/5734ed387598780444bf0a955532aeed33b355b6/library_capsule_2x.jpg?t=1795442544",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1029780/3eec57d783c54036166564e195039b20f600a52f.jpg"
   },
   {
@@ -2387,8 +2387,8 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 33,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/561770/capsule_231x87.jpg?t=1794849315",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/561770/portrait.png?t=1794849315",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/561770/capsule_231x87.jpg?t=1795370466",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/561770/portrait.png?t=1795370466",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/561770/b119c3d3d6d1d767a74f93f7968bdb866cab6216.jpg"
   },
   {
@@ -3267,8 +3267,8 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 20,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/802450/cc181623dd889bd07812d2ee02827d4de59ee1ed/capsule_231x87.jpg?t=1790246963",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/802450/library_600x900_2x.jpg?t=1790246963",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/802450/cc181623dd889bd07812d2ee02827d4de59ee1ed/capsule_231x87.jpg?t=1795431677",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/802450/library_600x900_2x.jpg?t=1795431677",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/802450/6210b190711e638be09703eea937559d6c6bdd97.jpg"
   },
   {
@@ -3677,8 +3677,8 @@
    "playtime_min": 36,
    "ach_done": 6,
    "ach_total": 250,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/246620/6360836e806dacf895d368663da4bb7c626bb661/capsule_231x87.jpg?t=1792426460",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/246620/3864dd151d2105e6c411e6fc971a4bf3241442f5/library_capsule_2x.jpg?t=1792426460",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/246620/6360836e806dacf895d368663da4bb7c626bb661/capsule_231x87.jpg?t=1795435601",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/246620/3864dd151d2105e6c411e6fc971a4bf3241442f5/library_capsule_2x.jpg?t=1795435601",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/246620/9e39dcfd5a300732c16111b268853ef11a0ba4d0.jpg"
   },
   {
@@ -4297,8 +4297,8 @@
    "playtime_min": 14,
    "ach_done": 5,
    "ach_total": 48,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3496000/4cc4872aa106c969ec7fece0e5db7c0859b53451/capsule_231x87.jpg?t=1794299139",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3496000/856c70845c372a54ac128d24f94eead9291b2c36/library_600x900_2x.jpg?t=1794299139",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3496000/4cc4872aa106c969ec7fece0e5db7c0859b53451/capsule_231x87.jpg?t=1795369280",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3496000/856c70845c372a54ac128d24f94eead9291b2c36/library_600x900_2x.jpg?t=1795369280",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/3496000/f864d131e5fea0928c8d9ecf568ed33aa12c18ad.jpg"
   },
   {
@@ -4347,8 +4347,8 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 40,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/308600/40a79d3fb82e3b704bb4e720ad4e17dfd374a98e/capsule_231x87.jpg?t=1790154745",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/308600/e23ce9f3651c97f43ff257d3257e9e5306f5ce95/library_capsule_2x.jpg?t=1790154745",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/308600/40a79d3fb82e3b704bb4e720ad4e17dfd374a98e/capsule_231x87.jpg?t=1795454555",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/308600/e23ce9f3651c97f43ff257d3257e9e5306f5ce95/library_capsule_2x.jpg?t=1795454555",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/308600/e0ba85c5d76697b6c1f8999f4ee5691eda138185.jpg"
   },
   {
@@ -4457,8 +4457,8 @@
    "playtime_min": 65,
    "ach_done": 1,
    "ach_total": 49,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475460/854814ba3318c86f638d7117300ac87ec02ba2c0/capsule_231x87.jpg?t=1794825359",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475460/0d6e24c4c78b6c385201971b2b6a78e4bdf536bf/library_capsule_2x.jpg?t=1794825359",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475460/854814ba3318c86f638d7117300ac87ec02ba2c0/capsule_231x87.jpg?t=1795433902",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2475460/0d6e24c4c78b6c385201971b2b6a78e4bdf536bf/library_capsule_2x.jpg?t=1795433902",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/2475460/fedae233db87adc274b6493356fe0bbe88ed0a7f.jpg"
   },
   {
