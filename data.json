@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-23T20:40:30+00:00",
+ "generated_at": "2026-11-24T19:46:37+00:00",
  "games": [
   {
    "appid": 251570,
@@ -167,7 +167,7 @@
    "playtime_min": 10853,
    "ach_done": 12,
    "ach_total": 12,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/0f7e056bbc3fb645cfd812a0154ebf3d53ef47f1/capsule_231x87_alt_assets_7.jpg?t=1794958367",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/9fbf2ae1cf580d02297a15b2bc9bf3f5b4ad7701/capsule_231x87.jpg?t=1794958367",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1172470/b727d513ccbd272e35095089837d386176c59a97/library_capsule_2x.jpg?t=1794958367",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1172470/8986dd626da56db5f3fe09bc1b8871739de8b00d.jpg"
   },
@@ -267,8 +267,8 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 94,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2208920/601e6fefb69d9f071cd113283ae0b4212ad9075a/capsule_231x87_alt_assets_0.jpg?t=1793391396",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2208920/library_600x900.jpg?t=1793391396",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2208920/601e6fefb69d9f071cd113283ae0b4212ad9075a/capsule_231x87_alt_assets_0.jpg?t=1795528347",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2208920/library_600x900.jpg?t=1795528347",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/2208920/3946f91cf6beb0d384a85fc32d71616313dc362e.jpg"
   },
   {
@@ -637,8 +637,8 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 43,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1422440/ce6bf5ba11052aacaa2cb7ff7bff32b9e8dc08f1/capsule_231x87.jpg?t=1795189518",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1422440/09beeef38b8b652efe596bcb8be2d4f01066ac3f/library_600x900_2x.jpg?t=1795189518",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1422440/ce6bf5ba11052aacaa2cb7ff7bff32b9e8dc08f1/capsule_231x87.jpg?t=1795529132",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1422440/09beeef38b8b652efe596bcb8be2d4f01066ac3f/library_600x900_2x.jpg?t=1795529132",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1422440/9da05eda6ab1949b2f96c9b106325826daf9b3dd.jpg"
   },
   {
@@ -717,8 +717,8 @@
    "playtime_min": 82,
    "ach_done": 25,
    "ach_total": 87,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/726840/8d974e36218e7826fa9754381a339e93306c717c/capsule_231x87_alt_assets_18.jpg?t=1795431060",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/726840/967c9748ab92537731b85e06302b3586a4e0a0e4/library_capsule_2x.jpg?t=1795431060",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/726840/081df7b53b33520a6e04ccbcc408c0c6d0445cef/capsule_231x87.jpg?t=1795510915",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/726840/967c9748ab92537731b85e06302b3586a4e0a0e4/library_capsule_2x.jpg?t=1795510915",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/726840/012f7e42ba3960e488a19d8b192f33e2c33ac000.jpg"
   },
   {
@@ -976,9 +976,9 @@
    "name": "Dead by Daylight",
    "playtime_min": 1039,
    "ach_done": 14,
-   "ach_total": 311,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/capsule_231x87.jpg?t=1795112227",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/1b6ff94b7c05c205fbcbd2628f862a1469882f23/library_capsule_2x.jpg?t=1795112227",
+   "ach_total": 318,
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/7e30ca9e674a362e7126655b2095c1eea4dd0f42/capsule_231x87_alt_assets_11.jpg?t=1795543658",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/90963ea60f082cdd919c1091196caf1e8e1877f5/library_capsule_2x.jpg?t=1795543658",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/381210/aa152097a700fd6f4707397ce41794ea30874790.jpg"
   },
   {
@@ -2084,7 +2084,7 @@
   {
    "appid": 990080,
    "name": "Hogwarts Legacy",
-   "playtime_min": 113,
+   "playtime_min": 117,
    "ach_done": 2,
    "ach_total": 45,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/4617336bf98ab04289173328838f18303673457f/capsule_231x87.jpg?t=1790708992",
@@ -3287,8 +3287,8 @@
    "playtime_min": 105,
    "ach_done": 4,
    "ach_total": 51,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1169040/2221d66e7576c197c3d360257d70614ccc2afb8e/capsule_231x87_alt_assets_5.jpg?t=1795108247",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1169040/f951103ede12401e1e1a1048d18113c68885bce6/library_capsule_2x.jpg?t=1795108247",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1169040/2221d66e7576c197c3d360257d70614ccc2afb8e/capsule_231x87_alt_assets_5.jpg?t=1795531087",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1169040/f951103ede12401e1e1a1048d18113c68885bce6/library_capsule_2x.jpg?t=1795531087",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1169040/b9e3becff5c706c4e57db3699ab7451cd178394e.jpg"
   },
   {
@@ -3347,7 +3347,7 @@
    "playtime_min": 1682,
    "ach_done": 12,
    "ach_total": 27,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/79d6a2b52a0a948b4b80b8a755d873b634dc67c5/capsule_231x87_alt_assets_26.jpg?t=1793196605",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/b580ec1af3eba9d81a6e0ad6af9622d6698cef34/capsule_231x87.jpg?t=1793196605",
    "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/2012c0098b08cdff7665a6a808e218b1ab1c6399/library_capsule_2x.jpg?t=1793196605",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/275850/fccb20f309ac5ae05b3cb4576a8a3357edf86f2e.jpg"
   },
@@ -3474,7 +3474,7 @@
   {
    "appid": 2026000,
    "name": "Our Adventurer Guild",
-   "playtime_min": 0,
+   "playtime_min": 1,
    "ach_done": 0,
    "ach_total": 43,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2026000/capsule_231x87.jpg?t=1760657263",
@@ -3627,8 +3627,8 @@
    "playtime_min": 1941,
    "ach_done": 6,
    "ach_total": 54,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/0268c77668d5643d3f2c19e67e92e252fdfe6c7f/capsule_231x87.jpg?t=1794312564",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/0b19136b9e98752001bb4c3ba8936774ac8ac7a7/library_capsule_2x.jpg?t=1794312564",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/ba9a76830cdff3b99ea8e83a440f245beae5b513/capsule_231x87_alt_assets_14.jpg?t=1795522435",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/739630/1ccd5d90ef1045de7584838eb3459a36604dcc49/library_capsule_2x.jpg?t=1795522435",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/739630/125673b382059f666ec81477173380a76e1df0be.jpg"
   },
   {
@@ -3917,8 +3917,8 @@
    "playtime_min": 41,
    "ach_done": 5,
    "ach_total": 99,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088790/d40cdc97a60007b9a0a58b3cbd30eab9191f17a0/capsule_231x87.jpg?t=1795190077",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088790/e8b3cb8983c2694e00d08c3332f0b3064bafebdf/library_capsule_2x.jpg?t=1795190077",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088790/d40cdc97a60007b9a0a58b3cbd30eab9191f17a0/capsule_231x87.jpg?t=1795529987",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1088790/e8b3cb8983c2694e00d08c3332f0b3064bafebdf/library_capsule_2x.jpg?t=1795529987",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1088790/7a4fe7587db367de75892a396f2f6937345016c9.jpg"
   },
   {
@@ -4114,7 +4114,7 @@
   {
    "appid": 252950,
    "name": "Rocket League",
-   "playtime_min": 55654,
+   "playtime_min": 55705,
    "ach_done": 88,
    "ach_total": 88,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252950/cb96e5338e74348cfc4640bc56f7bce313fcf7c3/capsule_231x87_alt_assets_17.jpg?t=1791210513",
@@ -4347,8 +4347,8 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 40,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/308600/40a79d3fb82e3b704bb4e720ad4e17dfd374a98e/capsule_231x87.jpg?t=1795454555",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/308600/e23ce9f3651c97f43ff257d3257e9e5306f5ce95/library_capsule_2x.jpg?t=1795454555",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/308600/40a79d3fb82e3b704bb4e720ad4e17dfd374a98e/capsule_231x87.jpg?t=1795518026",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/308600/e23ce9f3651c97f43ff257d3257e9e5306f5ce95/library_capsule_2x.jpg?t=1795518026",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/308600/e0ba85c5d76697b6c1f8999f4ee5691eda138185.jpg"
   },
   {
@@ -4417,8 +4417,8 @@
    "playtime_min": 37,
    "ach_done": 4,
    "ach_total": 33,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/544330/capsule_231x87.jpg?t=1780400076",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/544330/library_600x900_2x.jpg?t=1780400076",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/544330/capsule_231x87.jpg?t=1795522174",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/544330/library_600x900_2x.jpg?t=1795522174",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/544330/a4a42fb745404840580ee3c92e03b1686aa32ac4.jpg"
   },
   {
@@ -4716,9 +4716,9 @@
    "name": "Symphony of War: The Nephilim Saga",
    "playtime_min": 0,
    "ach_done": 0,
-   "ach_total": 19,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1488200/capsule_231x87_spanish.jpg?t=1795180616",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1488200/library_600x900_spanish_2x.jpg?t=1795180616",
+   "ach_total": 37,
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1488200/73bc815e09b8941a97203256755dd2073933a6d7/capsule_231x87_alt_assets_7.jpg?t=1795529438",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1488200/library_600x900_spanish_2x.jpg?t=1795529438",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1488200/35809511a6c2a0a36d8daec5436ea2864271094a.jpg"
   },
   {
@@ -4937,8 +4937,8 @@
    "playtime_min": 336,
    "ach_done": 14,
    "ach_total": 51,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1451480/a84f3bf1a52d0dfaa41ea6de526caea2c0b4b7e6/capsule_231x87.jpg?t=1790612752",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1451480/ab9d97b05cfa1ced495f05ee7d93ff41f3f886a3/library_capsule_2x.jpg?t=1790612752",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1451480/a84f3bf1a52d0dfaa41ea6de526caea2c0b4b7e6/capsule_231x87.jpg?t=1795469348",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1451480/ab9d97b05cfa1ced495f05ee7d93ff41f3f886a3/library_capsule_2x.jpg?t=1795469348",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1451480/6e1e88dcf5d3af797f119991ca77bf36b5f87a23.jpg"
   },
   {
@@ -5117,8 +5117,8 @@
    "playtime_min": 59,
    "ach_done": 1,
    "ach_total": 59,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/282070/2d8bb6908a236a5b129a2445dcc1cab37d0f7a47/capsule_231x87.jpg?t=1793632890",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/282070/library_600x900_2x.jpg?t=1793632890",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/282070/2d8bb6908a236a5b129a2445dcc1cab37d0f7a47/capsule_231x87.jpg?t=1795519118",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/282070/library_600x900_2x.jpg?t=1795519118",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/282070/38ad6fd10e2b89ab24e8013584ece7961bebe086.jpg"
   },
   {
@@ -5487,8 +5487,8 @@
    "playtime_min": 0,
    "ach_done": 0,
    "ach_total": 36,
-   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1361210/611c940039ef84ed8f18410b3fba99171ea0ce66/capsule_231x87.jpg?t=1794993230",
-   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1361210/9bfbd134692bd2caa8a28847f48f1a80c9408148/library_capsule_2x.jpg?t=1794993230",
+   "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1361210/1b1802b9a9674ff383afb95b37ebacb96a93d05b/capsule_231x87_alt_assets_21.jpg?t=1795527711",
+   "cover": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1361210/9bfbd134692bd2caa8a28847f48f1a80c9408148/library_capsule_2x.jpg?t=1795527711",
    "icon": "https://media.steampowered.com/steamcommunity/public/images/apps/1361210/c4e0990ff034cf6c48fb96649229e6362b866629.jpg"
   },
   {
@@ -5554,7 +5554,7 @@
   {
    "appid": 1016790,
    "name": "West of Dead",
-   "playtime_min": 495,
+   "playtime_min": 518,
    "ach_done": 17,
    "ach_total": 24,
    "img": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1016790/capsule_231x87.jpg?t=1759231379",
